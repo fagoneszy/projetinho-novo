@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BATLAB — 300 ferramentas .bat para Windows</title>
+<meta name="description" content="BATLAB: 300 microutilitarios .bat para Windows 10/11, organizados em 11 categorias. Busque, veja o risco e baixe direto.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1><span class="prompt">&gt;_</span> BATLAB</h1>
+    <p class="tagline">Tiny Windows tools. Open source. Free forever.</p>
+    <p class="lead">
+      <strong>300</strong> microutilitários <code>.bat</code> para Windows 10/11 —
+      um arquivo, um trabalho, sem instalação. Cada script declara no cabeçalho
+      se precisa de administrador e qual o nível de risco.
+    </p>
+    <div id="stats" class="stats"></div>
+  </div>
+</header>
+
+<section class="controls">
+  <div class="wrap">
+    <input id="q" type="search" autocomplete="off"
+           placeholder="Buscar ferramenta… (ex.: backup, wifi, git, limpar)"
+           aria-label="Buscar ferramenta">
+    <div id="chips" class="chips" role="tablist" aria-label="Categorias"></div>
+    <div class="meta">
+      <span id="count"></span>
+      <label class="admin-filter">
+        <input type="checkbox" id="noAdmin"> esconder as que pedem admin
+      </label>
+    </div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="grid" class="grid"></div>
+  <p id="empty" class="empty" hidden>Nada encontrado. Tente outra palavra.</p>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>
+      MIT © 2026 Fagoneszy ·
+      <a id="repo-link" href="#" target="_blank" rel="noopener">github.com</a> ·
+      como usar: baixe, dê dois cliques, use.
+    </p>
+    <p class="hint">
+      Risco 🟢 somente leitura · 🟡 modifica e pede confirmação ·
+      🔴 destrutivo com confirmação dupla.
+    </p>
+  </div>
+</footer>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

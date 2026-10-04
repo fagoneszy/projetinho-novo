@@ -1,0 +1,17 @@
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk
+
+# Backups/logs gerados por scripts
+*.log
+_*.bak
+Relatorios/
+
+# Editor
+.vscode/
+.idea/
+
+# Ambientes Python gerados por scripts
+.venv/
+__pycache__/
