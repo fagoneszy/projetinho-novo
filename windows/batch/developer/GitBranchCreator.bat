@@ -2,6 +2,7 @@
 :: BATLAB | GitBranchCreator.bat | v1.0.0
 :: @desc      Cria e entra em uma nova branch com git checkout -b
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

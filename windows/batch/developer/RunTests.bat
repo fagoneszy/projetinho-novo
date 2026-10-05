@@ -2,6 +2,7 @@
 :: BATLAB | RunTests.bat | v1.0.0
 :: @desc      Detecta e roda os testes do projeto (pytest, npm, cargo, go)
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

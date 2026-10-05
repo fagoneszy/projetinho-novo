@@ -2,6 +2,7 @@
 :: BATLAB | TimestampNote.bat | v1.0.0
 :: @desc      Cria uma nota com data e hora no nome do arquivo
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

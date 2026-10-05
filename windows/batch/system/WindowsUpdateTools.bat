@@ -2,8 +2,16 @@
 :: BATLAB | WindowsUpdateTools.bat | v1.0.0
 :: @desc      Menu de manutencao do Windows Update (buscar/baixar/instalar/reiniciar)
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes system
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      N/A - acoes do Windows Update sao gerenciadas pelo proprio Windows
 :: ============================================================
 @echo off

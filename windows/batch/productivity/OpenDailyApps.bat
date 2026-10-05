@@ -2,6 +2,7 @@
 :: BATLAB | OpenDailyApps.bat | v1.0.0
 :: @desc      Abre os aplicativos diarios listados em daily-apps.txt
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

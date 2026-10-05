@@ -2,8 +2,16 @@
 :: BATLAB | AutoBackup.bat | v1.0.0
 :: @desc      Menu de backups simples com robocopy
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Apague ou mova o destino para desfazer
 :: ============================================================
 @echo off

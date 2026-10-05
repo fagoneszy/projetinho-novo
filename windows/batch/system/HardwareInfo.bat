@@ -2,6 +2,7 @@
 :: BATLAB | HardwareInfo.bat | v1.0.0
 :: @desc      Hardware: placas, modulos e perifericos
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

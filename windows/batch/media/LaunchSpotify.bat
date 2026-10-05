@@ -2,6 +2,7 @@
 :: BATLAB | LaunchSpotify.bat | v1.0.0
 :: @desc      Abre o Spotify
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

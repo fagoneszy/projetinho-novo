@@ -2,6 +2,7 @@
 :: BATLAB | OpenWindowsFolder.bat | v1.0.0
 :: @desc      Abre a pasta do Windows
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

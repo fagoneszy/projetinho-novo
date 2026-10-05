@@ -2,8 +2,16 @@
 :: BATLAB | ShutdownTimer.bat | v1.0.0
 :: @desc      Desligar o PC em N minutos (shutdown /s /t N)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart os
 :: @undo      shutdown /a
 :: ============================================================
 @echo off

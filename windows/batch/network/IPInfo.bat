@@ -2,6 +2,7 @@
 :: BATLAB | IPInfo.bat | v1.0.0
 :: @desc      Exibe o IP local IPv4 e o gateway padrao da rede
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

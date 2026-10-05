@@ -33,54 +33,95 @@ $baseRepo  = "https://github.com/$Owner/$Repo/blob/main"
 $tools = @()
 $bad   = @()
 
+# enums de seguranca v2
+$secEnums = @{
+    writes   = @('none', 'temp', 'user', 'system')
+    deletes  = @('none', 'temp', 'files')
+    registry = @('none', 'read', 'write')
+    services = @('none', 'read', 'write')
+    tasks    = @('none', 'read', 'write')
+    network  = @('none', 'read', 'write')
+    restart  = @('none', 'process', 'explorer', 'os')
+}
+$secFields = @('writes', 'deletes', 'registry', 'services', 'tasks', 'network', 'restart')
+$platFromDir = @{ 'windows' = 'windows'; 'linux' = 'linux'; 'macos' = 'macos'; 'android' = 'android' }
+
 Get-ChildItem -LiteralPath (Join-Path $root 'windows\batch') -Directory |
     Where-Object { $_.Name -notin @('site', 'tools', 'docs', '.git') } |
     Sort-Object Name |
     ForEach-Object {
         $catDir = $_
+        $platDir = 'windows'
         Get-ChildItem -LiteralPath $catDir.FullName -Filter '*.bat' -File | Sort-Object Name | ForEach-Object {
             $f = $_
             $meta = @{}
             $version = '1.0.0'
-            $lines = Get-Content -LiteralPath $f.FullName -Encoding UTF8 -TotalCount 12
+            $lines = Get-Content -LiteralPath $f.FullName -Encoding UTF8 -TotalCount 30
             foreach ($l in $lines) {
-                if ($l -match '^::\s*@(\w+)\s+(.+)$') {
+                if ($l -match '^(?:#|::)\s*@(\w+)\s+(.+)$') {
                     $meta[$Matches[1]] = $Matches[2].Trim()
                 }
-                elseif ($l -match '^::\s*BATLAB\s*\|.*\|\s*v(\S+)\s*$') {
+                elseif ($l -match '^(?:#|::)\s*BATLAB\s*\|.*\|\s*v(\S+)\s*$') {
                     $version = $Matches[1]
                 }
             }
-            foreach ($req in @('desc', 'category', 'admin', 'risk', 'undo')) {
+            foreach ($req in @('desc', 'category', 'platform', 'admin', 'risk', 'undo')) {
                 if (-not $meta.ContainsKey($req)) { $bad += "$($f.FullName) :: falta @$req" }
             }
             if ($meta.ContainsKey('category') -and $meta['category'] -ne $catDir.Name) {
                 $bad += "$($f.FullName) :: @category=$($meta['category']) mas a pasta e '$($catDir.Name)'"
             }
+            if ($meta.ContainsKey('platform')) {
+                if ($meta['platform'] -notin @('windows', 'linux', 'macos', 'android')) {
+                    $bad += "$($f.FullName) :: @platform invalido: $($meta['platform'])"
+                }
+                elseif ($platDir -and $meta['platform'] -ne $platDir) {
+                    $bad += "$($f.FullName) :: @platform=$($meta['platform']) mas a pasta indica '$platDir'"
+                }
+            }
             if ($meta.ContainsKey('admin') -and $meta['admin'] -notin @('no', 'yes')) {
                 $bad += "$($f.FullName) :: @admin invalido: $($meta['admin'])"
             }
-            if ($meta.ContainsKey('risk') -and $meta['risk'] -notin @('low', 'medium', 'high')) {
+            if ($meta.ContainsKey('risk') -and $meta['risk'] -notin @('low', 'medium', 'high', 'critical')) {
                 $bad += "$($f.FullName) :: @risk invalido: $($meta['risk'])"
+            }
+            # campos de seguranca obrigatorios para risk medium+
+            if ($meta.ContainsKey('risk') -and $meta['risk'] -in @('medium', 'high', 'critical')) {
+                foreach ($s in $secFields) {
+                    if (-not $meta.ContainsKey($s)) { $bad += "$($f.FullName) :: risk=$($meta['risk']) mas falta @$s" }
+                    elseif ($secEnums[$s] -notcontains $meta[$s]) { $bad += "$($f.FullName) :: @$s invalido: $($meta[$s])" }
+                }
+            }
+            # critical exige confirmacao digitada
+            if ($meta.ContainsKey('risk') -and $meta['risk'] -eq 'critical') {
+                if (-not $meta.ContainsKey('confirm') -or $meta['confirm'] -ne 'typed') {
+                    $bad += "$($f.FullName) :: risk=critical mas falta @confirm typed"
+                }
             }
 
             $kb = [math]::Round($f.Length / 1KB, 1)
             $relDir = $catDir.FullName.Substring($root.Length + 1) -replace '\\', '/'
             $rel = "$relDir/$($f.Name)"
-            $tools += [pscustomobject]@{
+            $obj = [ordered]@{
                 name        = [System.IO.Path]::GetFileNameWithoutExtension($f.Name)
                 file        = $f.Name
                 slug        = $f.BaseName.ToLower()
                 category    = $catDir.Name
+                platform    = if ($meta.ContainsKey('platform')) { $meta['platform'] } else { '' }
                 description = if ($meta.ContainsKey('desc')) { $meta['desc'] } else { '' }
                 admin       = ($meta.ContainsKey('admin') -and $meta['admin'] -eq 'yes')
                 risk        = if ($meta.ContainsKey('risk')) { $meta['risk'] } else { 'low' }
                 undo        = if ($meta.ContainsKey('undo')) { $meta['undo'] } else { 'N/A' }
-                version     = $version
-                size        = "$kb KB"
-                download    = "$baseRaw/$rel"
-                source      = "$baseRepo/$rel"
             }
+            foreach ($s in $secFields) {
+                $obj[$s] = if ($meta.ContainsKey($s)) { $meta[$s] } else { '' }
+            }
+            $obj['confirm'] = if ($meta.ContainsKey('confirm')) { $meta['confirm'] } else { '' }
+            $obj['version'] = $version
+            $obj['size']    = "$kb KB"
+            $obj['download'] = "$baseRaw/$rel"
+            $obj['source']   = "$baseRepo/$rel"
+            $tools += [pscustomobject]$obj
         }
     }
 

@@ -2,6 +2,7 @@
 :: BATLAB | InternetTest.bat | v1.0.0
 :: @desc      Testa a conectividade da internet com varios destinos
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,6 +2,7 @@
 :: BATLAB | JavaProject.bat | v1.0.0
 :: @desc      Cria a estrutura de projeto Java com src e Main.java
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

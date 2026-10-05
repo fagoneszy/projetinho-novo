@@ -2,8 +2,16 @@
 :: BATLAB | GitBackup.bat | v1.0.0
 :: @desc      Faz add, commit e push em um unico passo
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      git reset --soft HEAD~1 e git push --force apenas se necessario
 :: ============================================================
 @echo off

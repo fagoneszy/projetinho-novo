@@ -2,8 +2,16 @@
 :: BATLAB | RepairSystemFiles.bat | v1.0.0
 :: @desc      Verifica e repara arquivos do sistema (sfc /scannow)
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes system
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      N/A - o sfc restaura arquivos a partir do proprio Windows
 :: ============================================================
 @echo off

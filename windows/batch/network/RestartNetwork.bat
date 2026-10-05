@@ -2,8 +2,16 @@
 :: BATLAB | RestartNetwork.bat | v1.0.0
 :: @desc      Desabilita e reabilita um adaptador de rede selecionado
 :: @category  network
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network write
+:: @restart none
 :: @undo      Enable-NetAdapter para reabilitar o adaptador manualmente
 :: ============================================================
 @echo off

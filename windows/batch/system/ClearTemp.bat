@@ -2,8 +2,16 @@
 :: BATLAB | ClearTemp.bat | v1.0.0
 :: @desc      Limpa os arquivos temporarios do usuario e do Windows
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes temp
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      N/A - arquivos temporarios sao recriados pelo Windows
 :: ============================================================
 @echo off

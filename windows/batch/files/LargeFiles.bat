@@ -2,6 +2,7 @@
 :: BATLAB | LargeFiles.bat | v1.0.0
 :: @desc      Lista arquivos maiores que N MB (padrao 100)
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente listagem)

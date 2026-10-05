@@ -2,8 +2,16 @@
 :: BATLAB | RestartPrintSpooler.bat | v1.0.0
 :: @desc      Reinicia o servico de impressao (spooler)
 :: @category  customization
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services write
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute net start spooler ou reinicie o servico Spooler pelo console Services.msc
 :: ============================================================
 @echo off

@@ -2,8 +2,16 @@
 :: BATLAB | VideoOrganizer.bat | v1.0.0
 :: @desc      Organiza videos por ano e mes
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas AAAA-MM de volta para a raiz de Videos
 :: ============================================================
 @echo off

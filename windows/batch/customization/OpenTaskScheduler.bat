@@ -2,6 +2,7 @@
 :: BATLAB | OpenTaskScheduler.bat | v1.0.0
 :: @desc      Abre o Agendador de Tarefas
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

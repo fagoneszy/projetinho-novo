@@ -2,6 +2,7 @@
 :: BATLAB | LockComputer.bat | v1.0.0
 :: @desc      Trava a estacao (rundll32.exe user32.dll,LockWorkStation)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Ctrl+Alt+Del e informe a senha

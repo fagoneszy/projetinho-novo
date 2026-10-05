@@ -2,6 +2,7 @@
 :: BATLAB | ListeningPorts.bat | v1.0.0
 :: @desc      Portas em escuta (netstat -ano -p tcp | findstr LISTENING)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

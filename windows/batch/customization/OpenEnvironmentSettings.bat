@@ -2,6 +2,7 @@
 :: BATLAB | OpenEnvironmentSettings.bat | v1.0.0
 :: @desc      Abre as configuracoes de variaveis de ambiente
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

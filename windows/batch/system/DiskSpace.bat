@@ -2,6 +2,7 @@
 :: BATLAB | DiskSpace.bat | v1.0.0
 :: @desc      Espaco total e livre por unidade
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

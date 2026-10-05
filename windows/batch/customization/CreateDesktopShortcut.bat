@@ -2,6 +2,7 @@
 :: BATLAB | CreateDesktopShortcut.bat | v1.0.0
 :: @desc      Cria um atalho na area de trabalho (arg: caminho do alvo)
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Exclua o arquivo .lnk criado na area de trabalho

@@ -2,8 +2,16 @@
 :: BATLAB | RenameByDate.bat | v1.0.0
 :: @desc      Adiciona a data de modificacao no inicio dos nomes dos arquivos
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Remova o prefixo AAAA-MM-DD_ dos nomes
 :: ============================================================
 @echo off

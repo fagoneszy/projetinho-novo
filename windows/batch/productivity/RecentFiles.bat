@@ -2,6 +2,7 @@
 :: BATLAB | RecentFiles.bat | v1.0.0
 :: @desc      Mostra os arquivos modificados nos ultimos N dias
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

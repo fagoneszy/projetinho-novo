@@ -2,8 +2,16 @@
 :: BATLAB | RestartComputer.bat | v1.0.0
 :: @desc      Reinicia o computador apos N segundos (padrao 60, cancelavel com /a)
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart os
 :: @undo      Cancele com shutdown /a antes do reinicio
 :: ============================================================
 @echo off

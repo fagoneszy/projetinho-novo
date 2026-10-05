@@ -2,6 +2,7 @@
 :: BATLAB | WifiInfo.bat | v1.0.0
 :: @desc      Exibe os detalhes da conexao Wi-Fi ativa
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

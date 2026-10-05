@@ -2,8 +2,16 @@
 :: BATLAB | BulkRename.bat | v1.0.0
 :: @desc      Renomeia arquivos em massa aplicando um padrao
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Renomeie os arquivos de volta para os nomes originais
 :: ============================================================
 @echo off

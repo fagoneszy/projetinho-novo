@@ -2,6 +2,7 @@
 :: BATLAB | ExportFileList.bat | v1.0.0
 :: @desc      Exporta a lista de arquivos para TXT
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo TXT gerado

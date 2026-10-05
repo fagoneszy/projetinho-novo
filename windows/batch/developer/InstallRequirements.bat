@@ -2,8 +2,16 @@
 :: BATLAB | InstallRequirements.bat | v1.0.0
 :: @desc      Instala as dependencias Python do requirements.txt com pip
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      pip uninstall -r requirements.txt para remover os pacotes
 :: ============================================================
 @echo off

@@ -2,6 +2,7 @@
 :: BATLAB | OpenRecycleBin.bat | v1.0.0
 :: @desc      Abre a Lixeira (explorer shell:RecycleBinFolder)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre uma janela

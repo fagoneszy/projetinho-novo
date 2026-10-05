@@ -2,6 +2,7 @@
 :: BATLAB | ScheduledTaskAudit.bat | v1.0.0
 :: @desc      Tarefas agendadas suspeitas ou ocultas (schtasks /query /fo LIST)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     yes
 :: @risk      low
 :: @undo      N/A

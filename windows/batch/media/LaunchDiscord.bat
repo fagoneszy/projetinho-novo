@@ -2,6 +2,7 @@
 :: BATLAB | LaunchDiscord.bat | v1.0.0
 :: @desc      Abre o Discord
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

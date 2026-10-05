@@ -2,6 +2,7 @@
 :: BATLAB | NetworkDiagnostics.bat | v1.0.0
 :: @desc      Menu de diagnostico de rede: ping, DNS, IP e adaptadores
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

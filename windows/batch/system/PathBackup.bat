@@ -2,6 +2,7 @@
 :: BATLAB | PathBackup.bat | v1.0.0
 :: @desc      Salva o PATH atual em um arquivo de backup
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo de backup do PATH gerado

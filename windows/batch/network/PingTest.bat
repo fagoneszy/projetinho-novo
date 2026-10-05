@@ -2,6 +2,7 @@
 :: BATLAB | PingTest.bat | v1.0.0
 :: @desc      Ping parametrizado para o host informado como argumento
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

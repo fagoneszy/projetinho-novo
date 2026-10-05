@@ -2,6 +2,7 @@
 :: BATLAB | WindowsVersion.bat | v1.0.0
 :: @desc      Versao, edicao e build do Windows
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

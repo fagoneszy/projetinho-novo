@@ -2,8 +2,16 @@
 :: BATLAB | WeeklyTaskCreator.bat | v1.0.0
 :: @desc      Assistente para criar uma tarefa semanal no Agendador
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn NOME /f
 :: ============================================================
 @echo off

@@ -2,8 +2,16 @@
 :: BATLAB | AutoStartupManager.bat | v1.0.0
 :: @desc      Lista e remove itens da inicializacao do Windows
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Rode novamente e readicione o valor do registro
 :: ============================================================
 @echo off

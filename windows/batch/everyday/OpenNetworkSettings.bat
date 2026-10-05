@@ -2,6 +2,7 @@
 :: BATLAB | OpenNetworkSettings.bat | v1.0.0
 :: @desc      Abre rede nas Configuracoes (ms-settings:network)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre uma janela

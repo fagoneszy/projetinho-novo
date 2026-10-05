@@ -2,6 +2,7 @@
 :: BATLAB | WeeklyFolder.bat | v1.0.0
 :: @desc      Cria a pasta da semana com subpastas Seg..Dom
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

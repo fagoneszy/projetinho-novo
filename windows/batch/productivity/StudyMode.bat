@@ -2,6 +2,7 @@
 :: BATLAB | StudyMode.bat | v1.0.0
 :: @desc      Abre navegador, editor e musica para estudos
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

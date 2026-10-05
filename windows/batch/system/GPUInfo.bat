@@ -2,6 +2,7 @@
 :: BATLAB | GPUInfo.bat | v1.0.0
 :: @desc      Placas de video instaladas
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

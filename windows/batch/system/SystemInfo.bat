@@ -2,6 +2,7 @@
 :: BATLAB | SystemInfo.bat | v1.0.0
 :: @desc      Informacoes completas do computador
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

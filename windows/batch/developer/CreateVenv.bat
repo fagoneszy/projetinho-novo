@@ -2,6 +2,7 @@
 :: BATLAB | CreateVenv.bat | v1.0.0
 :: @desc      Cria um ambiente virtual Python na pasta .venv
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

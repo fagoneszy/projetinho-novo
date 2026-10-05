@@ -2,6 +2,7 @@
 :: BATLAB | ProjectInit.bat | v1.0.0
 :: @desc      Inicializa um repo Git com estrutura basica e README
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

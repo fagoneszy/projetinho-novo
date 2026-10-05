@@ -2,6 +2,7 @@
 :: BATLAB | SystemHealthReport.bat | v1.0.0
 :: @desc      Relatorio de saude consolidado (disco, RAM, uptime, servicos) em TXT
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

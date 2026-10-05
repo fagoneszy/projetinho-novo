@@ -2,6 +2,7 @@
 :: BATLAB | Countdown.bat | v1.0.0
 :: @desc      Contagem regressiva com alerta sonoro no final
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

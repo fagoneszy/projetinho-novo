@@ -2,6 +2,7 @@
 :: BATLAB | GuessNumber.bat | v1.0.0
 :: @desc      Jogo: adivinhe o numero de 1 a 100 com dicas
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

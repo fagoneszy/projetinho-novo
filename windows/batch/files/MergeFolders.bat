@@ -2,8 +2,16 @@
 :: BATLAB | MergeFolders.bat | v1.0.0
 :: @desc      Mescla o conteudo de duas pastas
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos copiados de volta para a pasta de origem
 :: ============================================================
 @echo off

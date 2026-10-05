@@ -2,6 +2,7 @@
 :: BATLAB | MatrixEffect.bat | v1.0.0
 :: @desc      Efeito Matrix: chuva de caracteres verde por 30 segundos
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

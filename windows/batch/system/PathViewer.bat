@@ -2,6 +2,7 @@
 :: BATLAB | PathViewer.bat | v1.0.0
 :: @desc      Mostra o PATH do sistema formatado, uma pasta por linha
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

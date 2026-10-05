@@ -2,6 +2,7 @@
 :: BATLAB | HackerTerminal.bat | v1.0.0
 :: @desc      Simulacao visual de hack - apenas enfeite, nao faz nada
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

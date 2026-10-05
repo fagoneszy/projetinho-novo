@@ -2,8 +2,16 @@
 :: BATLAB | NetworkReset.bat | v1.0.0
 :: @desc      Reseta Winsock e TCP/IP do Windows (requer Administrador)
 :: @category  network
+:: @platform windows
 :: @admin     yes
 :: @risk      high
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network write
+:: @restart none
 :: @undo      Reiniciar o computador; para desfazer use um ponto de restauracao do sistema
 :: ============================================================
 @echo off

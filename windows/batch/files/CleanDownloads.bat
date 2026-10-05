@@ -2,8 +2,16 @@
 :: BATLAB | CleanDownloads.bat | v1.0.0
 :: @desc      Remove da pasta Downloads arquivos mais antigos que N dias
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      high
+:: @writes none
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Irreversivel - use /dryrun antes
 :: ============================================================
 @echo off

@@ -2,6 +2,7 @@
 :: BATLAB | OpenControlPanel.bat | v1.0.0
 :: @desc      Abre o Painel de Controle
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

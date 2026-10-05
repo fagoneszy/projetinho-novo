@@ -2,6 +2,7 @@
 :: BATLAB | ConnectionList.bat | v1.0.0
 :: @desc      Mostra conexoes TCP ativas e os processos do sistema
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

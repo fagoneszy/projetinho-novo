@@ -2,6 +2,7 @@
 :: BATLAB | MinecraftLauncher.bat | v1.0.0
 :: @desc      Abre o Minecraft
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

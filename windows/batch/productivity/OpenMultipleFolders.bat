@@ -2,6 +2,7 @@
 :: BATLAB | OpenMultipleFolders.bat | v1.0.0
 :: @desc      Abre varias pastas de uma vez (recebe caminhos como argumento)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

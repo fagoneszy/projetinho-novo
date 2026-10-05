@@ -2,6 +2,7 @@
 :: BATLAB | SystemEventReport.bat | v1.0.0
 :: @desc      Erros e avisos do log Sistema dos ultimos 7 dias em TXT
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,8 +2,16 @@
 :: BATLAB | ScheduledShutdown.bat | v1.0.0
 :: @desc      Agenda o desligamento do PC em N minutos
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart os
 :: @undo      shutdown /a
 :: ============================================================
 @echo off

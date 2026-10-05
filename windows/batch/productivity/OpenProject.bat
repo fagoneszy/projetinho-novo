@@ -2,6 +2,7 @@
 :: BATLAB | OpenProject.bat | v1.0.0
 :: @desc      Abre a pasta do projeto no Explorer, VS Code e terminal
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,6 +2,7 @@
 :: BATLAB | EpicLauncher.bat | v1.0.0
 :: @desc      Abre a Epic Games Launcher
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

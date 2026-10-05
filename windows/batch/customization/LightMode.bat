@@ -2,8 +2,16 @@
 :: BATLAB | LightMode.bat | v1.0.0
 :: @desc      Ativa o tema claro do Windows
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute DarkMode.bat (AppsUseLightTheme=0 e SystemUsesLightTheme=0)
 :: ============================================================
 @echo off

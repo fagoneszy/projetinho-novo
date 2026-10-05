@@ -2,8 +2,16 @@
 :: BATLAB | ScheduledProgram.bat | v1.0.0
 :: @desc      Agenda qualquer programa para rodar todo dia
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn BATLAB_Programa /f
 :: ============================================================
 @echo off

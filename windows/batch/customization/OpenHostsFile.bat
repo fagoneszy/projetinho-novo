@@ -2,8 +2,16 @@
 :: BATLAB | OpenHostsFile.bat | v1.0.0
 :: @desc      Abre o arquivo hosts no Bloco de Notas como administrador
 :: @category  customization
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Feche o Bloco de Notas sem salvar ou restaure o backup manual do arquivo hosts
 :: ============================================================
 @echo off

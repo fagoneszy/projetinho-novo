@@ -2,6 +2,7 @@
 :: BATLAB | RandomNumber.bat | v1.0.0
 :: @desc      Sorteia um numero entre 1 e N (padrao 100)
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

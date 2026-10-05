@@ -2,8 +2,16 @@
 :: BATLAB | ToggleDarkMode.bat | v1.0.0
 :: @desc      Alterna entre tema escuro e claro
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute DarkMode.bat ou LightMode.bat conforme o tema desejado
 :: ============================================================
 @echo off

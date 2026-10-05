@@ -2,8 +2,16 @@
 :: BATLAB | ScheduledCleanup.bat | v1.0.0
 :: @desc      Cria tarefa agendada semanal de limpeza de temporarios
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes temp
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn BATLAB_Cleanup /f
 :: ============================================================
 @echo off

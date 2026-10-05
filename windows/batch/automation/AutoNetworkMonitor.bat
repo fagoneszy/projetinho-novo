@@ -2,6 +2,7 @@
 :: BATLAB | AutoNetworkMonitor.bat | v1.0.0
 :: @desc      Monitora a internet e registra quando cai ou volta
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

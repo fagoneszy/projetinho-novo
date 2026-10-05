@@ -2,8 +2,16 @@
 :: BATLAB | SortImages.bat | v1.0.0
 :: @desc      Separa as imagens em uma pasta Imagens
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos da pasta Imagens de volta
 :: ============================================================
 @echo off

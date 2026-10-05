@@ -2,8 +2,16 @@
 :: BATLAB | DarkMode.bat | v1.0.0
 :: @desc      Ativa o tema escuro do Windows
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute LightMode.bat (AppsUseLightTheme=1 e SystemUsesLightTheme=1)
 :: ============================================================
 @echo off

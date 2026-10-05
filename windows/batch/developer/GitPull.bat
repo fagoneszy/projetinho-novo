@@ -2,6 +2,7 @@
 :: BATLAB | GitPull.bat | v1.0.0
 :: @desc      Atualiza o repositorio com git pull e reporta erro claro
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

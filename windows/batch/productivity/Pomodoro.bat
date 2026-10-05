@@ -2,6 +2,7 @@
 :: BATLAB | Pomodoro.bat | v1.0.0
 :: @desc      Temporizador Pomodoro (25 min foco / 5 min pausa, com alerta sonoro)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

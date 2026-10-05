@@ -2,8 +2,16 @@
 :: BATLAB | FullDiagnostic.bat | v1.0.0
 :: @desc      Bateria de verificacoes somente-leitura salvas em Relatorios\AAAA-MM-DD
 :: @category  diagnostics
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry read
+:: @services read
+:: @tasks read
+:: @network read
+:: @restart none
 :: @undo      N/A - somente leitura; apague a pasta Relatorios gerada
 :: ============================================================
 @echo off

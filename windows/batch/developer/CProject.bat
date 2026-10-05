@@ -2,6 +2,7 @@
 :: BATLAB | CProject.bat | v1.0.0
 :: @desc      Cria estrutura C com src, include e Makefile
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

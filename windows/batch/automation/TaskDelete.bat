@@ -2,8 +2,16 @@
 :: BATLAB | TaskDelete.bat | v1.0.0
 :: @desc      Exclui uma tarefa agendada
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      high
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      Recrie a tarefa via TaskManager.bat ou DailyTaskCreator.bat
 :: ============================================================
 @echo off

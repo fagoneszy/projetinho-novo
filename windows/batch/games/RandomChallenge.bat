@@ -2,6 +2,7 @@
 :: BATLAB | RandomChallenge.bat | v1.0.0
 :: @desc      Sorteia um desafio divertido
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

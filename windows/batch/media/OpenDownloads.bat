@@ -2,6 +2,7 @@
 :: BATLAB | OpenDownloads.bat | v1.0.0
 :: @desc      Abre a pasta Downloads
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

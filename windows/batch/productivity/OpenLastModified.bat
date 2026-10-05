@@ -2,6 +2,7 @@
 :: BATLAB | OpenLastModified.bat | v1.0.0
 :: @desc      Abre o arquivo mais recentemente alterado da pasta
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

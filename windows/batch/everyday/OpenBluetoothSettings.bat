@@ -2,6 +2,7 @@
 :: BATLAB | OpenBluetoothSettings.bat | v1.0.0
 :: @desc      Abre Bluetooth (ms-settings:bluetooth)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre uma janela

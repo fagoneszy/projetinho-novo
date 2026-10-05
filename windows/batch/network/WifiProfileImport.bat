@@ -2,8 +2,16 @@
 :: BATLAB | WifiProfileImport.bat | v1.0.0
 :: @desc      Importa perfis Wi-Fi a partir de XMLs de uma pasta
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network write
+:: @restart none
 :: @undo      netsh wlan delete profile name do perfil importado
 :: ============================================================
 @echo off

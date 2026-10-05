@@ -2,8 +2,16 @@
 :: BATLAB | SortBySize.bat | v1.0.0
 :: @desc      Separa os arquivos por faixa de tamanho
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das pastas de faixa de volta para a pasta raiz
 :: ============================================================
 @echo off

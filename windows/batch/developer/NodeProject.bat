@@ -2,6 +2,7 @@
 :: BATLAB | NodeProject.bat | v1.0.0
 :: @desc      Cria um projeto Node.js com npm init, src e index.js
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

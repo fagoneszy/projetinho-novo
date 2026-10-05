@@ -2,6 +2,7 @@
 :: BATLAB | UserAccounts.bat | v1.0.0
 :: @desc      Contas locais (net user)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

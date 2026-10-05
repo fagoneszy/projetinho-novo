@@ -2,6 +2,7 @@
 :: BATLAB | WindowsDefenderStatus.bat | v1.0.0
 :: @desc      Status do Windows Defender (Get-MpComputerStatus)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

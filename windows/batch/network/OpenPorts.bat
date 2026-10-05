@@ -2,6 +2,7 @@
 :: BATLAB | OpenPorts.bat | v1.0.0
 :: @desc      Lista as portas em escuta no sistema com netstat
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

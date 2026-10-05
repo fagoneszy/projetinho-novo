@@ -2,6 +2,7 @@
 :: BATLAB | OpenStartupFolder.bat | v1.0.0
 :: @desc      Abre a pasta de inicializacao (shell:startup)
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

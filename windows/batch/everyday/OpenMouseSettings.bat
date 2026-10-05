@@ -2,6 +2,7 @@
 :: BATLAB | OpenMouseSettings.bat | v1.0.0
 :: @desc      Abre as configuracoes do mouse (main.cpl)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre uma janela

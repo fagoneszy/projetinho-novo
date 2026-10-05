@@ -2,6 +2,7 @@
 :: BATLAB | MonthlyFolder.bat | v1.0.0
 :: @desc      Cria a estrutura do mes (AAAA-MM com 31 pastas de dias)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

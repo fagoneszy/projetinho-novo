@@ -2,8 +2,16 @@
 :: BATLAB | RestoreBackup.bat | v1.0.0
 :: @desc      Restaura um backup para a pasta de origem
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      high
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      A substituicao nao tem desfazer - use /dryrun antes
 :: ============================================================
 @echo off

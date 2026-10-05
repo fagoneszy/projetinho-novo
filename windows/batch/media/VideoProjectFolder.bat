@@ -2,6 +2,7 @@
 :: BATLAB | VideoProjectFolder.bat | v1.0.0
 :: @desc      Cria a estrutura de um projeto de video (Raw, Edicao, Assets, Export)
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta do projeto criada

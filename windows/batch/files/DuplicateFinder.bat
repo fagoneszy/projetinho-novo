@@ -2,6 +2,7 @@
 :: BATLAB | DuplicateFinder.bat | v1.0.0
 :: @desc      Lista arquivos duplicados (mesmo tamanho e conteudo)
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente listagem)

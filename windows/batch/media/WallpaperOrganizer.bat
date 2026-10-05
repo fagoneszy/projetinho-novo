@@ -2,8 +2,16 @@
 :: BATLAB | WallpaperOrganizer.bat | v1.0.0
 :: @desc      Organiza wallpapers por data de modificacao
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas AAAA-MM de volta para a raiz de Pictures\Wallpapers
 :: ============================================================
 @echo off

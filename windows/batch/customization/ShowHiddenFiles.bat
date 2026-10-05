@@ -2,8 +2,16 @@
 :: BATLAB | ShowHiddenFiles.bat | v1.0.0
 :: @desc      Mostra arquivos ocultos no Explorer
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute HideHiddenFiles.bat (valor Hidden=2)
 :: ============================================================
 @echo off

@@ -2,6 +2,7 @@
 :: BATLAB | MemoryInfo.bat | v1.0.0
 :: @desc      Modulos de memoria e total de RAM
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

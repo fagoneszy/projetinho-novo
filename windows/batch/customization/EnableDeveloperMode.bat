@@ -2,8 +2,16 @@
 :: BATLAB | EnableDeveloperMode.bat | v1.0.0
 :: @desc      Ativa o Modo de Desenvolvedor do Windows
 :: @category  customization
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute DisableDeveloperMode.bat (AllowDevelopmentWithoutDevLicense=0)
 :: ============================================================
 @echo off

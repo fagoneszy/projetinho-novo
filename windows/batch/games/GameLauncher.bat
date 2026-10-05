@@ -2,6 +2,7 @@
 :: BATLAB | GameLauncher.bat | v1.0.0
 :: @desc      Menu para abrir seus jogos (lista em games.txt)
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

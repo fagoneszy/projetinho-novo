@@ -2,8 +2,16 @@
 :: BATLAB | SortVideos.bat | v1.0.0
 :: @desc      Separa os videos em uma pasta Videos
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos da pasta Videos de volta
 :: ============================================================
 @echo off

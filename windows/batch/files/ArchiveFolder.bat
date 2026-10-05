@@ -2,6 +2,7 @@
 :: BATLAB | ArchiveFolder.bat | v1.0.0
 :: @desc      Compacta a pasta atual em um arquivo ZIP
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo ZIP gerado

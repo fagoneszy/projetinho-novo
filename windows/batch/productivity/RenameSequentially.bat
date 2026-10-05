@@ -2,8 +2,16 @@
 :: BATLAB | RenameSequentially.bat | v1.0.0
 :: @desc      Renomeia arquivos em sequencia numerica (001, 002...)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Os nomes originais nao sao restaurados - faca backup antes
 :: ============================================================
 @echo off

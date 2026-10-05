@@ -2,6 +2,7 @@
 :: BATLAB | ConnectionLogger.bat | v1.0.0
 :: @desc      Registra em log o status da conexao com o DNS do Google
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

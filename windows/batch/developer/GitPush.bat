@@ -2,6 +2,7 @@
 :: BATLAB | GitPush.bat | v1.0.0
 :: @desc      Envia os commits locais com git push e reporta erro claro
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,6 +2,7 @@
 :: BATLAB | TypingTest.bat | v1.0.0
 :: @desc      Teste de digitacao: mede suas palavras por minuto
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

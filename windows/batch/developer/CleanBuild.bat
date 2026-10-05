@@ -2,8 +2,16 @@
 :: BATLAB | CleanBuild.bat | v1.0.0
 :: @desc      Remove pastas de build e dependencias do projeto
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Recriado no proximo build
 :: ============================================================
 @echo off

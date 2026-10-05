@@ -2,6 +2,7 @@
 :: BATLAB | AutoLogGenerator.bat | v1.0.0
 :: @desc      Registra linhas de log com data/hora em arquivo
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo batlab_log.txt

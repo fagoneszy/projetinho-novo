@@ -2,6 +2,7 @@
 :: BATLAB | CompareFolders.bat | v1.0.0
 :: @desc      Compara duas pastas e lista as diferencas
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente listagem)

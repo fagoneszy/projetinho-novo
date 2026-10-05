@@ -2,8 +2,16 @@
 :: BATLAB | TaskEnable.bat | v1.0.0
 :: @desc      Ativa uma tarefa agendada
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /change /disable para desativar
 :: ============================================================
 @echo off

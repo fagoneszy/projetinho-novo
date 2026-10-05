@@ -2,8 +2,16 @@
 :: BATLAB | TaskManager.bat | v1.0.0
 :: @desc      Hub para listar, ativar, desativar e excluir tarefas
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /f para excluir
 :: ============================================================
 @echo off

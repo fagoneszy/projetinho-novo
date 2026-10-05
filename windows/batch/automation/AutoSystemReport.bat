@@ -2,8 +2,16 @@
 :: BATLAB | AutoSystemReport.bat | v1.0.0
 :: @desc      Tarefa diaria que salva relatorio de sistema em log
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn BATLAB_SystemReport /f
 :: ============================================================
 @echo off

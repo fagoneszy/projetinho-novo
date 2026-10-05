@@ -2,6 +2,7 @@
 :: BATLAB | MeetingMode.bat | v1.0.0
 :: @desc      Prepara os aplicativos para uma reuniao
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

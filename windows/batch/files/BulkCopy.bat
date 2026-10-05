@@ -2,8 +2,16 @@
 :: BATLAB | BulkCopy.bat | v1.0.0
 :: @desc      Copia arquivos em massa conforme criterio
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Apague os arquivos copiados no destino
 :: ============================================================
 @echo off

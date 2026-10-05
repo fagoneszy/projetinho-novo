@@ -2,6 +2,7 @@
 :: BATLAB | FakeLoading.bat | v1.0.0
 :: @desc      Barra de progresso falsa - brincadeira
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

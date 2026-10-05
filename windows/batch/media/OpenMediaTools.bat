@@ -2,6 +2,7 @@
 :: BATLAB | OpenMediaTools.bat | v1.0.0
 :: @desc      Menu que abre as ferramentas de midia do sistema
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

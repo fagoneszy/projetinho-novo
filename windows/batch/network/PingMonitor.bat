@@ -2,6 +2,7 @@
 :: BATLAB | PingMonitor.bat | v1.0.0
 :: @desc      Ping continuo (-t) para um host ate o usuario cancelar
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

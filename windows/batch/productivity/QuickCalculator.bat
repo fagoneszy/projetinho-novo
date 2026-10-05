@@ -2,6 +2,7 @@
 :: BATLAB | QuickCalculator.bat | v1.0.0
 :: @desc      Calculadora rapida pelo terminal (aceita 1+2*3, parenteses e decimais)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

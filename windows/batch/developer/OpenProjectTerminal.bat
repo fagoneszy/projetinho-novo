@@ -2,6 +2,7 @@
 :: BATLAB | OpenProjectTerminal.bat | v1.0.0
 :: @desc      Abre um terminal na pasta do projeto com git status
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

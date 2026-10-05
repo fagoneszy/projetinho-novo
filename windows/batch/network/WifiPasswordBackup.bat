@@ -2,8 +2,16 @@
 :: BATLAB | WifiPasswordBackup.bat | v1.0.0
 :: @desc      Exporta as senhas dos perfis Wi-Fi salvas para um TXT
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network read
+:: @restart none
 :: @undo      Apagar o arquivo TXT gerado com as senhas
 :: ============================================================
 @echo off

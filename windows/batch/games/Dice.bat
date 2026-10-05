@@ -2,6 +2,7 @@
 :: BATLAB | Dice.bat | v1.0.0
 :: @desc      Rola um dado de 6 lados
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

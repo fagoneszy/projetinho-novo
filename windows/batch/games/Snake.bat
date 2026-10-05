@@ -2,6 +2,7 @@
 :: BATLAB | Snake.bat | v1.0.0
 :: @desc      Cobrinha no terminal - WASD move, ESC sai
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

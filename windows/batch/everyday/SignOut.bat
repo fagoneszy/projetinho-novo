@@ -2,8 +2,16 @@
 :: BATLAB | SignOut.bat | v1.0.0
 :: @desc      Fecha a sessao (shutdown /l)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Refaca o login com sua senha
 :: ============================================================
 @echo off

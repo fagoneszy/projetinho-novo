@@ -2,8 +2,16 @@
 :: BATLAB | AudioOrganizer.bat | v1.0.0
 :: @desc      Organiza arquivos de audio em pastas por tipo
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas de tipo de volta para a raiz de Music
 :: ============================================================
 @echo off

@@ -2,8 +2,16 @@
 :: BATLAB | PresentationMode.bat | v1.0.0
 :: @desc      Prepara o PC para apresentacao (sem sono, tela em 15 min)
 :: @category  productivity
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      powercfg /change standby-timeout-ac 30
 :: ============================================================
 @echo off

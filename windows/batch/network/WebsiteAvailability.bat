@@ -2,6 +2,7 @@
 :: BATLAB | WebsiteAvailability.bat | v1.0.0
 :: @desc      Testa a disponibilidade de uma lista de sites com curl
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

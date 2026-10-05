@@ -2,6 +2,7 @@
 :: BATLAB | CreatorMode.bat | v1.0.0
 :: @desc      Abre o ambiente de criador de conteudo (OBS, Discord, pasta do projeto)
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

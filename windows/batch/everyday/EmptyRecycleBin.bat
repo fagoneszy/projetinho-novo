@@ -2,8 +2,16 @@
 :: BATLAB | EmptyRecycleBin.bat | v1.0.0
 :: @desc      Esvazia a Lixeira (PowerShell Clear-RecycleBin -Force)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      high
+:: @writes none
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Irreversivel - use /dryrun antes
 :: ============================================================
 @echo off

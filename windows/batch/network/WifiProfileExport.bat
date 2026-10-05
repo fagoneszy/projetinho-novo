@@ -2,8 +2,16 @@
 :: BATLAB | WifiProfileExport.bat | v1.0.0
 :: @desc      Exporta os perfis Wi-Fi para arquivos XML em uma pasta
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network read
+:: @restart none
 :: @undo      Apagar a pasta de exportacao com os XMLs
 :: ============================================================
 @echo off

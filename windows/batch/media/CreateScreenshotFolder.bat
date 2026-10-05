@@ -2,6 +2,7 @@
 :: BATLAB | CreateScreenshotFolder.bat | v1.0.0
 :: @desc      Cria a pasta de capturas do dia e abre
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta do dia criada em Pictures\Screenshots

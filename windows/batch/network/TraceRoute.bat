@@ -2,6 +2,7 @@
 :: BATLAB | TraceRoute.bat | v1.0.0
 :: @desc      Rastreia as rotas ate um host com tracert -d
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

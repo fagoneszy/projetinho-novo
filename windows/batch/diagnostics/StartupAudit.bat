@@ -2,6 +2,7 @@
 :: BATLAB | StartupAudit.bat | v1.0.0
 :: @desc      O que inicia com o Windows (reg Run + schtasks)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

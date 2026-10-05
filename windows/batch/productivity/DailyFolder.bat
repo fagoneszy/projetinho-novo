@@ -2,6 +2,7 @@
 :: BATLAB | DailyFolder.bat | v1.0.0
 :: @desc      Cria a pasta do dia (AAAA-MM-DD) e abre
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

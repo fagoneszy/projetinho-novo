@@ -2,6 +2,7 @@
 :: BATLAB | EnvironmentVariables.bat | v1.0.0
 :: @desc      Mostra todas as variaves de ambiente
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

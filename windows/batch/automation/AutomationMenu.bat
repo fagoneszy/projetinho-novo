@@ -2,6 +2,7 @@
 :: BATLAB | AutomationMenu.bat | v1.0.0
 :: @desc      Menu com os utilitarios de automatizacao
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,8 +2,16 @@
 :: BATLAB | KillProcess.bat | v1.0.0
 :: @desc      Lista processos e encerra o escolhido
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart process
 :: @undo      Abra o programa novamente pelo Menu Iniciar ou atalho
 :: ============================================================
 @echo off

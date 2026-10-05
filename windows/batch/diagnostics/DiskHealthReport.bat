@@ -2,6 +2,7 @@
 :: BATLAB | DiskHealthReport.bat | v1.0.0
 :: @desc      Status e SMART dos discos (Get-PhysicalDisk / Win32_DiskDrive)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

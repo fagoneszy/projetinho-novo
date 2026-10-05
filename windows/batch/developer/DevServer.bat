@@ -2,6 +2,7 @@
 :: BATLAB | DevServer.bat | v1.0.0
 :: @desc      Detecta e inicia o servidor de desenvolvimento do projeto
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

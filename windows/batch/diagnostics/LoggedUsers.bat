@@ -2,6 +2,7 @@
 :: BATLAB | LoggedUsers.bat | v1.0.0
 :: @desc      Usuarios logados (query user)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,6 +2,7 @@
 :: BATLAB | ClearDNSCache.bat | v1.0.0
 :: @desc      Limpa o cache de DNS
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - o cache DNS e reconstruido nas proximas consultas

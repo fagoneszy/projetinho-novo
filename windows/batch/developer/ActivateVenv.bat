@@ -2,6 +2,7 @@
 :: BATLAB | ActivateVenv.bat | v1.0.0
 :: @desc      Abre um prompt com o ambiente virtual .venv ativo
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

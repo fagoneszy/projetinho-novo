@@ -2,8 +2,16 @@
 :: BATLAB | SmartBackup.bat | v1.0.0
 :: @desc      Backup incremental com robocopy (nao reprocessa iguais)
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Apague a pasta de destino do backup incremental
 :: ============================================================
 @echo off

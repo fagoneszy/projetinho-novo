@@ -2,8 +2,16 @@
 :: BATLAB | PathRestore.bat | v1.0.0
 :: @desc      Restaura o PATH a partir de um arquivo de backup
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Restaure o PATH de outro arquivo de backup com PathBackup
 :: ============================================================
 @echo off

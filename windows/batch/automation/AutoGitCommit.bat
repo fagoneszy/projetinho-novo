@@ -2,8 +2,16 @@
 :: BATLAB | AutoGitCommit.bat | v1.0.0
 :: @desc      Commit periodico automatico de um repositorio
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn BATLAB_GitCommit /f
 :: ============================================================
 @echo off

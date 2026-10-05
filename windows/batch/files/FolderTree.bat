@@ -2,6 +2,7 @@
 :: BATLAB | FolderTree.bat | v1.0.0
 :: @desc      Gera a arvore de diretorios
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente listagem)

@@ -2,8 +2,16 @@
 :: BATLAB | QuickShutdown.bat | v1.0.0
 :: @desc      Desliga agora (shutdown /s /t 0)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart os
 :: @undo      N/A - desligamento imediato, nao reversivel
 :: ============================================================
 @echo off

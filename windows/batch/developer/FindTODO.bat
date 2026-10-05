@@ -2,6 +2,7 @@
 :: BATLAB | FindTODO.bat | v1.0.0
 :: @desc      Procura marcadores TODO e FIXME em todos os arquivos
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

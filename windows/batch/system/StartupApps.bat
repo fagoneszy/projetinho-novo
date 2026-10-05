@@ -2,6 +2,7 @@
 :: BATLAB | StartupApps.bat | v1.0.0
 :: @desc      Programas que iniciam com o Windows
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

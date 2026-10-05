@@ -2,6 +2,7 @@
 :: BATLAB | FirewallRules.bat | v1.0.0
 :: @desc      Exporta as regras do firewall (netsh advfirewall export)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     yes
 :: @risk      low
 :: @undo      netsh advfirewall import <arquivo exportado>

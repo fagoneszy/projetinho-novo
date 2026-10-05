@@ -2,6 +2,7 @@
 :: BATLAB | RecentlyInstalled.bat | v1.0.0
 :: @desc      Programas instalados recentemente, ordenados por data
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

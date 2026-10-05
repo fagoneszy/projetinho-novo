@@ -2,8 +2,16 @@
 :: BATLAB | DocumentOrganizer.bat | v1.0.0
 :: @desc      Organiza documentos em pastas por categoria
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas de categoria de volta para a raiz de Documents
 :: ============================================================
 @echo off

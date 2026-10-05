@@ -2,6 +2,7 @@
 :: BATLAB | RandomGame.bat | v1.0.0
 :: @desc      Sorteia e abre um jogo da lista games.txt
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

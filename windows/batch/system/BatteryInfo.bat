@@ -2,6 +2,7 @@
 :: BATLAB | BatteryInfo.bat | v1.0.0
 :: @desc      Status e carga da bateria
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

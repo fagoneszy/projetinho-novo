@@ -2,6 +2,7 @@
 :: BATLAB | BuildProject.bat | v1.0.0
 :: @desc      Detecta e roda o build do projeto (make, npm, cargo, cmake)
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,6 +2,7 @@
 :: BATLAB | NetworkAdapters.bat | v1.0.0
 :: @desc      Lista as interfaces de rede com netsh interface show
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

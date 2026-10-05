@@ -2,6 +2,7 @@
 :: BATLAB | CreateStartMenuShortcut.bat | v1.0.0
 :: @desc      Cria um atalho no Menu Iniciar (arg: caminho do alvo)
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Exclua o arquivo .lnk criado na pasta Programs do Menu Iniciar

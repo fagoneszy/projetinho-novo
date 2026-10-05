@@ -2,6 +2,7 @@
 :: BATLAB | InstalledPrograms.bat | v1.0.0
 :: @desc      Programas instalados (registro de desinstalar) em TXT e CSV
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

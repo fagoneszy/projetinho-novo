@@ -2,6 +2,7 @@
 :: BATLAB | InvoiceFolder.bat | v1.0.0
 :: @desc      Cria a estrutura de documentos financeiros do mes
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

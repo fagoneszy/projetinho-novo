@@ -2,6 +2,7 @@
 :: BATLAB | OpenVSCode.bat | v1.0.0
 :: @desc      Abre o VS Code na pasta atual ou na pasta informada
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

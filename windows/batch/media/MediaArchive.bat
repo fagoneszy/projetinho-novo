@@ -2,8 +2,16 @@
 :: BATLAB | MediaArchive.bat | v1.0.0
 :: @desc      Compacta as imagens e videos do ano em ZIP
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Exclua o ZIP gerado na pasta Documentos (as origens nao sao alteradas)
 :: ============================================================
 @echo off

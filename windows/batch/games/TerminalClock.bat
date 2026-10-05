@@ -2,6 +2,7 @@
 :: BATLAB | TerminalClock.bat | v1.0.0
 :: @desc      Relogio em tempo real no terminal - Ctrl+C para sair
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

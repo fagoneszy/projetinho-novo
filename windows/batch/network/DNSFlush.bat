@@ -2,6 +2,7 @@
 :: BATLAB | DNSFlush.bat | v1.0.0
 :: @desc      Limpa o cache de resolucao DNS do Windows
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

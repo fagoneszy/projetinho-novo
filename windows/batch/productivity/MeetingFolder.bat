@@ -2,6 +2,7 @@
 :: BATLAB | MeetingFolder.bat | v1.0.0
 :: @desc      Cria a pasta de uma reuniao com Ata, Pauta e Apresentacao
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

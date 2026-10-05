@@ -2,8 +2,16 @@
 :: BATLAB | HideFileExtensions.bat | v1.0.0
 :: @desc      Oculta as extensoes de arquivo
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry write
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Execute ShowFileExtensions.bat (valor HideFileExt=0)
 :: ============================================================
 @echo off

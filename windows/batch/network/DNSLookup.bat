@@ -2,6 +2,7 @@
 :: BATLAB | DNSLookup.bat | v1.0.0
 :: @desc      Consulta os registros DNS de um dominio informado
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

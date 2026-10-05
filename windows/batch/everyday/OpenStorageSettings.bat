@@ -2,6 +2,7 @@
 :: BATLAB | OpenStorageSettings.bat | v1.0.0
 :: @desc      Abre armazenamento (ms-settings:storagesense)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre uma janela

@@ -2,6 +2,7 @@
 :: BATLAB | WindowsUpdateCheck.bat | v1.0.0
 :: @desc      Forca a busca de atualizacoes do Windows
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      low
 :: @undo      N/A - apenas dispara uma busca de atualizacoes

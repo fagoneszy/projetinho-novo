@@ -2,6 +2,7 @@
 :: BATLAB | OpenWindowsUpdate.bat | v1.0.0
 :: @desc      Abre atualizacao do Windows (ms-settings:windowsupdate)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre uma janela

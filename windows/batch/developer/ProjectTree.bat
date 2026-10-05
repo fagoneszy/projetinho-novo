@@ -2,6 +2,7 @@
 :: BATLAB | ProjectTree.bat | v1.0.0
 :: @desc      Mostra a arvore de arquivos do projeto com tree /f
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

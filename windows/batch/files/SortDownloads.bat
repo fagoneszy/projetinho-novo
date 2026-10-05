@@ -2,8 +2,16 @@
 :: BATLAB | SortDownloads.bat | v1.0.0
 :: @desc      Organiza a pasta Downloads por tipo de arquivo
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas de volta para Downloads
 :: ============================================================
 @echo off

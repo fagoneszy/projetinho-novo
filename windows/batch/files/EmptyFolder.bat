@@ -2,8 +2,16 @@
 :: BATLAB | EmptyFolder.bat | v1.0.0
 :: @desc      Esvazia o conteudo da pasta atual
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      high
+:: @writes none
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Irreversivel - use /dryrun antes
 :: ============================================================
 @echo off

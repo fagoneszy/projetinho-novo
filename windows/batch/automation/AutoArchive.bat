@@ -2,8 +2,16 @@
 :: BATLAB | AutoArchive.bat | v1.0.0
 :: @desc      Compacta em ZIP e remove arquivos antigos da pasta
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Extraia os arquivos do ZIP Arquivo_AAAA-MM-DD.zip
 :: ============================================================
 @echo off

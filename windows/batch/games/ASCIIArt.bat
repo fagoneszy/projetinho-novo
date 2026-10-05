@@ -2,6 +2,7 @@
 :: BATLAB | ASCIIArt.bat | v1.0.0
 :: @desc      Exibe banners ASCII aleatorios
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

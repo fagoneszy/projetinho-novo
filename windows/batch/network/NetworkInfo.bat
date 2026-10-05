@@ -2,6 +2,7 @@
 :: BATLAB | NetworkInfo.bat | v1.0.0
 :: @desc      Exibe todas as configuracoes de rede com ipconfig /all
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

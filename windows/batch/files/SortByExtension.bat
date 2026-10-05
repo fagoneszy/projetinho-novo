@@ -2,8 +2,16 @@
 :: BATLAB | SortByExtension.bat | v1.0.0
 :: @desc      Organiza os arquivos em pastas por extensao
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas de volta para a pasta raiz
 :: ============================================================
 @echo off

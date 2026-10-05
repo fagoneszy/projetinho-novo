@@ -2,6 +2,7 @@
 :: BATLAB | OpenSocialApps.bat | v1.0.0
 :: @desc      Menu de redes sociais (YouTube, Twitch, Twitter/X, Instagram)
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

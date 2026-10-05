@@ -2,6 +2,7 @@
 :: BATLAB | GitStatus.bat | v1.0.0
 :: @desc      Mostra o status e o resumo de diferencas do repositorio
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

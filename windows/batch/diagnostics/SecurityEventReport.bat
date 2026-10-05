@@ -2,6 +2,7 @@
 :: BATLAB | SecurityEventReport.bat | v1.0.0
 :: @desc      Eventos de seguranca dos ultimos 7 dias em TXT
 :: @category  diagnostics
+:: @platform windows
 :: @admin     yes
 :: @risk      low
 :: @undo      N/A

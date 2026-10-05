@@ -2,6 +2,7 @@
 :: BATLAB | GameFolder.bat | v1.0.0
 :: @desc      Cria a estrutura de uma pasta de jogo
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

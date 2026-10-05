@@ -2,8 +2,16 @@
 :: BATLAB | MirrorFolder.bat | v1.0.0
 :: @desc      Espelha uma pasta apagando no destino o que nao existe na origem (robocopy /MIR)
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      high
+:: @writes user
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Irreversivel para os arquivos apagados no destino - use /dryrun antes
 :: ============================================================
 @echo off

@@ -2,8 +2,16 @@
 :: BATLAB | AutoGitBackup.bat | v1.0.0
 :: @desc      Tarefa diaria que faz commit e push de um repositorio
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn BATLAB_GitBackup /f
 :: ============================================================
 @echo off

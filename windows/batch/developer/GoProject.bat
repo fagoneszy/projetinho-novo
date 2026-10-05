@@ -2,6 +2,7 @@
 :: BATLAB | GoProject.bat | v1.0.0
 :: @desc      Cria um modulo Go com go mod init e main.go
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

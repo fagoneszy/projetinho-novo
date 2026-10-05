@@ -2,6 +2,7 @@
 :: BATLAB | BreakReminder.bat | v1.0.0
 :: @desc      Lembrete de pausa periodico (padrao: 20 min)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

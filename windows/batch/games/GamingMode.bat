@@ -2,8 +2,16 @@
 :: BATLAB | GamingMode.bat | v1.0.0
 :: @desc      Fecha aplicativos pesados antes de jogar
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart process
 :: @undo      Abra novamente o que foi fechado
 :: ============================================================
 @echo off

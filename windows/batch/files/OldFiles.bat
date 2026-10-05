@@ -2,6 +2,7 @@
 :: BATLAB | OldFiles.bat | v1.0.0
 :: @desc      Lista arquivos mais antigos que N dias (padrao 365)
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente listagem)

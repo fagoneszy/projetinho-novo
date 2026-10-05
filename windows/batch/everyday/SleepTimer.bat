@@ -2,8 +2,16 @@
 :: BATLAB | SleepTimer.bat | v1.0.0
 :: @desc      Dorme o PC em N minutos (rundll32.exe powrprof.dll,SetSuspendState)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Feche a janela antes do fim da espera; apos dormir acorde com o teclado
 :: ============================================================
 @echo off

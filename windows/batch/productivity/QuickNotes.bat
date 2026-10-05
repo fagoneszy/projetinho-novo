@@ -2,6 +2,7 @@
 :: BATLAB | QuickNotes.bat | v1.0.0
 :: @desc      Cria uma nota rapida na area de trabalho
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a linha do arquivo Notas.txt

@@ -2,6 +2,7 @@
 :: BATLAB | FileCounter.bat | v1.0.0
 :: @desc      Conta arquivos e pastas da pasta atual
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente contagem)

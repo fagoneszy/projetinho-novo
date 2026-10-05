@@ -2,8 +2,16 @@
 :: BATLAB | MediaBackup.bat | v1.0.0
 :: @desc      Backup de fotos e videos com robocopy
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Remova a copia criada na pasta de destino (a origem nao foi alterada)
 :: ============================================================
 @echo off

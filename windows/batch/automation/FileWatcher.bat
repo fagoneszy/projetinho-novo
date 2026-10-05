@@ -2,6 +2,7 @@
 :: BATLAB | FileWatcher.bat | v1.0.0
 :: @desc      Monitora um arquivo e avisa quando ele muda
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

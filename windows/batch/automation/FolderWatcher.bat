@@ -2,6 +2,7 @@
 :: BATLAB | FolderWatcher.bat | v1.0.0
 :: @desc      Monitora uma pasta e avisa quando arquivos mudam
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

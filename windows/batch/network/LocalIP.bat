@@ -2,6 +2,7 @@
 :: BATLAB | LocalIP.bat | v1.0.0
 :: @desc      Exibe apenas o endereco IPv4 local do adaptador
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

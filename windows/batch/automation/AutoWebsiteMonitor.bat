@@ -2,6 +2,7 @@
 :: BATLAB | AutoWebsiteMonitor.bat | v1.0.0
 :: @desc      Monitora se um site esta no ar e registra mudancas
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

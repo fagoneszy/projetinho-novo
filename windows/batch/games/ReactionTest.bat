@@ -2,6 +2,7 @@
 :: BATLAB | ReactionTest.bat | v1.0.0
 :: @desc      Mede seu tempo de reacao
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

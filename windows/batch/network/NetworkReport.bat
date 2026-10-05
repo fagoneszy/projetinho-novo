@@ -2,6 +2,7 @@
 :: BATLAB | NetworkReport.bat | v1.0.0
 :: @desc      Gera um relatorio TXT com todas as informacoes de rede
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

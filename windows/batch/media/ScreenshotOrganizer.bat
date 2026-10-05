@@ -2,8 +2,16 @@
 :: BATLAB | ScreenshotOrganizer.bat | v1.0.0
 :: @desc      Organiza as capturas de tela por data
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos das subpastas AAAA-MM-DD de volta para a raiz de Pictures\Screenshots
 :: ============================================================
 @echo off

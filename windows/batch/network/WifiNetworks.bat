@@ -2,6 +2,7 @@
 :: BATLAB | WifiNetworks.bat | v1.0.0
 :: @desc      Lista as redes Wi-Fi visiveis no ambiente
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

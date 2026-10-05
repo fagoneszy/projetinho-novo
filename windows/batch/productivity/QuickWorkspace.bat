@@ -2,6 +2,7 @@
 :: BATLAB | QuickWorkspace.bat | v1.0.0
 :: @desc      Abre todos os programas de trabalho de uma vez
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

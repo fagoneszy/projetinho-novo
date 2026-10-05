@@ -2,8 +2,16 @@
 :: BATLAB | ClearThumbnailCache.bat | v1.0.0
 :: @desc      Limpa o cache de miniaturas do Explorer
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      N/A - o cache de miniaturas e recriado automaticamente
 :: ============================================================
 @echo off

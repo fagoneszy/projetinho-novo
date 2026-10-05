@@ -2,6 +2,7 @@
 :: BATLAB | FolderSize.bat | v1.0.0
 :: @desc      Calcula o tamanho total da pasta atual
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente calculo)

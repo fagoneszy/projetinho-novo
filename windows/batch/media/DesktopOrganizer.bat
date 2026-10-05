@@ -2,8 +2,16 @@
 :: BATLAB | DesktopOrganizer.bat | v1.0.0
 :: @desc      Organiza a area de trabalho em pastas por tipo
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos de Desktop\Organizado de volta para a area de trabalho
 :: ============================================================
 @echo off

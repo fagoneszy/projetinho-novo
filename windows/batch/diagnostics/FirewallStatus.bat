@@ -2,6 +2,7 @@
 :: BATLAB | FirewallStatus.bat | v1.0.0
 :: @desc      Estado do firewall por perfil (netsh advfirewall show allprofiles)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

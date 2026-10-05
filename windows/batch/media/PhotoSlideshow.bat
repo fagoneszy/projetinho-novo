@@ -2,6 +2,7 @@
 :: BATLAB | PhotoSlideshow.bat | v1.0.0
 :: @desc      Inicia um visualizador da pasta de imagens
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

@@ -2,8 +2,16 @@
 :: BATLAB | CheckDisk.bat | v1.0.0
 :: @desc      Verifica integridade do disco (chkdsk /f)
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      N/A - as correcoes do chkdsk nao tem desfazer; faca backup antes
 :: ============================================================
 @echo off

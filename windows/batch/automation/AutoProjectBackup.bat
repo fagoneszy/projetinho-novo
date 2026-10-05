@@ -2,8 +2,16 @@
 :: BATLAB | AutoProjectBackup.bat | v1.0.0
 :: @desc      Backup versionado (pasta por data) de um projeto
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      Apague as pastas de backup em DESTINO
 :: ============================================================
 @echo off

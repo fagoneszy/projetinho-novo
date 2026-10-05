@@ -2,6 +2,7 @@
 :: BATLAB | TerminalMusic.bat | v1.0.0
 :: @desc      Toca uma melodia simples no terminal
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

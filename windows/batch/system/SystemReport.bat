@@ -2,6 +2,7 @@
 :: BATLAB | SystemReport.bat | v1.0.0
 :: @desc      Gera um relatorio completo do sistema em TXT
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo TXT do relatorio

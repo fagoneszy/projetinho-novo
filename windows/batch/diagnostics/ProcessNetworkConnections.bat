@@ -2,6 +2,7 @@
 :: BATLAB | ProcessNetworkConnections.bat | v1.0.0
 :: @desc      netstat + processo dono (tasklist)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

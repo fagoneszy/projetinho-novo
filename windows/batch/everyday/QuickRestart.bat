@@ -2,8 +2,16 @@
 :: BATLAB | QuickRestart.bat | v1.0.0
 :: @desc      Reinicia agora (shutdown /r /t 0)
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart os
 :: @undo      N/A - reinicio imediato, nao reversivel
 :: ============================================================
 @echo off

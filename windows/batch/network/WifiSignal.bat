@@ -2,6 +2,7 @@
 :: BATLAB | WifiSignal.bat | v1.0.0
 :: @desc      Exibe apenas o nivel de sinal do Wi-Fi atual
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

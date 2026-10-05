@@ -2,6 +2,7 @@
 :: BATLAB | RestartExplorer.bat | v1.0.0
 :: @desc      Reinicia o Explorer do Windows
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (o Explorer e recriado pelo proprio Windows)

@@ -49,7 +49,7 @@ Get-ChildItem -LiteralPath (Join-Path $root 'windows\batch') -Directory |
 
         $rows = foreach ($f in $files) {
             $meta = @{}
-            $lines = Get-Content -LiteralPath $f.FullName -Encoding UTF8 -TotalCount 12
+            $lines = Get-Content -LiteralPath $f.FullName -Encoding UTF8 -TotalCount 30
             foreach ($l in $lines) {
                 if ($l -match '^::\s*@(\w+)\s+(.+)$') { $meta[$Matches[1]] = $Matches[2].Trim() }
             }

@@ -2,6 +2,7 @@
 :: BATLAB | WindowsQuickTools.bat | v1.0.0
 :: @desc      Menu estilo Win+X: Tarefas, Dispositivos, Disco, Terminal, Configuracoes
 :: @category  everyday
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A - somente abre ferramentas

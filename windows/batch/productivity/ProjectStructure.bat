@@ -2,6 +2,7 @@
 :: BATLAB | ProjectStructure.bat | v1.0.0
 :: @desc      Cria a estrutura basica de um projeto (src, docs, tests)
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta criada

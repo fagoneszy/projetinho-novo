@@ -2,8 +2,16 @@
 :: BATLAB | GitQuickCommit.bat | v1.0.0
 :: @desc      Adiciona todos os arquivos e cria um commit automatico
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      git reset --soft HEAD~1 para desfazer o commit
 :: ============================================================
 @echo off

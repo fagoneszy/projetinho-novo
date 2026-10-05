@@ -2,6 +2,7 @@
 :: BATLAB | DriverList.bat | v1.0.0
 :: @desc      Lista os drivers instalados
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

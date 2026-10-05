@@ -2,6 +2,7 @@
 :: BATLAB | AdminCheck.bat | v1.0.0
 :: @desc      Verifica se o script esta rodando como administrador
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

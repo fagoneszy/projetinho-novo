@@ -2,6 +2,7 @@
 :: BATLAB | LaunchOBS.bat | v1.0.0
 :: @desc      Abre o OBS Studio (caminho configuravel no script)
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

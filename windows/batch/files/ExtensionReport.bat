@@ -2,6 +2,7 @@
 :: BATLAB | ExtensionReport.bat | v1.0.0
 :: @desc      Relatorio: quantidade e tamanho por extensao
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente listagem)

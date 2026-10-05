@@ -2,6 +2,7 @@
 :: BATLAB | RunningProcesses.bat | v1.0.0
 :: @desc      Processos ativos com uso de memoria
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

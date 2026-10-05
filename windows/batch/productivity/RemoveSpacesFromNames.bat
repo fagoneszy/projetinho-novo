@@ -2,8 +2,16 @@
 :: BATLAB | RemoveSpacesFromNames.bat | v1.0.0
 :: @desc      Remove os espacos dos nomes dos arquivos
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Renomeie manualmente para voltar ao original
 :: ============================================================
 @echo off

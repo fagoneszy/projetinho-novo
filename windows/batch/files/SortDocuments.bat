@@ -2,8 +2,16 @@
 :: BATLAB | SortDocuments.bat | v1.0.0
 :: @desc      Separa os documentos em uma pasta Documentos
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos da pasta Documentos de volta
 :: ============================================================
 @echo off

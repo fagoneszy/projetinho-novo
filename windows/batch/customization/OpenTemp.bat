@@ -2,6 +2,7 @@
 :: BATLAB | OpenTemp.bat | v1.0.0
 :: @desc      Abre a pasta de temporarios
 :: @category  customization
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

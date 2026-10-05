@@ -2,6 +2,7 @@
 :: BATLAB | AutoProcessMonitor.bat | v1.0.0
 :: @desc      Monitora se um processo esta aberto e avisa na mudanca
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

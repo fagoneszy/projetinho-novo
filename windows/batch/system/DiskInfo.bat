@@ -2,6 +2,7 @@
 :: BATLAB | DiskInfo.bat | v1.0.0
 :: @desc      Informacoes dos discos fisicos
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

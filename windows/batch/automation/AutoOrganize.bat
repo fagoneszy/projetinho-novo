@@ -2,8 +2,16 @@
 :: BATLAB | AutoOrganize.bat | v1.0.0
 :: @desc      Organiza os arquivos da pasta em Imagens, Videos, Documentos e Outros
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Mova os arquivos de volta para a raiz
 :: ============================================================
 @echo off

@@ -2,6 +2,7 @@
 :: BATLAB | RouteTable.bat | v1.0.0
 :: @desc      Exibe a tabela de rotas do sistema com route print
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

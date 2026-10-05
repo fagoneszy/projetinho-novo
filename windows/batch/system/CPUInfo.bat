@@ -2,6 +2,7 @@
 :: BATLAB | CPUInfo.bat | v1.0.0
 :: @desc      Processador: modelo, nucleos e frequencia
 :: @category  system
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A (somente leitura)

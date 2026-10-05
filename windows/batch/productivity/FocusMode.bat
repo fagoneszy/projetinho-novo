@@ -2,8 +2,16 @@
 :: BATLAB | FocusMode.bat | v1.0.0
 :: @desc      Fecha aplicativos de distracao e abre ferramentas de foco
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart process
 :: @undo      Abra manualmente o que foi fechado
 :: ============================================================
 @echo off

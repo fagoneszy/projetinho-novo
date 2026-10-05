@@ -2,6 +2,7 @@
 :: BATLAB | RandomColor.bat | v1.0.0
 :: @desc      Muda a cor do console para uma aleatoria
 :: @category  games
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

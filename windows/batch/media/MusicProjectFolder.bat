@@ -2,6 +2,7 @@
 :: BATLAB | MusicProjectFolder.bat | v1.0.0
 :: @desc      Cria a estrutura de um projeto de musica (Gravacoes, Mixes, Stems, Export)
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague a pasta do projeto criada

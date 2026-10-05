@@ -2,6 +2,7 @@
 :: BATLAB | CopyClipboardToFile.bat | v1.0.0
 :: @desc      Salva o conteudo da area de transferencia em um arquivo
 :: @category  productivity
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo Clipboard.txt

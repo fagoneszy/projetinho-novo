@@ -2,8 +2,16 @@
 :: BATLAB | AutoCleanup.bat | v1.0.0
 :: @desc      Remove do %TEMP% os arquivos com mais de N dias
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes none
+:: @deletes temp
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Irreversivel - arquivos de temp raramente sao necessarios
 :: ============================================================
 @echo off

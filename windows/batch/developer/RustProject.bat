@@ -2,6 +2,7 @@
 :: BATLAB | RustProject.bat | v1.0.0
 :: @desc      Cria um projeto Rust com cargo new
 :: @category  developer
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

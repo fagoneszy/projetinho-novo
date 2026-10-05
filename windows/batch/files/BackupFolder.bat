@@ -2,8 +2,16 @@
 :: BATLAB | BackupFolder.bat | v1.0.0
 :: @desc      Backup simples de uma pasta com robocopy
 :: @category  files
+:: @platform windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Apague a pasta de destino do backup
 :: ============================================================
 @echo off

@@ -2,6 +2,7 @@
 :: BATLAB | InternetSpeedLauncher.bat | v1.0.0
 :: @desc      Abre o teste de velocidade speedtest.net no navegador
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

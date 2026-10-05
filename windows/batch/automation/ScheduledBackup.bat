@@ -2,8 +2,16 @@
 :: BATLAB | ScheduledBackup.bat | v1.0.0
 :: @desc      Cria tarefa agendada diaria de backup (schtasks)
 :: @category  automation
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks write
+:: @network none
+:: @restart none
 :: @undo      schtasks /delete /tn BATLAB_Backup /f
 :: ============================================================
 @echo off

@@ -2,6 +2,7 @@
 :: BATLAB | EventLogExport.bat | v1.0.0
 :: @desc      Exporta os logs de eventos do sistema para arquivo
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      low
 :: @undo      Apague o arquivo .evtx exportado

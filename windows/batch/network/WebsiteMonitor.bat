@@ -2,6 +2,7 @@
 :: BATLAB | WebsiteMonitor.bat | v1.0.0
 :: @desc      Monitora uma URL a cada N segundos ate o usuario cancelar
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

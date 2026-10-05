@@ -2,6 +2,7 @@
 :: BATLAB | OpenTwitch.bat | v1.0.0
 :: @desc      Abre a Twitch no navegador
 :: @category  media
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

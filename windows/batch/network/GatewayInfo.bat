@@ -2,6 +2,7 @@
 :: BATLAB | GatewayInfo.bat | v1.0.0
 :: @desc      Exibe o gateway padrao usado para saida da rede
 :: @category  network
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A

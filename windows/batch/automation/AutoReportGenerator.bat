@@ -2,6 +2,7 @@
 :: BATLAB | AutoReportGenerator.bat | v1.0.0
 :: @desc      Gera relatorio de sistema em arquivo de texto
 :: @category  automation
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      Apague o arquivo Relatorio_*.txt

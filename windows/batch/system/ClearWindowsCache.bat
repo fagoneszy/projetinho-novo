@@ -2,8 +2,16 @@
 :: BATLAB | ClearWindowsCache.bat | v1.0.0
 :: @desc      Limpa caches do Windows (prefetch e similares)
 :: @category  system
+:: @platform windows
 :: @admin     yes
 :: @risk      medium
+:: @writes none
+:: @deletes files
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      N/A - os caches serao recriados pelo Windows
 :: ============================================================
 @echo off

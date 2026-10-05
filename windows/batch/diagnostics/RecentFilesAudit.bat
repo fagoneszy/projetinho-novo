@@ -2,6 +2,7 @@
 :: BATLAB | RecentFilesAudit.bat | v1.0.0
 :: @desc      Arquivos recentes do usuario (%APPDATA%\Microsoft\Windows\Recent)
 :: @category  diagnostics
+:: @platform windows
 :: @admin     no
 :: @risk      low
 :: @undo      N/A
