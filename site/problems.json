@@ -67,7 +67,18 @@
                       "cleanbuild",
                       "diskinfo",
                       "emergencydiskreport",
-                      "drivehealthcheck"
+                      "drivehealthcheck",
+                      "lowdiskspacealert",
+                      "freespacethreshold",
+                      "storagecleanuppreview",
+                      "temporaryfileanalyzer",
+                      "recyclebinanalyzer",
+                      "largestfolders",
+                      "largestfilesbyextension",
+                      "cachesizereport",
+                      "unusedfiles",
+                      "storageemergencyreport",
+                      "volumereport"
                   ]
     },
     {
