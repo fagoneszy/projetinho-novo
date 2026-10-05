@@ -272,7 +272,11 @@
                       "eventlogexport",
                       "windowsversion",
                       "openwindowsupdate",
-                      "updateservicerepair"
+                      "updateservicerepair",
+                      "failedupdatefinder",
+                      "pendingrestartdetector",
+                      "updatetroubleshooter",
+                      "windowsupdatelogcollector"
                   ]
     },
     {

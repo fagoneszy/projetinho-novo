@@ -4,5 +4,5 @@
   "title": "Windows Update com erro",
   "desc": "Atualização travada, código de erro ou serviço problema. Verifique o status, dispare a atualização e repare arquivos do sistema.",
   "keywords": ["update", "atualização", "atualizar", "windows update", "erro", "travado", "baixar", "instalar"],
-  "tools": ["windowsupdatecheck", "windowsupdatetools", "repairsystemfiles", "checkdisk", "systemhealthreport", "eventlogexport", "windowsversion", "openwindowsupdate", "updateservicerepair"]
+  "tools": ["windowsupdatecheck", "windowsupdatetools", "repairsystemfiles", "checkdisk", "systemhealthreport", "eventlogexport", "windowsversion", "openwindowsupdate", "updateservicerepair", "failedupdatefinder", "pendingrestartdetector", "updatetroubleshooter", "windowsupdatelogcollector"]
 }
