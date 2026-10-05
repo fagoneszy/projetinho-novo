@@ -1,34 +1,46 @@
 # Contribuindo com o BATLAB
 
 Obrigado por querer contribuir! O BATLAB é uma coleção de **microutilitários
-`.bat`** para Windows — cada arquivo resolve **uma coisa específica** e deve
+multiplataforma** — `.bat` para Windows, `.sh` para Linux/macOS e scripts
+`adb` para Android. Cada arquivo resolve **uma coisa específica** e deve
 continuar pequeno, legível e seguro.
 
-> **EN:** BATLAB is a collection of tiny Windows `.bat` utilities. Each file
-> does one thing, stays small, and follows a strict header/style standard.
+> **EN:** BATLAB is a collection of tiny cross-platform utilities — `.bat`
+> for Windows, `.sh` for Linux/macOS and `adb` scripts for Android. Each
+> file does one thing, stays small, and follows a strict header/style
+> standard.
 
 ## Regras básicas
 
 1. **Um arquivo = uma ferramenta.** Nada de "super scripts" com 20 funções.
-2. **Sem dependências externas.** Só comandos nativos do Windows
-   (`robocopy`, `schtasks`, `netsh`, `powershell`, `dir`, `forfiles`...).
+2. **Sem dependências externas.** Só comandos nativos da plataforma
+   (`robocopy`, `schtasks`, `netsh`, `powershell`, `df`, `system_profiler`,
+   `adb`...).
 3. **Mensagens e comentários em PT-BR.** Código universal, mensagens locais.
-4. **UTF-8 sem BOM** + `chcp 65001 >nul 2>&1` na primeira linha executável.
-5. **Nível de risco declarado** no cabeçalho (`@admin`, `@risk`, `@undo`).
+4. **UTF-8 sem BOM.** `.bat` em CRLF, `.sh` em LF (o `.gitattributes`
+   normaliza no repositório).
+5. **Nível de risco declarado** no cabeçalho (`@admin`, `@risk`, `@undo`) —
+   e do `medium` em diante os 7 campos de segurança.
 
-## Cabeçalho obrigatório
+## Cabeçalho obrigatório (v2)
 
-Todo `.bat` começa exatamente assim (ver `docs/TEMPLATE.md`):
+Todo script começa exatamente assim (ver `docs/TEMPLATE.md`):
 
 ```bat
 :: ============================================================
 :: BATLAB | NomeArquivo.bat | v1.0.0
 :: @desc      Descrição em uma linha
-:: @category  productivity | files | system | network | developer
-::             | media | customization | games | automation
-::             | diagnostics | everyday
+:: @category  productivity (igual à pasta)
+:: @platform  windows (igual à raiz: windows|linux|macos|android)
 :: @admin     no | yes
-:: @risk      low | medium | high
+:: @risk      low | medium | high | critical
+:: @writes    none | temp | user | system
+:: @deletes   none | temp | files
+:: @registry  none | read | write
+:: @services  none | read | write
+:: @tasks     none | read | write
+:: @network   none | read | write
+:: @restart   none | process | explorer | os
 :: @undo      Como desfazer (ou N/A)
 :: ============================================================
 @echo off
@@ -36,30 +48,38 @@ chcp 65001 >nul 2>&1
 setlocal
 ```
 
+Em `.sh`, o mesmo com `#` no lugar de `::` e o `#!/usr/bin/env bash` acima.
+
 O script `tools/build-manifest.ps1` lê esses campos e gera o
-`site/projects.json` — se o cabeçalho estiver errado, a ferramenta não
-aparece no site.
+`site/projects.json` — cabeçalho errado = build falha com o motivo e a
+ferramenta não aparece no site.
 
 ## Política de risco (ver `docs/RISCOS.md`)
 
 | `@risk` | O que fazer |
 |---|---|
 | `low` | Leitura/informação. Pode rodar direto. |
-| `medium` | Modifica arquivos/config. Mostrar o plano + `choice` de confirmação. |
-| `high` | Exclui ou altera o sistema. Confirmação **dupla** + `/dryrun` + aviso destacado. |
+| `medium` | Modifica algo reversível. Plano na tela + 1 `choice`. |
+| `high` | Exclui/altera o sistema. Confirmação **dupla** + `/dryrun` + aviso. |
+| `critical` | Potencialmente irreversível. Tudo do `high` + `@confirm typed` (usuário digita `SIM`). |
 
 Scripts com `@admin yes` devem verificar a elevação e avisar
 ("Este script precisa de administrador") em vez de falhar em silêncio.
 
 ## Como adicionar uma ferramenta
 
-1. Crie o `.bat` na pasta da categoria, seguindo `docs/TEMPLATE.md`.
-2. Rode `powershell -File tools\build-manifest.ps1` e confira se a contagem subiu.
-3. Teste: scripts `low` devem rodar sem erro; `medium/high` — teste o caminho
-   de confirmação e o `/dryrun` (quando existir), **nunca** o caminho destrutivo
-   sem querer.
-4. Adicione a linha correspondente no `README.md` da categoria.
-5. Abra um PR com o motivo da ferramenta.
+1. Confira no `docs/catalog-v2.csv` se a ferramenta já está planejada
+   (e note se já foi implementada com `impl-piloto-v2`).
+2. Crie o arquivo na pasta/categoria certa, seguindo `docs/TEMPLATE.md`.
+3. Rode `powershell -File tools\build-manifest.ps1` e confira se a contagem
+   subiu sem erros de cabeçalho.
+4. Rode `powershell -File tools\build-readmes.ps1` (atualiza a ficha da
+   categoria) e, se a ferramenta resolver um problema da taxonomia,
+   adicione o slug em `problems/<id>.json` + `tools\build-problems.ps1`.
+5. Teste: `low` roda sem erro; `medium/high/critical` — teste o caminho de
+   cancelamento e o `/dryrun` (quando existir), **nunca** o caminho
+   destrutivo sem querer.
+6. Abra um PR com o motivo da ferramenta.
 
 ## Commits
 

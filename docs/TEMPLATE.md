@@ -1,16 +1,24 @@
-# TEMPLATE — padrão de script BATLAB
+# TEMPLATE — padrão de script BATLAB (v2)
 
-Todo `.bat` do BATLAB segue este esqueleto. Copie, preencha e mantenha.
+Todo script do BATLAB segue este esqueleto. Copie, preencha e mantenha.
 
-## Esqueleto
+## Esqueleto `.bat` (Windows)
 
 ```bat
 :: ============================================================
 :: BATLAB | NomeArquivo.bat | v1.0.0
 :: @desc      Descrição em uma linha, PT-BR, sem ponto final
 :: @category  files
+:: @platform  windows
 :: @admin     no
 :: @risk      medium
+:: @writes user
+:: @deletes none
+:: @registry none
+:: @services none
+:: @tasks none
+:: @network none
+:: @restart none
 :: @undo      Descreva como desfazer (ou N/A)
 :: ============================================================
 @echo off
@@ -18,7 +26,7 @@ chcp 65001 >nul 2>&1
 setlocal
 title BATLAB - NomeArquivo
 
-:: ---- aviso (obrigatório para medium/high) ----
+:: ---- aviso (obrigatório para medium/high/critical) ----
 echo ============================================
 echo  BATLAB - NomeArquivo
 echo ============================================
@@ -30,46 +38,104 @@ echo.
 :: ---- execucao ----
 REM seu codigo aqui
 
+:fim
 echo.
 pause
 endlocal
 ```
 
-## Reglas de estilo
+## Esqueleto `.sh` (Linux/macOS/Android)
+
+```bash
+#!/usr/bin/env bash
+# ============================================================
+# BATLAB | nome-arquivo.sh | v1.0.0
+# @desc      Descrição em uma linha, PT-BR, sem ponto final
+# @category  system
+# @platform  linux
+# @admin     no
+# @risk      low
+# @writes none
+# @deletes none
+# @registry none
+# @services none
+# @tasks none
+# @network none
+# @restart none
+# @undo      Somente leitura: nada a desfazer
+# ============================================================
+
+echo "============================================"
+echo " BATLAB - Nome do script"
+echo "============================================"
+
+# seu codigo aqui
+
+echo
+read -r -p "Pressione Enter para sair... " _
+```
+
+## Regras de estilo
+
+### `.bat`
 
 1. **`@echo off` + `chcp 65001 >nul 2>&1` + `setlocal`** sempre no topo
    (após o cabeçalho `::`).
-2. **UTF-8 sem BOM.** Nunca salve como ANSI/UTF-16.
-3. Mensagens em **PT-BR**, sem acentos pesados em `choice /m` (evita bugs de
-   codepage); acentos em `echo` normais são permitidos.
+2. **UTF-8 sem BOM, CRLF** (o `.gitattributes` força no repositório).
+3. Mensagens em **PT-BR**, sem acentos pesados em `choice /m`; acentos em
+   `echo` normais são permitidos.
 4. **Uma responsabilidade.** Se o script passar de ~120 linhas, divida.
 5. Trate erros: `if errorlevel 1 (...)` com mensagem clara, nunca falha muda.
-6. Termine com `pause` (UX de duplo clique) e `endlocal`.
+6. Termine com `:fim` + `echo.` + `pause` (UX de duplo clique) + `endlocal`.
 7. Sem dependências externas: só comandos nativos + PowerShell nativo.
 
-## Confirmação (obrigatória em `medium`/`high`)
+### `.sh`
+
+1. `#!/usr/bin/env bash` na primeira linha; **UTF-8 sem BOM, LF**.
+2. Cabecalho `# @meta` logo abaixo do shebang (dentro das 30 primeiras
+   linhas — o build só le a janela inicial).
+3. `command -v` para checar dependências antes de usar (`adb`, `free`…).
+4. Termine com `read -r -p "Pressione Enter para sair... " _`.
+5. Nada de `sudo` automático: pedir com mensagem quando precisar.
+6. PT-BR nas mensagens; nome do arquivo em **kebab-case**
+   (`linux-system-report.sh`).
+
+## Confirmação por nível de risco
+
+### `medium` — 1 confirmação
 
 ```bat
-echo [ATENCAO] Este script modifica arquivos.
+echo [ATENCAO] Vai modificar arquivos da pasta atual.
 choice /c SN /m "Continuar? (S/N)"
-if errorlevel 2 (
-    echo Cancelado pelo usuario.
-    pause
-    exit /b 0
-)
+if errorlevel 2 (echo Cancelado pelo usuario. & goto :fim)
 ```
 
-Para `high`, use confirmação **dupla** (dois `choice` seguidos) e, quando
-faz sentido, `/dryrun`:
+### `high` — 2 confirmações + `/dryrun`
 
 ```bat
 if /i "%~1"=="/dryrun" (
     echo [DRYRUN] Apenas listando o que seria feito...
     REM lista sem alterar nada
-    pause
-    exit /b 0
+    goto :fim
 )
+echo [ATENCAO] Acao destrutiva e irreversivel.
+choice /c SN /m "Primeira confirmacao. Continuar? (S/N)"
+if errorlevel 2 (echo Cancelado pelo usuario. & goto :fim)
+choice /c SN /m "Segunda confirmacao. Tem certeza? (S/N)"
+if errorlevel 2 (echo Cancelado pelo usuario. & goto :fim)
 ```
+
+### `critical` — digitação obrigatória (`@confirm typed`)
+
+```bat
+echo [CRITICO] Esta acao pode ser irreversivel.
+echo Digite SIM (em maiusculas) para continuar:
+set /p "CONF="
+if /i not "%CONF%"=="SIM" (echo Cancelado pelo usuario. & goto :fim)
+```
+
+O build **rejeita** qualquer script com `@risk critical` sem
+`@confirm typed` no cabeçalho.
 
 ## Verificação de administrador
 
@@ -77,27 +143,38 @@ if /i "%~1"=="/dryrun" (
 net session >nul 2>&1
 if errorlevel 1 (
     echo [ERRO] Este script precisa ser executado como Administrador.
-    pause
-    exit /b 1
+    goto :fim
 )
 ```
 
-## Metadados (`@meta`)
+## Metadados (`@meta` v2)
 
-| Campo | Valores |
-|---|---|
-| `@desc` | uma linha, PT-BR |
-| `@category` | `productivity` `files` `system` `network` `developer` `media` `customization` `games` `automation` `diagnostics` `everyday` |
-| `@admin` | `no` \| `yes` |
-| `@risk` | `low` \| `medium` \| `high` |
-| `@undo` | como desfazer, ou `N/A` |
+| Campo | Valores | Obrigatório |
+|---|---|---|
+| `@desc` | uma linha, PT-BR | sim |
+| `@category` | deve ser **igual ao nome da pasta** | sim |
+| `@platform` | `windows` \| `linux` \| `macos` \| `android` | sim (igual à raiz) |
+| `@admin` | `no` \| `yes` | sim |
+| `@risk` | `low` \| `medium` \| `high` \| `critical` | sim |
+| `@undo` | como desfazer, ou `N/A` | sim |
+| `@writes` | `none` \| `temp` \| `user` \| `system` | medium+ |
+| `@deletes` | `none` \| `temp` \| `files` | medium+ |
+| `@registry` | `none` \| `read` \| `write` | medium+ |
+| `@services` | `none` \| `read` \| `write` | medium+ |
+| `@tasks` | `none` \| `read` \| `write` | medium+ |
+| `@network` | `none` \| `read` \| `write` | medium+ |
+| `@restart` | `none` \| `process` \| `explorer` \| `os` | medium+ |
+| `@confirm` | `typed` | só `critical` |
 
-Esses campos são lidos por `tools/build-manifest.ps1` para gerar
-`site/projects.json`. Não remova nem altere o formato `:: @chave   valor`.
+Formatação: `:: @chave` + espaços + valor (`# @chave` em `.sh`). Os campos de
+segurança são **obrigatórios a partir de `medium`** — o build falha se
+faltarem ou tiverem valor fora do enum.
+
+O `platform` precisa bater com a pasta (raiz `windows/batch` → `windows`,
+`linux/shell` → `linux`…) e o `category` com o nome da subpasta.
 
 ## Codificação — como salvar
 
-No editor (VS Code): `Ctrl+Shift+P` → *Change End of Line Sequence* → LF/CRLF
-tanto faz; **Save with Encoding → UTF-8 (sem BOM)**.
-
-O gerador de manifesto falha em avisar se o BOM existir — sempre confira.
+No editor (VS Code): **Save with Encoding → UTF-8 (sem BOM)**. Fim de linha
+(.bat CRLF / .sh LF) é normalizado pelo `.gitattributes` — não precisa
+se preocupar depois do primeiro checkout.
