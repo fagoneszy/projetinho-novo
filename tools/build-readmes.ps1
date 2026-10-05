@@ -38,7 +38,7 @@ $descriptions = @{
 function Esc($s) { if ($null -eq $s) { return '' }; ($s -replace '\|', '\|') -replace '\s+$', '' }
 
 $total = 0
-Get-ChildItem -LiteralPath $root -Directory |
+Get-ChildItem -LiteralPath (Join-Path $root 'windows\batch') -Directory |
     Where-Object { $_.Name -in $titles.Keys } |
     Sort-Object { [array]::IndexOf(@($titles.Keys), $_.Name) } |
     ForEach-Object {

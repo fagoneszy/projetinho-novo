@@ -10,8 +10,8 @@
         "undo":  "Extraia os arquivos do ZIP Arquivo_AAAA-MM-DD.zip",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoArchive.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoArchive.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoArchive.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoArchive.bat"
     },
     {
         "name":  "AutoBackup",
@@ -24,8 +24,8 @@
         "undo":  "Apague ou mova o destino para desfazer",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoBackup.bat"
     },
     {
         "name":  "AutoCleanup",
@@ -38,8 +38,8 @@
         "undo":  "Irreversivel - arquivos de temp raramente sao necessarios",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoCleanup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoCleanup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoCleanup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoCleanup.bat"
     },
     {
         "name":  "AutoDownloadOrganizer",
@@ -52,8 +52,8 @@
         "undo":  "Mova os arquivos de volta de Downloads",
         "version":  "1.0.0",
         "size":  "1.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoDownloadOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoDownloadOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoDownloadOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoDownloadOrganizer.bat"
     },
     {
         "name":  "AutoGitBackup",
@@ -66,8 +66,8 @@
         "undo":  "schtasks /delete /tn BATLAB_GitBackup /f",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoGitBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoGitBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoGitBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoGitBackup.bat"
     },
     {
         "name":  "AutoGitCommit",
@@ -80,8 +80,8 @@
         "undo":  "schtasks /delete /tn BATLAB_GitCommit /f",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoGitCommit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoGitCommit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoGitCommit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoGitCommit.bat"
     },
     {
         "name":  "AutoLogGenerator",
@@ -94,8 +94,8 @@
         "undo":  "Apague o arquivo batlab_log.txt",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoLogGenerator.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoLogGenerator.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoLogGenerator.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoLogGenerator.bat"
     },
     {
         "name":  "AutomationMenu",
@@ -108,8 +108,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutomationMenu.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutomationMenu.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutomationMenu.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutomationMenu.bat"
     },
     {
         "name":  "AutoNetworkMonitor",
@@ -122,8 +122,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoNetworkMonitor.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoNetworkMonitor.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoNetworkMonitor.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoNetworkMonitor.bat"
     },
     {
         "name":  "AutoOrganize",
@@ -136,8 +136,8 @@
         "undo":  "Mova os arquivos de volta para a raiz",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoOrganize.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoOrganize.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoOrganize.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoOrganize.bat"
     },
     {
         "name":  "AutoProcessMonitor",
@@ -150,8 +150,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoProcessMonitor.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoProcessMonitor.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoProcessMonitor.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoProcessMonitor.bat"
     },
     {
         "name":  "AutoProjectBackup",
@@ -164,8 +164,8 @@
         "undo":  "Apague as pastas de backup em DESTINO",
         "version":  "1.0.0",
         "size":  "1.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoProjectBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoProjectBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoProjectBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoProjectBackup.bat"
     },
     {
         "name":  "AutoReportGenerator",
@@ -178,8 +178,8 @@
         "undo":  "Apague o arquivo Relatorio_*.txt",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoReportGenerator.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoReportGenerator.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoReportGenerator.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoReportGenerator.bat"
     },
     {
         "name":  "AutoStartupManager",
@@ -192,8 +192,8 @@
         "undo":  "Rode novamente e readicione o valor do registro",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoStartupManager.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoStartupManager.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoStartupManager.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoStartupManager.bat"
     },
     {
         "name":  "AutoSystemReport",
@@ -206,8 +206,8 @@
         "undo":  "schtasks /delete /tn BATLAB_SystemReport /f",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoSystemReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoSystemReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoSystemReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoSystemReport.bat"
     },
     {
         "name":  "AutoWebsiteMonitor",
@@ -220,8 +220,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/AutoWebsiteMonitor.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/AutoWebsiteMonitor.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/AutoWebsiteMonitor.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/AutoWebsiteMonitor.bat"
     },
     {
         "name":  "DailyTaskCreator",
@@ -234,8 +234,8 @@
         "undo":  "schtasks /delete /tn NOME /f",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/DailyTaskCreator.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/DailyTaskCreator.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/DailyTaskCreator.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/DailyTaskCreator.bat"
     },
     {
         "name":  "FileWatcher",
@@ -248,8 +248,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/FileWatcher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/FileWatcher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/FileWatcher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/FileWatcher.bat"
     },
     {
         "name":  "FolderWatcher",
@@ -262,8 +262,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/FolderWatcher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/FolderWatcher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/FolderWatcher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/FolderWatcher.bat"
     },
     {
         "name":  "ScheduledBackup",
@@ -276,8 +276,8 @@
         "undo":  "schtasks /delete /tn BATLAB_Backup /f",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/ScheduledBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/ScheduledBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/ScheduledBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/ScheduledBackup.bat"
     },
     {
         "name":  "ScheduledCleanup",
@@ -290,8 +290,8 @@
         "undo":  "schtasks /delete /tn BATLAB_Cleanup /f",
         "version":  "1.0.0",
         "size":  "1.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/ScheduledCleanup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/ScheduledCleanup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/ScheduledCleanup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/ScheduledCleanup.bat"
     },
     {
         "name":  "ScheduledProgram",
@@ -304,8 +304,8 @@
         "undo":  "schtasks /delete /tn BATLAB_Programa /f",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/ScheduledProgram.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/ScheduledProgram.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/ScheduledProgram.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/ScheduledProgram.bat"
     },
     {
         "name":  "ScheduledRestart",
@@ -318,8 +318,8 @@
         "undo":  "shutdown /a",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/ScheduledRestart.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/ScheduledRestart.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/ScheduledRestart.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/ScheduledRestart.bat"
     },
     {
         "name":  "ScheduledShutdown",
@@ -332,8 +332,8 @@
         "undo":  "shutdown /a",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/ScheduledShutdown.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/ScheduledShutdown.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/ScheduledShutdown.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/ScheduledShutdown.bat"
     },
     {
         "name":  "TaskDelete",
@@ -346,8 +346,8 @@
         "undo":  "Recrie a tarefa via TaskManager.bat ou DailyTaskCreator.bat",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/TaskDelete.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/TaskDelete.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/TaskDelete.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/TaskDelete.bat"
     },
     {
         "name":  "TaskDisable",
@@ -360,8 +360,8 @@
         "undo":  "schtasks /change /enable para reativar",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/TaskDisable.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/TaskDisable.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/TaskDisable.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/TaskDisable.bat"
     },
     {
         "name":  "TaskEnable",
@@ -374,8 +374,8 @@
         "undo":  "schtasks /change /disable para desativar",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/TaskEnable.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/TaskEnable.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/TaskEnable.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/TaskEnable.bat"
     },
     {
         "name":  "TaskList",
@@ -388,8 +388,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/TaskList.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/TaskList.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/TaskList.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/TaskList.bat"
     },
     {
         "name":  "TaskManager",
@@ -402,8 +402,8 @@
         "undo":  "schtasks /delete /f para excluir",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/TaskManager.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/TaskManager.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/TaskManager.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/TaskManager.bat"
     },
     {
         "name":  "WeeklyTaskCreator",
@@ -416,8 +416,8 @@
         "undo":  "schtasks /delete /tn NOME /f",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/automation/WeeklyTaskCreator.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/automation/WeeklyTaskCreator.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/automation/WeeklyTaskCreator.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/automation/WeeklyTaskCreator.bat"
     },
     {
         "name":  "CreateDesktopShortcut",
@@ -430,8 +430,8 @@
         "undo":  "Exclua o arquivo .lnk criado na area de trabalho",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/CreateDesktopShortcut.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/CreateDesktopShortcut.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/CreateDesktopShortcut.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/CreateDesktopShortcut.bat"
     },
     {
         "name":  "CreateStartMenuShortcut",
@@ -444,8 +444,8 @@
         "undo":  "Exclua o arquivo .lnk criado na pasta Programs do Menu Iniciar",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/CreateStartMenuShortcut.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/CreateStartMenuShortcut.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/CreateStartMenuShortcut.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/CreateStartMenuShortcut.bat"
     },
     {
         "name":  "DarkMode",
@@ -458,8 +458,8 @@
         "undo":  "Execute LightMode.bat (AppsUseLightTheme=1 e SystemUsesLightTheme=1)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/DarkMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/DarkMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/DarkMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/DarkMode.bat"
     },
     {
         "name":  "DesktopRefresh",
@@ -472,8 +472,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/DesktopRefresh.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/DesktopRefresh.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/DesktopRefresh.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/DesktopRefresh.bat"
     },
     {
         "name":  "DisableDeveloperMode",
@@ -486,8 +486,8 @@
         "undo":  "Execute EnableDeveloperMode.bat (AllowDevelopmentWithoutDevLicense=1)",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/DisableDeveloperMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/DisableDeveloperMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/DisableDeveloperMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/DisableDeveloperMode.bat"
     },
     {
         "name":  "EnableDeveloperMode",
@@ -500,8 +500,8 @@
         "undo":  "Execute DisableDeveloperMode.bat (AllowDevelopmentWithoutDevLicense=0)",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/EnableDeveloperMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/EnableDeveloperMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/EnableDeveloperMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/EnableDeveloperMode.bat"
     },
     {
         "name":  "HideFileExtensions",
@@ -514,8 +514,8 @@
         "undo":  "Execute ShowFileExtensions.bat (valor HideFileExt=0)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/HideFileExtensions.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/HideFileExtensions.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/HideFileExtensions.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/HideFileExtensions.bat"
     },
     {
         "name":  "HideHiddenFiles",
@@ -528,8 +528,8 @@
         "undo":  "Execute ShowHiddenFiles.bat (valor Hidden=1)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/HideHiddenFiles.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/HideHiddenFiles.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/HideHiddenFiles.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/HideHiddenFiles.bat"
     },
     {
         "name":  "LightMode",
@@ -542,8 +542,8 @@
         "undo":  "Execute DarkMode.bat (AppsUseLightTheme=0 e SystemUsesLightTheme=0)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/LightMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/LightMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/LightMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/LightMode.bat"
     },
     {
         "name":  "OpenAppData",
@@ -556,8 +556,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenAppData.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenAppData.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenAppData.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenAppData.bat"
     },
     {
         "name":  "OpenControlPanel",
@@ -570,8 +570,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenControlPanel.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenControlPanel.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenControlPanel.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenControlPanel.bat"
     },
     {
         "name":  "OpenDeviceManager",
@@ -584,8 +584,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenDeviceManager.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenDeviceManager.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenDeviceManager.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenDeviceManager.bat"
     },
     {
         "name":  "OpenEnvironmentSettings",
@@ -598,8 +598,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenEnvironmentSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenEnvironmentSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenEnvironmentSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenEnvironmentSettings.bat"
     },
     {
         "name":  "OpenHostsFile",
@@ -612,8 +612,8 @@
         "undo":  "Feche o Bloco de Notas sem salvar ou restaure o backup manual do arquivo hosts",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenHostsFile.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenHostsFile.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenHostsFile.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenHostsFile.bat"
     },
     {
         "name":  "OpenServices",
@@ -626,8 +626,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenServices.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenServices.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenServices.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenServices.bat"
     },
     {
         "name":  "OpenSettings",
@@ -640,8 +640,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenSettings.bat"
     },
     {
         "name":  "OpenStartupFolder",
@@ -654,8 +654,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenStartupFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenStartupFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenStartupFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenStartupFolder.bat"
     },
     {
         "name":  "OpenSystem32",
@@ -668,8 +668,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenSystem32.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenSystem32.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenSystem32.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenSystem32.bat"
     },
     {
         "name":  "OpenTaskScheduler",
@@ -682,8 +682,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenTaskScheduler.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenTaskScheduler.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenTaskScheduler.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenTaskScheduler.bat"
     },
     {
         "name":  "OpenTemp",
@@ -696,8 +696,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenTemp.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenTemp.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenTemp.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenTemp.bat"
     },
     {
         "name":  "OpenWindowsFolder",
@@ -710,8 +710,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/OpenWindowsFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/OpenWindowsFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/OpenWindowsFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/OpenWindowsFolder.bat"
     },
     {
         "name":  "RestartPrintSpooler",
@@ -724,8 +724,8 @@
         "undo":  "Execute net start spooler ou reinicie o servico Spooler pelo console Services.msc",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/RestartPrintSpooler.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/RestartPrintSpooler.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/RestartPrintSpooler.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/RestartPrintSpooler.bat"
     },
     {
         "name":  "ShowFileExtensions",
@@ -738,8 +738,8 @@
         "undo":  "Execute HideFileExtensions.bat (valor HideFileExt=1)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/ShowFileExtensions.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/ShowFileExtensions.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/ShowFileExtensions.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/ShowFileExtensions.bat"
     },
     {
         "name":  "ShowHiddenFiles",
@@ -752,8 +752,8 @@
         "undo":  "Execute HideHiddenFiles.bat (valor Hidden=2)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/ShowHiddenFiles.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/ShowHiddenFiles.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/ShowHiddenFiles.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/ShowHiddenFiles.bat"
     },
     {
         "name":  "ToggleDarkMode",
@@ -766,8 +766,8 @@
         "undo":  "Execute DarkMode.bat ou LightMode.bat conforme o tema desejado",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/customization/ToggleDarkMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/customization/ToggleDarkMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/customization/ToggleDarkMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/customization/ToggleDarkMode.bat"
     },
     {
         "name":  "ActivateVenv",
@@ -780,8 +780,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/ActivateVenv.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/ActivateVenv.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/ActivateVenv.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/ActivateVenv.bat"
     },
     {
         "name":  "BuildProject",
@@ -794,8 +794,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/BuildProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/BuildProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/BuildProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/BuildProject.bat"
     },
     {
         "name":  "CleanBuild",
@@ -808,8 +808,8 @@
         "undo":  "Recriado no proximo build",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/CleanBuild.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/CleanBuild.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/CleanBuild.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/CleanBuild.bat"
     },
     {
         "name":  "CountCodeLines",
@@ -822,8 +822,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/CountCodeLines.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/CountCodeLines.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/CountCodeLines.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/CountCodeLines.bat"
     },
     {
         "name":  "CppProject",
@@ -836,8 +836,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/CppProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/CppProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/CppProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/CppProject.bat"
     },
     {
         "name":  "CProject",
@@ -850,8 +850,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/CProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/CProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/CProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/CProject.bat"
     },
     {
         "name":  "CreateVenv",
@@ -864,8 +864,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/CreateVenv.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/CreateVenv.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/CreateVenv.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/CreateVenv.bat"
     },
     {
         "name":  "DevEnvironment",
@@ -878,8 +878,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/DevEnvironment.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/DevEnvironment.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/DevEnvironment.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/DevEnvironment.bat"
     },
     {
         "name":  "DevServer",
@@ -892,8 +892,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/DevServer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/DevServer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/DevServer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/DevServer.bat"
     },
     {
         "name":  "FindTODO",
@@ -906,8 +906,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/FindTODO.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/FindTODO.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/FindTODO.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/FindTODO.bat"
     },
     {
         "name":  "GitBackup",
@@ -920,8 +920,8 @@
         "undo":  "git reset --soft HEAD~1 e git push --force apenas se necessario",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitBackup.bat"
     },
     {
         "name":  "GitBranchCreator",
@@ -934,8 +934,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitBranchCreator.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitBranchCreator.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitBranchCreator.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitBranchCreator.bat"
     },
     {
         "name":  "GitCommit",
@@ -948,8 +948,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitCommit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitCommit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitCommit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitCommit.bat"
     },
     {
         "name":  "GitPull",
@@ -962,8 +962,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitPull.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitPull.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitPull.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitPull.bat"
     },
     {
         "name":  "GitPush",
@@ -976,8 +976,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitPush.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitPush.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitPush.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitPush.bat"
     },
     {
         "name":  "GitQuickCommit",
@@ -990,8 +990,8 @@
         "undo":  "git reset --soft HEAD~1 para desfazer o commit",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitQuickCommit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitQuickCommit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitQuickCommit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitQuickCommit.bat"
     },
     {
         "name":  "GitStatus",
@@ -1004,8 +1004,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GitStatus.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GitStatus.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GitStatus.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GitStatus.bat"
     },
     {
         "name":  "GoProject",
@@ -1018,8 +1018,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/GoProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/GoProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/GoProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/GoProject.bat"
     },
     {
         "name":  "InstallRequirements",
@@ -1032,8 +1032,8 @@
         "undo":  "pip uninstall -r requirements.txt para remover os pacotes",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/InstallRequirements.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/InstallRequirements.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/InstallRequirements.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/InstallRequirements.bat"
     },
     {
         "name":  "JavaProject",
@@ -1046,8 +1046,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/JavaProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/JavaProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/JavaProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/JavaProject.bat"
     },
     {
         "name":  "NodeProject",
@@ -1060,8 +1060,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/NodeProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/NodeProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/NodeProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/NodeProject.bat"
     },
     {
         "name":  "OpenGitBashHere",
@@ -1074,8 +1074,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/OpenGitBashHere.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/OpenGitBashHere.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/OpenGitBashHere.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/OpenGitBashHere.bat"
     },
     {
         "name":  "OpenProjectTerminal",
@@ -1088,8 +1088,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/OpenProjectTerminal.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/OpenProjectTerminal.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/OpenProjectTerminal.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/OpenProjectTerminal.bat"
     },
     {
         "name":  "OpenTerminalHere",
@@ -1102,8 +1102,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/OpenTerminalHere.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/OpenTerminalHere.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/OpenTerminalHere.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/OpenTerminalHere.bat"
     },
     {
         "name":  "OpenVSCode",
@@ -1116,8 +1116,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/OpenVSCode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/OpenVSCode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/OpenVSCode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/OpenVSCode.bat"
     },
     {
         "name":  "ProjectInit",
@@ -1130,8 +1130,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/ProjectInit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/ProjectInit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/ProjectInit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/ProjectInit.bat"
     },
     {
         "name":  "ProjectTree",
@@ -1144,8 +1144,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/ProjectTree.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/ProjectTree.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/ProjectTree.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/ProjectTree.bat"
     },
     {
         "name":  "PythonProject",
@@ -1158,8 +1158,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/PythonProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/PythonProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/PythonProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/PythonProject.bat"
     },
     {
         "name":  "RunTests",
@@ -1172,8 +1172,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/RunTests.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/RunTests.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/RunTests.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/RunTests.bat"
     },
     {
         "name":  "RustProject",
@@ -1186,8 +1186,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/developer/RustProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/developer/RustProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/developer/RustProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/developer/RustProject.bat"
     },
     {
         "name":  "ActiveSessions",
@@ -1200,8 +1200,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/ActiveSessions.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/ActiveSessions.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/ActiveSessions.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/ActiveSessions.bat"
     },
     {
         "name":  "AdminUsers",
@@ -1214,8 +1214,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/AdminUsers.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/AdminUsers.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/AdminUsers.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/AdminUsers.bat"
     },
     {
         "name":  "DiskHealthReport",
@@ -1228,8 +1228,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/DiskHealthReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/DiskHealthReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/DiskHealthReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/DiskHealthReport.bat"
     },
     {
         "name":  "FirewallRules",
@@ -1242,8 +1242,8 @@
         "undo":  "netsh advfirewall import \u003carquivo exportado\u003e",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/FirewallRules.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/FirewallRules.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/FirewallRules.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/FirewallRules.bat"
     },
     {
         "name":  "FirewallStatus",
@@ -1256,8 +1256,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/FirewallStatus.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/FirewallStatus.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/FirewallStatus.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/FirewallStatus.bat"
     },
     {
         "name":  "FullDiagnostic",
@@ -1270,8 +1270,8 @@
         "undo":  "N/A - somente leitura; apague a pasta Relatorios gerada",
         "version":  "1.0.0",
         "size":  "2.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/FullDiagnostic.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/FullDiagnostic.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/FullDiagnostic.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/FullDiagnostic.bat"
     },
     {
         "name":  "InstalledPrograms",
@@ -1284,8 +1284,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/InstalledPrograms.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/InstalledPrograms.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/InstalledPrograms.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/InstalledPrograms.bat"
     },
     {
         "name":  "ListeningPorts",
@@ -1298,8 +1298,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/ListeningPorts.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/ListeningPorts.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/ListeningPorts.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/ListeningPorts.bat"
     },
     {
         "name":  "LoggedUsers",
@@ -1312,8 +1312,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/LoggedUsers.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/LoggedUsers.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/LoggedUsers.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/LoggedUsers.bat"
     },
     {
         "name":  "OpenConnections",
@@ -1326,8 +1326,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/OpenConnections.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/OpenConnections.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/OpenConnections.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/OpenConnections.bat"
     },
     {
         "name":  "ProcessNetworkConnections",
@@ -1340,8 +1340,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/ProcessNetworkConnections.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/ProcessNetworkConnections.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/ProcessNetworkConnections.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/ProcessNetworkConnections.bat"
     },
     {
         "name":  "RecentFilesAudit",
@@ -1354,8 +1354,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/RecentFilesAudit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/RecentFilesAudit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/RecentFilesAudit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/RecentFilesAudit.bat"
     },
     {
         "name":  "RecentlyInstalled",
@@ -1368,8 +1368,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/RecentlyInstalled.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/RecentlyInstalled.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/RecentlyInstalled.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/RecentlyInstalled.bat"
     },
     {
         "name":  "ScheduledTaskAudit",
@@ -1382,8 +1382,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/ScheduledTaskAudit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/ScheduledTaskAudit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/ScheduledTaskAudit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/ScheduledTaskAudit.bat"
     },
     {
         "name":  "SecurityEventReport",
@@ -1396,8 +1396,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/SecurityEventReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/SecurityEventReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/SecurityEventReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/SecurityEventReport.bat"
     },
     {
         "name":  "StartupAudit",
@@ -1410,8 +1410,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/StartupAudit.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/StartupAudit.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/StartupAudit.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/StartupAudit.bat"
     },
     {
         "name":  "SystemEventReport",
@@ -1424,8 +1424,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/SystemEventReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/SystemEventReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/SystemEventReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/SystemEventReport.bat"
     },
     {
         "name":  "SystemHealthReport",
@@ -1438,8 +1438,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/SystemHealthReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/SystemHealthReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/SystemHealthReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/SystemHealthReport.bat"
     },
     {
         "name":  "UserAccounts",
@@ -1452,8 +1452,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/UserAccounts.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/UserAccounts.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/UserAccounts.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/UserAccounts.bat"
     },
     {
         "name":  "WindowsDefenderStatus",
@@ -1466,8 +1466,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/diagnostics/WindowsDefenderStatus.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/diagnostics/WindowsDefenderStatus.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/diagnostics/WindowsDefenderStatus.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/diagnostics/WindowsDefenderStatus.bat"
     },
     {
         "name":  "EmptyRecycleBin",
@@ -1480,8 +1480,8 @@
         "undo":  "Irreversivel - use /dryrun antes",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/EmptyRecycleBin.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/EmptyRecycleBin.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/EmptyRecycleBin.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/EmptyRecycleBin.bat"
     },
     {
         "name":  "LockComputer",
@@ -1494,8 +1494,8 @@
         "undo":  "Ctrl+Alt+Del e informe a senha",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/LockComputer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/LockComputer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/LockComputer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/LockComputer.bat"
     },
     {
         "name":  "OpenAppsSettings",
@@ -1508,8 +1508,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenAppsSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenAppsSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenAppsSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenAppsSettings.bat"
     },
     {
         "name":  "OpenBluetoothSettings",
@@ -1522,8 +1522,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenBluetoothSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenBluetoothSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenBluetoothSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenBluetoothSettings.bat"
     },
     {
         "name":  "OpenDisplaySettings",
@@ -1536,8 +1536,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenDisplaySettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenDisplaySettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenDisplaySettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenDisplaySettings.bat"
     },
     {
         "name":  "OpenMouseSettings",
@@ -1550,8 +1550,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenMouseSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenMouseSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenMouseSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenMouseSettings.bat"
     },
     {
         "name":  "OpenNetworkSettings",
@@ -1564,8 +1564,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenNetworkSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenNetworkSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenNetworkSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenNetworkSettings.bat"
     },
     {
         "name":  "OpenPrivacySettings",
@@ -1578,8 +1578,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenPrivacySettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenPrivacySettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenPrivacySettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenPrivacySettings.bat"
     },
     {
         "name":  "OpenRecycleBin",
@@ -1592,8 +1592,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenRecycleBin.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenRecycleBin.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenRecycleBin.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenRecycleBin.bat"
     },
     {
         "name":  "OpenSoundSettings",
@@ -1606,8 +1606,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenSoundSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenSoundSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenSoundSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenSoundSettings.bat"
     },
     {
         "name":  "OpenStorageSettings",
@@ -1620,8 +1620,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenStorageSettings.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenStorageSettings.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenStorageSettings.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenStorageSettings.bat"
     },
     {
         "name":  "OpenTaskManager",
@@ -1634,8 +1634,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenTaskManager.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenTaskManager.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenTaskManager.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenTaskManager.bat"
     },
     {
         "name":  "OpenWindowsUpdate",
@@ -1648,8 +1648,8 @@
         "undo":  "N/A - somente abre uma janela",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/OpenWindowsUpdate.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/OpenWindowsUpdate.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/OpenWindowsUpdate.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/OpenWindowsUpdate.bat"
     },
     {
         "name":  "QuickRestart",
@@ -1662,8 +1662,8 @@
         "undo":  "N/A - reinicio imediato, nao reversivel",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/QuickRestart.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/QuickRestart.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/QuickRestart.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/QuickRestart.bat"
     },
     {
         "name":  "QuickShutdown",
@@ -1676,8 +1676,8 @@
         "undo":  "N/A - desligamento imediato, nao reversivel",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/QuickShutdown.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/QuickShutdown.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/QuickShutdown.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/QuickShutdown.bat"
     },
     {
         "name":  "RestartTimer",
@@ -1690,8 +1690,8 @@
         "undo":  "shutdown /a",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/RestartTimer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/RestartTimer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/RestartTimer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/RestartTimer.bat"
     },
     {
         "name":  "ShutdownTimer",
@@ -1704,8 +1704,8 @@
         "undo":  "shutdown /a",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/ShutdownTimer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/ShutdownTimer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/ShutdownTimer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/ShutdownTimer.bat"
     },
     {
         "name":  "SignOut",
@@ -1718,8 +1718,8 @@
         "undo":  "Refaca o login com sua senha",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/SignOut.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/SignOut.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/SignOut.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/SignOut.bat"
     },
     {
         "name":  "SleepTimer",
@@ -1732,8 +1732,8 @@
         "undo":  "Feche a janela antes do fim da espera; apos dormir acorde com o teclado",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/SleepTimer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/SleepTimer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/SleepTimer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/SleepTimer.bat"
     },
     {
         "name":  "WindowsQuickTools",
@@ -1746,8 +1746,8 @@
         "undo":  "N/A - somente abre ferramentas",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/everyday/WindowsQuickTools.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/everyday/WindowsQuickTools.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/everyday/WindowsQuickTools.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/everyday/WindowsQuickTools.bat"
     },
     {
         "name":  "ArchiveFolder",
@@ -1760,8 +1760,8 @@
         "undo":  "Apague o arquivo ZIP gerado",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/ArchiveFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/ArchiveFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/ArchiveFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/ArchiveFolder.bat"
     },
     {
         "name":  "BackupFolder",
@@ -1774,8 +1774,8 @@
         "undo":  "Apague a pasta de destino do backup",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/BackupFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/BackupFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/BackupFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/BackupFolder.bat"
     },
     {
         "name":  "BulkCopy",
@@ -1788,8 +1788,8 @@
         "undo":  "Apague os arquivos copiados no destino",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/BulkCopy.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/BulkCopy.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/BulkCopy.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/BulkCopy.bat"
     },
     {
         "name":  "BulkMove",
@@ -1802,8 +1802,8 @@
         "undo":  "Mova os arquivos de volta para a pasta de origem",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/BulkMove.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/BulkMove.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/BulkMove.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/BulkMove.bat"
     },
     {
         "name":  "BulkRename",
@@ -1816,8 +1816,8 @@
         "undo":  "Renomeie os arquivos de volta para os nomes originais",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/BulkRename.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/BulkRename.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/BulkRename.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/BulkRename.bat"
     },
     {
         "name":  "CleanDownloads",
@@ -1830,8 +1830,8 @@
         "undo":  "Irreversivel - use /dryrun antes",
         "version":  "1.0.0",
         "size":  "2.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/CleanDownloads.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/CleanDownloads.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/CleanDownloads.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/CleanDownloads.bat"
     },
     {
         "name":  "CompareFolders",
@@ -1844,8 +1844,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "1.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/CompareFolders.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/CompareFolders.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/CompareFolders.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/CompareFolders.bat"
     },
     {
         "name":  "DuplicateFinder",
@@ -1858,8 +1858,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/DuplicateFinder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/DuplicateFinder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/DuplicateFinder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/DuplicateFinder.bat"
     },
     {
         "name":  "EmptyFolder",
@@ -1872,8 +1872,8 @@
         "undo":  "Irreversivel - use /dryrun antes",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/EmptyFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/EmptyFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/EmptyFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/EmptyFolder.bat"
     },
     {
         "name":  "EmptyFolders",
@@ -1886,8 +1886,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/EmptyFolders.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/EmptyFolders.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/EmptyFolders.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/EmptyFolders.bat"
     },
     {
         "name":  "ExportFileList",
@@ -1900,8 +1900,8 @@
         "undo":  "Apague o arquivo TXT gerado",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/ExportFileList.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/ExportFileList.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/ExportFileList.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/ExportFileList.bat"
     },
     {
         "name":  "ExportFileListCSV",
@@ -1914,8 +1914,8 @@
         "undo":  "Apague o arquivo CSV gerado",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/ExportFileListCSV.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/ExportFileListCSV.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/ExportFileListCSV.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/ExportFileListCSV.bat"
     },
     {
         "name":  "ExtensionReport",
@@ -1928,8 +1928,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/ExtensionReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/ExtensionReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/ExtensionReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/ExtensionReport.bat"
     },
     {
         "name":  "FileCounter",
@@ -1942,8 +1942,8 @@
         "undo":  "N/A (somente contagem)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/FileCounter.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/FileCounter.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/FileCounter.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/FileCounter.bat"
     },
     {
         "name":  "FolderSize",
@@ -1956,8 +1956,8 @@
         "undo":  "N/A (somente calculo)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/FolderSize.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/FolderSize.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/FolderSize.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/FolderSize.bat"
     },
     {
         "name":  "FolderTree",
@@ -1970,8 +1970,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/FolderTree.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/FolderTree.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/FolderTree.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/FolderTree.bat"
     },
     {
         "name":  "LargeFiles",
@@ -1984,8 +1984,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/LargeFiles.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/LargeFiles.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/LargeFiles.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/LargeFiles.bat"
     },
     {
         "name":  "MergeFolders",
@@ -1998,8 +1998,8 @@
         "undo":  "Mova os arquivos copiados de volta para a pasta de origem",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/MergeFolders.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/MergeFolders.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/MergeFolders.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/MergeFolders.bat"
     },
     {
         "name":  "MirrorFolder",
@@ -2012,8 +2012,8 @@
         "undo":  "Irreversivel para os arquivos apagados no destino - use /dryrun antes",
         "version":  "1.0.0",
         "size":  "2.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/MirrorFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/MirrorFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/MirrorFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/MirrorFolder.bat"
     },
     {
         "name":  "OldFiles",
@@ -2026,8 +2026,8 @@
         "undo":  "N/A (somente listagem)",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/OldFiles.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/OldFiles.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/OldFiles.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/OldFiles.bat"
     },
     {
         "name":  "RestoreBackup",
@@ -2040,8 +2040,8 @@
         "undo":  "A substituicao nao tem desfazer - use /dryrun antes",
         "version":  "1.0.0",
         "size":  "2.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/RestoreBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/RestoreBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/RestoreBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/RestoreBackup.bat"
     },
     {
         "name":  "SmartBackup",
@@ -2054,8 +2054,8 @@
         "undo":  "Apague a pasta de destino do backup incremental",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SmartBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SmartBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SmartBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SmartBackup.bat"
     },
     {
         "name":  "SortByDate",
@@ -2068,8 +2068,8 @@
         "undo":  "Mova os arquivos das pastas Ano\\Mes de volta para a pasta raiz",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortByDate.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortByDate.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortByDate.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortByDate.bat"
     },
     {
         "name":  "SortByExtension",
@@ -2082,8 +2082,8 @@
         "undo":  "Mova os arquivos das subpastas de volta para a pasta raiz",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortByExtension.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortByExtension.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortByExtension.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortByExtension.bat"
     },
     {
         "name":  "SortBySize",
@@ -2096,8 +2096,8 @@
         "undo":  "Mova os arquivos das pastas de faixa de volta para a pasta raiz",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortBySize.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortBySize.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortBySize.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortBySize.bat"
     },
     {
         "name":  "SortDocuments",
@@ -2110,8 +2110,8 @@
         "undo":  "Mova os arquivos da pasta Documentos de volta",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortDocuments.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortDocuments.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortDocuments.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortDocuments.bat"
     },
     {
         "name":  "SortDownloads",
@@ -2124,8 +2124,8 @@
         "undo":  "Mova os arquivos das subpastas de volta para Downloads",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortDownloads.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortDownloads.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortDownloads.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortDownloads.bat"
     },
     {
         "name":  "SortImages",
@@ -2138,8 +2138,8 @@
         "undo":  "Mova os arquivos da pasta Imagens de volta",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortImages.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortImages.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortImages.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortImages.bat"
     },
     {
         "name":  "SortMusic",
@@ -2152,8 +2152,8 @@
         "undo":  "Mova os arquivos da pasta Musicas de volta",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortMusic.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortMusic.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortMusic.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortMusic.bat"
     },
     {
         "name":  "SortVideos",
@@ -2166,8 +2166,8 @@
         "undo":  "Mova os arquivos da pasta Videos de volta",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/files/SortVideos.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/files/SortVideos.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/files/SortVideos.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/files/SortVideos.bat"
     },
     {
         "name":  "ASCIIArt",
@@ -2180,8 +2180,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/ASCIIArt.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/ASCIIArt.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/ASCIIArt.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/ASCIIArt.bat"
     },
     {
         "name":  "CoinFlip",
@@ -2194,8 +2194,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/CoinFlip.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/CoinFlip.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/CoinFlip.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/CoinFlip.bat"
     },
     {
         "name":  "CountdownGame",
@@ -2208,8 +2208,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/CountdownGame.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/CountdownGame.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/CountdownGame.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/CountdownGame.bat"
     },
     {
         "name":  "Dice",
@@ -2222,8 +2222,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/Dice.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/Dice.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/Dice.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/Dice.bat"
     },
     {
         "name":  "DiscordGaming",
@@ -2236,8 +2236,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/DiscordGaming.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/DiscordGaming.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/DiscordGaming.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/DiscordGaming.bat"
     },
     {
         "name":  "EpicLauncher",
@@ -2250,8 +2250,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/EpicLauncher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/EpicLauncher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/EpicLauncher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/EpicLauncher.bat"
     },
     {
         "name":  "FakeLoading",
@@ -2264,8 +2264,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/FakeLoading.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/FakeLoading.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/FakeLoading.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/FakeLoading.bat"
     },
     {
         "name":  "FakeUpdate",
@@ -2278,8 +2278,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/FakeUpdate.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/FakeUpdate.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/FakeUpdate.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/FakeUpdate.bat"
     },
     {
         "name":  "GameFolder",
@@ -2292,8 +2292,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/GameFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/GameFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/GameFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/GameFolder.bat"
     },
     {
         "name":  "GameLauncher",
@@ -2306,8 +2306,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/GameLauncher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/GameLauncher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/GameLauncher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/GameLauncher.bat"
     },
     {
         "name":  "GameNight",
@@ -2320,8 +2320,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/GameNight.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/GameNight.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/GameNight.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/GameNight.bat"
     },
     {
         "name":  "GamingMode",
@@ -2334,8 +2334,8 @@
         "undo":  "Abra novamente o que foi fechado",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/GamingMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/GamingMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/GamingMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/GamingMode.bat"
     },
     {
         "name":  "GuessNumber",
@@ -2348,8 +2348,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/GuessNumber.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/GuessNumber.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/GuessNumber.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/GuessNumber.bat"
     },
     {
         "name":  "HackerTerminal",
@@ -2362,8 +2362,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/HackerTerminal.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/HackerTerminal.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/HackerTerminal.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/HackerTerminal.bat"
     },
     {
         "name":  "MatrixEffect",
@@ -2376,8 +2376,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/MatrixEffect.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/MatrixEffect.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/MatrixEffect.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/MatrixEffect.bat"
     },
     {
         "name":  "MinecraftLauncher",
@@ -2390,8 +2390,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/MinecraftLauncher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/MinecraftLauncher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/MinecraftLauncher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/MinecraftLauncher.bat"
     },
     {
         "name":  "RainEffect",
@@ -2404,8 +2404,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RainEffect.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RainEffect.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RainEffect.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RainEffect.bat"
     },
     {
         "name":  "RandomChallenge",
@@ -2418,8 +2418,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RandomChallenge.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RandomChallenge.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RandomChallenge.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RandomChallenge.bat"
     },
     {
         "name":  "RandomColor",
@@ -2432,8 +2432,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RandomColor.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RandomColor.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RandomColor.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RandomColor.bat"
     },
     {
         "name":  "RandomGame",
@@ -2446,8 +2446,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RandomGame.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RandomGame.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RandomGame.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RandomGame.bat"
     },
     {
         "name":  "RandomNumber",
@@ -2460,8 +2460,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RandomNumber.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RandomNumber.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RandomNumber.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RandomNumber.bat"
     },
     {
         "name":  "ReactionTest",
@@ -2474,8 +2474,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/ReactionTest.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/ReactionTest.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/ReactionTest.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/ReactionTest.bat"
     },
     {
         "name":  "RobloxLauncher",
@@ -2488,8 +2488,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RobloxLauncher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RobloxLauncher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RobloxLauncher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RobloxLauncher.bat"
     },
     {
         "name":  "RockPaperScissors",
@@ -2502,8 +2502,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/RockPaperScissors.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/RockPaperScissors.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/RockPaperScissors.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/RockPaperScissors.bat"
     },
     {
         "name":  "Snake",
@@ -2516,8 +2516,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "3.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/Snake.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/Snake.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/Snake.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/Snake.bat"
     },
     {
         "name":  "SteamLauncher",
@@ -2530,8 +2530,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/SteamLauncher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/SteamLauncher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/SteamLauncher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/SteamLauncher.bat"
     },
     {
         "name":  "TerminalClock",
@@ -2544,8 +2544,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/TerminalClock.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/TerminalClock.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/TerminalClock.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/TerminalClock.bat"
     },
     {
         "name":  "TerminalMusic",
@@ -2558,8 +2558,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/TerminalMusic.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/TerminalMusic.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/TerminalMusic.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/TerminalMusic.bat"
     },
     {
         "name":  "TicTacToe",
@@ -2572,8 +2572,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "2.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/TicTacToe.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/TicTacToe.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/TicTacToe.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/TicTacToe.bat"
     },
     {
         "name":  "TypingTest",
@@ -2586,8 +2586,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/games/TypingTest.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/games/TypingTest.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/games/TypingTest.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/games/TypingTest.bat"
     },
     {
         "name":  "AudioOrganizer",
@@ -2600,8 +2600,8 @@
         "undo":  "Mova os arquivos das subpastas de tipo de volta para a raiz de Music",
         "version":  "1.0.0",
         "size":  "2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/AudioOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/AudioOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/AudioOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/AudioOrganizer.bat"
     },
     {
         "name":  "CreateScreenshotFolder",
@@ -2614,8 +2614,8 @@
         "undo":  "Apague a pasta do dia criada em Pictures\\Screenshots",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/CreateScreenshotFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/CreateScreenshotFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/CreateScreenshotFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/CreateScreenshotFolder.bat"
     },
     {
         "name":  "CreatorMode",
@@ -2628,8 +2628,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/CreatorMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/CreatorMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/CreatorMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/CreatorMode.bat"
     },
     {
         "name":  "DesktopOrganizer",
@@ -2642,8 +2642,8 @@
         "undo":  "Mova os arquivos de Desktop\\Organizado de volta para a area de trabalho",
         "version":  "1.0.0",
         "size":  "2.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/DesktopOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/DesktopOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/DesktopOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/DesktopOrganizer.bat"
     },
     {
         "name":  "DocumentOrganizer",
@@ -2656,8 +2656,8 @@
         "undo":  "Mova os arquivos das subpastas de categoria de volta para a raiz de Documents",
         "version":  "1.0.0",
         "size":  "2.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/DocumentOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/DocumentOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/DocumentOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/DocumentOrganizer.bat"
     },
     {
         "name":  "ImageOrganizer",
@@ -2670,8 +2670,8 @@
         "undo":  "Mova os arquivos das subpastas AAAA-MM de volta para a raiz de Pictures",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/ImageOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/ImageOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/ImageOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/ImageOrganizer.bat"
     },
     {
         "name":  "LaunchBrowser",
@@ -2684,8 +2684,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/LaunchBrowser.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/LaunchBrowser.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/LaunchBrowser.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/LaunchBrowser.bat"
     },
     {
         "name":  "LaunchDiscord",
@@ -2698,8 +2698,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/LaunchDiscord.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/LaunchDiscord.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/LaunchDiscord.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/LaunchDiscord.bat"
     },
     {
         "name":  "LaunchOBS",
@@ -2712,8 +2712,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/LaunchOBS.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/LaunchOBS.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/LaunchOBS.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/LaunchOBS.bat"
     },
     {
         "name":  "LaunchSpotify",
@@ -2726,8 +2726,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/LaunchSpotify.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/LaunchSpotify.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/LaunchSpotify.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/LaunchSpotify.bat"
     },
     {
         "name":  "MediaArchive",
@@ -2740,8 +2740,8 @@
         "undo":  "Exclua o ZIP gerado na pasta Documentos (as origens nao sao alteradas)",
         "version":  "1.0.0",
         "size":  "2.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/MediaArchive.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/MediaArchive.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/MediaArchive.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/MediaArchive.bat"
     },
     {
         "name":  "MediaBackup",
@@ -2754,8 +2754,8 @@
         "undo":  "Remova a copia criada na pasta de destino (a origem nao foi alterada)",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/MediaBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/MediaBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/MediaBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/MediaBackup.bat"
     },
     {
         "name":  "MusicProjectFolder",
@@ -2768,8 +2768,8 @@
         "undo":  "Apague a pasta do projeto criada",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/MusicProjectFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/MusicProjectFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/MusicProjectFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/MusicProjectFolder.bat"
     },
     {
         "name":  "OpenDownloads",
@@ -2782,8 +2782,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/OpenDownloads.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/OpenDownloads.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/OpenDownloads.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/OpenDownloads.bat"
     },
     {
         "name":  "OpenMediaTools",
@@ -2796,8 +2796,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/OpenMediaTools.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/OpenMediaTools.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/OpenMediaTools.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/OpenMediaTools.bat"
     },
     {
         "name":  "OpenPictures",
@@ -2810,8 +2810,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/OpenPictures.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/OpenPictures.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/OpenPictures.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/OpenPictures.bat"
     },
     {
         "name":  "OpenSocialApps",
@@ -2824,8 +2824,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/OpenSocialApps.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/OpenSocialApps.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/OpenSocialApps.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/OpenSocialApps.bat"
     },
     {
         "name":  "OpenTwitch",
@@ -2838,8 +2838,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/OpenTwitch.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/OpenTwitch.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/OpenTwitch.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/OpenTwitch.bat"
     },
     {
         "name":  "OpenYouTube",
@@ -2852,8 +2852,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/OpenYouTube.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/OpenYouTube.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/OpenYouTube.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/OpenYouTube.bat"
     },
     {
         "name":  "PhotoProjectFolder",
@@ -2866,8 +2866,8 @@
         "undo":  "Apague a pasta do projeto criada",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/PhotoProjectFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/PhotoProjectFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/PhotoProjectFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/PhotoProjectFolder.bat"
     },
     {
         "name":  "PhotoSlideshow",
@@ -2880,8 +2880,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/PhotoSlideshow.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/PhotoSlideshow.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/PhotoSlideshow.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/PhotoSlideshow.bat"
     },
     {
         "name":  "ScreenshotOrganizer",
@@ -2894,8 +2894,8 @@
         "undo":  "Mova os arquivos das subpastas AAAA-MM-DD de volta para a raiz de Pictures\\Screenshots",
         "version":  "1.0.0",
         "size":  "1.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/ScreenshotOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/ScreenshotOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/ScreenshotOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/ScreenshotOrganizer.bat"
     },
     {
         "name":  "VideoOrganizer",
@@ -2908,8 +2908,8 @@
         "undo":  "Mova os arquivos das subpastas AAAA-MM de volta para a raiz de Videos",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/VideoOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/VideoOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/VideoOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/VideoOrganizer.bat"
     },
     {
         "name":  "VideoProjectFolder",
@@ -2922,8 +2922,8 @@
         "undo":  "Apague a pasta do projeto criada",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/VideoProjectFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/VideoProjectFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/VideoProjectFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/VideoProjectFolder.bat"
     },
     {
         "name":  "WallpaperOrganizer",
@@ -2936,8 +2936,8 @@
         "undo":  "Mova os arquivos das subpastas AAAA-MM de volta para a raiz de Pictures\\Wallpapers",
         "version":  "1.0.0",
         "size":  "1.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/media/WallpaperOrganizer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/media/WallpaperOrganizer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/media/WallpaperOrganizer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/media/WallpaperOrganizer.bat"
     },
     {
         "name":  "ConnectionList",
@@ -2950,8 +2950,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/ConnectionList.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/ConnectionList.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/ConnectionList.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/ConnectionList.bat"
     },
     {
         "name":  "ConnectionLogger",
@@ -2964,8 +2964,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/ConnectionLogger.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/ConnectionLogger.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/ConnectionLogger.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/ConnectionLogger.bat"
     },
     {
         "name":  "DNSFlush",
@@ -2978,8 +2978,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/DNSFlush.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/DNSFlush.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/DNSFlush.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/DNSFlush.bat"
     },
     {
         "name":  "DNSLookup",
@@ -2992,8 +2992,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/DNSLookup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/DNSLookup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/DNSLookup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/DNSLookup.bat"
     },
     {
         "name":  "GatewayInfo",
@@ -3006,8 +3006,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/GatewayInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/GatewayInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/GatewayInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/GatewayInfo.bat"
     },
     {
         "name":  "InternetSpeedLauncher",
@@ -3020,8 +3020,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/InternetSpeedLauncher.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/InternetSpeedLauncher.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/InternetSpeedLauncher.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/InternetSpeedLauncher.bat"
     },
     {
         "name":  "InternetTest",
@@ -3034,8 +3034,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/InternetTest.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/InternetTest.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/InternetTest.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/InternetTest.bat"
     },
     {
         "name":  "IPInfo",
@@ -3048,8 +3048,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/IPInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/IPInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/IPInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/IPInfo.bat"
     },
     {
         "name":  "LocalIP",
@@ -3062,8 +3062,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/LocalIP.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/LocalIP.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/LocalIP.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/LocalIP.bat"
     },
     {
         "name":  "NetworkAdapters",
@@ -3076,8 +3076,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/NetworkAdapters.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/NetworkAdapters.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/NetworkAdapters.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/NetworkAdapters.bat"
     },
     {
         "name":  "NetworkDiagnostics",
@@ -3090,8 +3090,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/NetworkDiagnostics.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/NetworkDiagnostics.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/NetworkDiagnostics.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/NetworkDiagnostics.bat"
     },
     {
         "name":  "NetworkInfo",
@@ -3104,8 +3104,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/NetworkInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/NetworkInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/NetworkInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/NetworkInfo.bat"
     },
     {
         "name":  "NetworkReport",
@@ -3118,8 +3118,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/NetworkReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/NetworkReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/NetworkReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/NetworkReport.bat"
     },
     {
         "name":  "NetworkReset",
@@ -3132,8 +3132,8 @@
         "undo":  "Reiniciar o computador; para desfazer use um ponto de restauracao do sistema",
         "version":  "1.0.0",
         "size":  "2.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/NetworkReset.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/NetworkReset.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/NetworkReset.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/NetworkReset.bat"
     },
     {
         "name":  "OpenPorts",
@@ -3146,8 +3146,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/OpenPorts.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/OpenPorts.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/OpenPorts.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/OpenPorts.bat"
     },
     {
         "name":  "PingMonitor",
@@ -3160,8 +3160,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/PingMonitor.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/PingMonitor.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/PingMonitor.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/PingMonitor.bat"
     },
     {
         "name":  "PingTest",
@@ -3174,8 +3174,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/PingTest.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/PingTest.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/PingTest.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/PingTest.bat"
     },
     {
         "name":  "PortCheck",
@@ -3188,8 +3188,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/PortCheck.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/PortCheck.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/PortCheck.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/PortCheck.bat"
     },
     {
         "name":  "PublicIP",
@@ -3202,8 +3202,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/PublicIP.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/PublicIP.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/PublicIP.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/PublicIP.bat"
     },
     {
         "name":  "RestartNetwork",
@@ -3216,8 +3216,8 @@
         "undo":  "Enable-NetAdapter para reabilitar o adaptador manualmente",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/RestartNetwork.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/RestartNetwork.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/RestartNetwork.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/RestartNetwork.bat"
     },
     {
         "name":  "RouteTable",
@@ -3230,8 +3230,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/RouteTable.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/RouteTable.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/RouteTable.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/RouteTable.bat"
     },
     {
         "name":  "TraceRoute",
@@ -3244,8 +3244,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/TraceRoute.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/TraceRoute.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/TraceRoute.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/TraceRoute.bat"
     },
     {
         "name":  "WebsiteAvailability",
@@ -3258,8 +3258,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WebsiteAvailability.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WebsiteAvailability.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WebsiteAvailability.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WebsiteAvailability.bat"
     },
     {
         "name":  "WebsiteMonitor",
@@ -3272,8 +3272,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WebsiteMonitor.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WebsiteMonitor.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WebsiteMonitor.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WebsiteMonitor.bat"
     },
     {
         "name":  "WifiInfo",
@@ -3286,8 +3286,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WifiInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WifiInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WifiInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WifiInfo.bat"
     },
     {
         "name":  "WifiNetworks",
@@ -3300,8 +3300,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WifiNetworks.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WifiNetworks.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WifiNetworks.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WifiNetworks.bat"
     },
     {
         "name":  "WifiPasswordBackup",
@@ -3314,8 +3314,8 @@
         "undo":  "Apagar o arquivo TXT gerado com as senhas",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WifiPasswordBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WifiPasswordBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WifiPasswordBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WifiPasswordBackup.bat"
     },
     {
         "name":  "WifiProfileExport",
@@ -3328,8 +3328,8 @@
         "undo":  "Apagar a pasta de exportacao com os XMLs",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WifiProfileExport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WifiProfileExport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WifiProfileExport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WifiProfileExport.bat"
     },
     {
         "name":  "WifiProfileImport",
@@ -3342,8 +3342,8 @@
         "undo":  "netsh wlan delete profile name do perfil importado",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WifiProfileImport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WifiProfileImport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WifiProfileImport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WifiProfileImport.bat"
     },
     {
         "name":  "WifiSignal",
@@ -3356,8 +3356,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/network/WifiSignal.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/network/WifiSignal.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/network/WifiSignal.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/network/WifiSignal.bat"
     },
     {
         "name":  "BreakReminder",
@@ -3370,8 +3370,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/BreakReminder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/BreakReminder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/BreakReminder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/BreakReminder.bat"
     },
     {
         "name":  "ClientFolder",
@@ -3384,8 +3384,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/ClientFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/ClientFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/ClientFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/ClientFolder.bat"
     },
     {
         "name":  "CopyClipboardToFile",
@@ -3398,8 +3398,8 @@
         "undo":  "Apague o arquivo Clipboard.txt",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/CopyClipboardToFile.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/CopyClipboardToFile.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/CopyClipboardToFile.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/CopyClipboardToFile.bat"
     },
     {
         "name":  "Countdown",
@@ -3412,8 +3412,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/Countdown.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/Countdown.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/Countdown.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/Countdown.bat"
     },
     {
         "name":  "DailyFolder",
@@ -3426,8 +3426,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/DailyFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/DailyFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/DailyFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/DailyFolder.bat"
     },
     {
         "name":  "FocusMode",
@@ -3440,8 +3440,8 @@
         "undo":  "Abra manualmente o que foi fechado",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/FocusMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/FocusMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/FocusMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/FocusMode.bat"
     },
     {
         "name":  "InvoiceFolder",
@@ -3454,8 +3454,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/InvoiceFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/InvoiceFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/InvoiceFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/InvoiceFolder.bat"
     },
     {
         "name":  "MeetingFolder",
@@ -3468,8 +3468,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/MeetingFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/MeetingFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/MeetingFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/MeetingFolder.bat"
     },
     {
         "name":  "MeetingMode",
@@ -3482,8 +3482,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/MeetingMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/MeetingMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/MeetingMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/MeetingMode.bat"
     },
     {
         "name":  "MonthlyFolder",
@@ -3496,8 +3496,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/MonthlyFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/MonthlyFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/MonthlyFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/MonthlyFolder.bat"
     },
     {
         "name":  "NormalizeFileNames",
@@ -3510,8 +3510,8 @@
         "undo":  "Renomeie manualmente para voltar ao original",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/NormalizeFileNames.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/NormalizeFileNames.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/NormalizeFileNames.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/NormalizeFileNames.bat"
     },
     {
         "name":  "OpenDailyApps",
@@ -3524,8 +3524,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/OpenDailyApps.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/OpenDailyApps.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/OpenDailyApps.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/OpenDailyApps.bat"
     },
     {
         "name":  "OpenLastModified",
@@ -3538,8 +3538,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/OpenLastModified.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/OpenLastModified.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/OpenLastModified.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/OpenLastModified.bat"
     },
     {
         "name":  "OpenMultipleFolders",
@@ -3552,8 +3552,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/OpenMultipleFolders.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/OpenMultipleFolders.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/OpenMultipleFolders.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/OpenMultipleFolders.bat"
     },
     {
         "name":  "OpenProject",
@@ -3566,8 +3566,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/OpenProject.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/OpenProject.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/OpenProject.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/OpenProject.bat"
     },
     {
         "name":  "Pomodoro",
@@ -3580,8 +3580,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/Pomodoro.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/Pomodoro.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/Pomodoro.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/Pomodoro.bat"
     },
     {
         "name":  "PresentationMode",
@@ -3594,8 +3594,8 @@
         "undo":  "powercfg /change standby-timeout-ac 30",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/PresentationMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/PresentationMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/PresentationMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/PresentationMode.bat"
     },
     {
         "name":  "ProjectStructure",
@@ -3608,8 +3608,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/ProjectStructure.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/ProjectStructure.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/ProjectStructure.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/ProjectStructure.bat"
     },
     {
         "name":  "QuickCalculator",
@@ -3622,8 +3622,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/QuickCalculator.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/QuickCalculator.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/QuickCalculator.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/QuickCalculator.bat"
     },
     {
         "name":  "QuickNotes",
@@ -3636,8 +3636,8 @@
         "undo":  "Apague a linha do arquivo Notas.txt",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/QuickNotes.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/QuickNotes.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/QuickNotes.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/QuickNotes.bat"
     },
     {
         "name":  "QuickSearch",
@@ -3650,8 +3650,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/QuickSearch.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/QuickSearch.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/QuickSearch.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/QuickSearch.bat"
     },
     {
         "name":  "QuickWorkspace",
@@ -3664,8 +3664,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/QuickWorkspace.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/QuickWorkspace.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/QuickWorkspace.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/QuickWorkspace.bat"
     },
     {
         "name":  "RecentFiles",
@@ -3678,8 +3678,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/RecentFiles.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/RecentFiles.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/RecentFiles.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/RecentFiles.bat"
     },
     {
         "name":  "RemoveSpacesFromNames",
@@ -3692,8 +3692,8 @@
         "undo":  "Renomeie manualmente para voltar ao original",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/RemoveSpacesFromNames.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/RemoveSpacesFromNames.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/RemoveSpacesFromNames.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/RemoveSpacesFromNames.bat"
     },
     {
         "name":  "RenameByDate",
@@ -3706,8 +3706,8 @@
         "undo":  "Remova o prefixo AAAA-MM-DD_ dos nomes",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/RenameByDate.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/RenameByDate.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/RenameByDate.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/RenameByDate.bat"
     },
     {
         "name":  "RenameSequentially",
@@ -3720,8 +3720,8 @@
         "undo":  "Os nomes originais nao sao restaurados - faca backup antes",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/RenameSequentially.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/RenameSequentially.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/RenameSequentially.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/RenameSequentially.bat"
     },
     {
         "name":  "StudyMode",
@@ -3734,8 +3734,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/StudyMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/StudyMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/StudyMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/StudyMode.bat"
     },
     {
         "name":  "TimestampNote",
@@ -3748,8 +3748,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/TimestampNote.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/TimestampNote.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/TimestampNote.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/TimestampNote.bat"
     },
     {
         "name":  "WeeklyFolder",
@@ -3762,8 +3762,8 @@
         "undo":  "Apague a pasta criada",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/WeeklyFolder.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/WeeklyFolder.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/WeeklyFolder.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/WeeklyFolder.bat"
     },
     {
         "name":  "WorkMode",
@@ -3776,8 +3776,8 @@
         "undo":  "N/A",
         "version":  "1.0.0",
         "size":  "0.7 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/productivity/WorkMode.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/productivity/WorkMode.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/productivity/WorkMode.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/productivity/WorkMode.bat"
     },
     {
         "name":  "AdminCheck",
@@ -3790,8 +3790,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/AdminCheck.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/AdminCheck.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/AdminCheck.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/AdminCheck.bat"
     },
     {
         "name":  "BatteryInfo",
@@ -3804,8 +3804,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/BatteryInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/BatteryInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/BatteryInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/BatteryInfo.bat"
     },
     {
         "name":  "CheckDisk",
@@ -3818,8 +3818,8 @@
         "undo":  "N/A - as correcoes do chkdsk nao tem desfazer; faca backup antes",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/CheckDisk.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/CheckDisk.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/CheckDisk.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/CheckDisk.bat"
     },
     {
         "name":  "ClearDNSCache",
@@ -3832,8 +3832,8 @@
         "undo":  "N/A - o cache DNS e reconstruido nas proximas consultas",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/ClearDNSCache.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/ClearDNSCache.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/ClearDNSCache.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/ClearDNSCache.bat"
     },
     {
         "name":  "ClearTemp",
@@ -3846,8 +3846,8 @@
         "undo":  "N/A - arquivos temporarios sao recriados pelo Windows",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/ClearTemp.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/ClearTemp.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/ClearTemp.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/ClearTemp.bat"
     },
     {
         "name":  "ClearThumbnailCache",
@@ -3860,8 +3860,8 @@
         "undo":  "N/A - o cache de miniaturas e recriado automaticamente",
         "version":  "1.0.0",
         "size":  "1.5 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/ClearThumbnailCache.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/ClearThumbnailCache.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/ClearThumbnailCache.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/ClearThumbnailCache.bat"
     },
     {
         "name":  "ClearWindowsCache",
@@ -3874,8 +3874,8 @@
         "undo":  "N/A - os caches serao recriados pelo Windows",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/ClearWindowsCache.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/ClearWindowsCache.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/ClearWindowsCache.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/ClearWindowsCache.bat"
     },
     {
         "name":  "CPUInfo",
@@ -3888,8 +3888,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/CPUInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/CPUInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/CPUInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/CPUInfo.bat"
     },
     {
         "name":  "DiskInfo",
@@ -3902,8 +3902,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/DiskInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/DiskInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/DiskInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/DiskInfo.bat"
     },
     {
         "name":  "DiskSpace",
@@ -3916,8 +3916,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/DiskSpace.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/DiskSpace.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/DiskSpace.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/DiskSpace.bat"
     },
     {
         "name":  "DriverList",
@@ -3930,8 +3930,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/DriverList.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/DriverList.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/DriverList.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/DriverList.bat"
     },
     {
         "name":  "EnvironmentVariables",
@@ -3944,8 +3944,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/EnvironmentVariables.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/EnvironmentVariables.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/EnvironmentVariables.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/EnvironmentVariables.bat"
     },
     {
         "name":  "EventLogExport",
@@ -3958,8 +3958,8 @@
         "undo":  "Apague o arquivo .evtx exportado",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/EventLogExport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/EventLogExport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/EventLogExport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/EventLogExport.bat"
     },
     {
         "name":  "GPUInfo",
@@ -3972,8 +3972,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/GPUInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/GPUInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/GPUInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/GPUInfo.bat"
     },
     {
         "name":  "HardwareInfo",
@@ -3986,8 +3986,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/HardwareInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/HardwareInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/HardwareInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/HardwareInfo.bat"
     },
     {
         "name":  "KillProcess",
@@ -4000,8 +4000,8 @@
         "undo":  "Abra o programa novamente pelo Menu Iniciar ou atalho",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/KillProcess.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/KillProcess.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/KillProcess.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/KillProcess.bat"
     },
     {
         "name":  "MemoryInfo",
@@ -4014,8 +4014,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/MemoryInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/MemoryInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/MemoryInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/MemoryInfo.bat"
     },
     {
         "name":  "PathBackup",
@@ -4028,8 +4028,8 @@
         "undo":  "Apague o arquivo de backup do PATH gerado",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/PathBackup.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/PathBackup.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/PathBackup.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/PathBackup.bat"
     },
     {
         "name":  "PathRestore",
@@ -4042,8 +4042,8 @@
         "undo":  "Restaure o PATH de outro arquivo de backup com PathBackup",
         "version":  "1.0.0",
         "size":  "1.8 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/PathRestore.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/PathRestore.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/PathRestore.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/PathRestore.bat"
     },
     {
         "name":  "PathViewer",
@@ -4056,8 +4056,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.3 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/PathViewer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/PathViewer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/PathViewer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/PathViewer.bat"
     },
     {
         "name":  "RepairSystemFiles",
@@ -4070,8 +4070,8 @@
         "undo":  "N/A - o sfc restaura arquivos a partir do proprio Windows",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/RepairSystemFiles.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/RepairSystemFiles.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/RepairSystemFiles.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/RepairSystemFiles.bat"
     },
     {
         "name":  "RestartComputer",
@@ -4084,8 +4084,8 @@
         "undo":  "Cancele com shutdown /a antes do reinicio",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/RestartComputer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/RestartComputer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/RestartComputer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/RestartComputer.bat"
     },
     {
         "name":  "RestartExplorer",
@@ -4098,8 +4098,8 @@
         "undo":  "N/A (o Explorer e recriado pelo proprio Windows)",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/RestartExplorer.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/RestartExplorer.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/RestartExplorer.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/RestartExplorer.bat"
     },
     {
         "name":  "RunningProcesses",
@@ -4112,8 +4112,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/RunningProcesses.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/RunningProcesses.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/RunningProcesses.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/RunningProcesses.bat"
     },
     {
         "name":  "StartupApps",
@@ -4126,8 +4126,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.4 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/StartupApps.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/StartupApps.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/StartupApps.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/StartupApps.bat"
     },
     {
         "name":  "SystemInfo",
@@ -4140,8 +4140,8 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "0.9 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/SystemInfo.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/SystemInfo.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/SystemInfo.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/SystemInfo.bat"
     },
     {
         "name":  "SystemReport",
@@ -4154,8 +4154,8 @@
         "undo":  "Apague o arquivo TXT do relatorio",
         "version":  "1.0.0",
         "size":  "2.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/SystemReport.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/SystemReport.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/SystemReport.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/SystemReport.bat"
     },
     {
         "name":  "WindowsUpdateCheck",
@@ -4168,8 +4168,8 @@
         "undo":  "N/A - apenas dispara uma busca de atualizacoes",
         "version":  "1.0.0",
         "size":  "1.1 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/WindowsUpdateCheck.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/WindowsUpdateCheck.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/WindowsUpdateCheck.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/WindowsUpdateCheck.bat"
     },
     {
         "name":  "WindowsUpdateTools",
@@ -4182,8 +4182,8 @@
         "undo":  "N/A - acoes do Windows Update sao gerenciadas pelo proprio Windows",
         "version":  "1.0.0",
         "size":  "1.6 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/WindowsUpdateTools.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/WindowsUpdateTools.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/WindowsUpdateTools.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/WindowsUpdateTools.bat"
     },
     {
         "name":  "WindowsVersion",
@@ -4196,7 +4196,7 @@
         "undo":  "N/A (somente leitura)",
         "version":  "1.0.0",
         "size":  "1.2 KB",
-        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/system/WindowsVersion.bat",
-        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/system/WindowsVersion.bat"
+        "download":  "https://raw.githubusercontent.com/SEU_USUARIO/batlab/main/windows/batch/system/WindowsVersion.bat",
+        "source":  "https://github.com/SEU_USUARIO/batlab/blob/main/windows/batch/system/WindowsVersion.bat"
     }
 ]

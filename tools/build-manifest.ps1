@@ -33,7 +33,7 @@ $baseRepo  = "https://github.com/$Owner/$Repo/blob/main"
 $tools = @()
 $bad   = @()
 
-Get-ChildItem -LiteralPath $root -Directory |
+Get-ChildItem -LiteralPath (Join-Path $root 'windows\batch') -Directory |
     Where-Object { $_.Name -notin @('site', 'tools', 'docs', '.git') } |
     Sort-Object Name |
     ForEach-Object {
@@ -65,7 +65,8 @@ Get-ChildItem -LiteralPath $root -Directory |
             }
 
             $kb = [math]::Round($f.Length / 1KB, 1)
-            $rel = "$($catDir.Name)/$($f.Name)"
+            $relDir = $catDir.FullName.Substring($root.Length + 1) -replace '\\', '/'
+            $rel = "$relDir/$($f.Name)"
             $tools += [pscustomobject]@{
                 name        = [System.IO.Path]::GetFileNameWithoutExtension($f.Name)
                 file        = $f.Name
