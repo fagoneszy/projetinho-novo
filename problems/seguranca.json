@@ -1,0 +1,8 @@
+{
+  "id": "seguranca",
+  "order": 6,
+  "title": "Revisar a segurança do PC",
+  "desc": "Auditoria de portas, firewall, contas, eventos e programas suspeitos. Veja o que está exposto antes que vire problema.",
+  "keywords": ["segurança", "vírus", "virus", "malware", "firewall", "portas", "invasão", "suspeito", "auditoria", "defender"],
+  "tools": ["fulldiagnostic", "windowsdefenderstatus", "firewallstatus", "firewallrules", "listeningports", "openports", "securityeventreport", "recentfilesaudit", "installedprograms", "recentlyinstalled", "adminusers", "useraccounts", "activesessions", "loggedusers", "scheduledtaskaudit", "startupaudit", "openhostsfile"]
+}

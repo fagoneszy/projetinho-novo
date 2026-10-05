@@ -1,0 +1,8 @@
+{
+  "id": "git-fluxo",
+  "order": 11,
+  "title": "Git: erros e fluxo diário",
+  "desc": "Status, commit, push e pull na ponta do dedo, com backup automático do repositório e criação de branches.",
+  "keywords": ["git", "commit", "push", "pull", "repositório", "branch", "merge", "versionamento", "backup"],
+  "tools": ["gitstatus", "gitcommit", "gitquickcommit", "gitpush", "gitpull", "gitbackup", "autogitcommit", "autogitbackup", "gitbranchcreator", "opengitbashhere", "projecttree"]
+}

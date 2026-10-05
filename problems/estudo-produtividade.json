@@ -1,0 +1,8 @@
+{
+  "id": "estudo-produtividade",
+  "order": 13,
+  "title": "Focar, estudar e trabalhar",
+  "desc": "Modos de foco, pomodoro, lembretes de pausa e atalhos para abrir o ambiente de estudo ou reunião.",
+  "keywords": ["foco", "estudo", "pomodoro", "produtividade", "trabalho", "reunião", "apresentação", "concentração", "pausa"],
+  "tools": ["focusmode", "studymode", "workmode", "pomodoro", "breakreminder", "countdown", "presentationmode", "meetingmode", "quicknotes", "timestampnote", "copyclipboardtofile", "quicksearch", "openproject", "openmultiplefolders", "quickworkspace", "recentfiles", "openlastmodified", "opendailyapps"]
+}

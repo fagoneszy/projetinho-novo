@@ -1,0 +1,8 @@
+{
+  "id": "automatizar",
+  "order": 15,
+  "title": "Automatizar tarefas repetitivas",
+  "desc": "Backups, limpezas, relatórios e desligamento em horário. Monte rotinas com tarefas agendadas e watchers.",
+  "keywords": ["automatizar", "agendado", "tarefa", "rotina", "timer", "recorrente", "limpeza automática", "horário"],
+  "tools": ["automationmenu", "dailytaskcreator", "weeklytaskcreator", "scheduledbackup", "scheduledcleanup", "scheduledprogram", "scheduledrestart", "scheduledshutdown", "tasklist", "taskmanager", "taskenable", "taskdisable", "taskdelete", "filewatcher", "folderwatcher", "autologgenerator", "autoreportgenerator", "autonetworkmonitor", "autoprocessmonitor", "autodownloadorganizer", "autoorganize", "autostartupmanager", "shutdowntimer", "restarttimer", "sleeptimer"]
+}

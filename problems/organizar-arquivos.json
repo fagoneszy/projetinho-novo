@@ -1,0 +1,8 @@
+{
+  "id": "organizar-arquivos",
+  "order": 3,
+  "title": "Organizar arquivos e pastas",
+  "desc": "Downloads, documentos e imagens espalhados. Some, renomeie em massa, classifique por tipo/data e gere relatórios do que você tem.",
+  "keywords": ["organizar", "pastas", "arquivos", "renomear", "classificar", "bagunça", "ordenar", "downloads", "duplicados"],
+  "tools": ["autoorganize", "sortbydate", "sortbyextension", "sortbysize", "sortdocuments", "sortdownloads", "sortimages", "sortmusic", "sortvideos", "bulkrename", "renamebydate", "renamesequentially", "normalizefilenames", "removespacesfromnames", "foldertree", "duplicatefinder", "exportfilelist", "exportfilelistcsv", "extensionreport", "filecounter", "mergefolders", "comparefolders"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "containers-wsl",
+  "order": 12,
+  "title": "Containers e WSL",
+  "desc": "Preparar o PC para Docker e WSL: ferramentas de build, terminal e manutenção de dependências do projeto.",
+  "keywords": ["docker", "wsl", "container", "linux", "ubuntu", "imagem", "build", "deploy"],
+  "tools": ["devenvironment", "buildproject", "cleanbuild", "runtests", "openterminalhere", "devserver"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "dev-ambiente",
+  "order": 10,
+  "title": "Montar ambiente de programação",
+  "desc": "Crie a estrutura do projeto, venv, dependências, abra o terminal certo e rode testes sem decorar comandos.",
+  "keywords": ["programação", "dev", "ambiente", "python", "node", "java", "rust", "go", "c++", "venv", "código"],
+  "tools": ["devenvironment", "pythonproject", "nodeproject", "javaproject", "rustproject", "goproject", "cproject", "cppproject", "projectinit", "createvenv", "activatevenv", "installrequirements", "openvscode", "openterminalhere", "opengitbashhere", "runtests", "devserver", "countcodelines", "findtodo"]
+}

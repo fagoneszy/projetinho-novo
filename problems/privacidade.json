@@ -1,0 +1,8 @@
+{
+  "id": "privacidade",
+  "order": 7,
+  "title": "Privacidade e dados",
+  "desc": "Controle o que o Windows coleta, revise histórico, sessões ativas e o hosts file. Menos rastreamento, mais controle.",
+  "keywords": ["privacidade", "rastreamento", "rastrear", "telemetria", "histórico", "dados", "sessões", "hosts"],
+  "tools": ["openprivacysettings", "openhostsfile", "recentfilesaudit", "activesessions", "loggedusers", "securityeventreport", "clearthumbnailcache", "wifipasswordbackup"]
+}

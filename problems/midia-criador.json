@@ -1,0 +1,8 @@
+{
+  "id": "midia-criador",
+  "order": 16,
+  "title": "Organizar mídia e criador de conteúdo",
+  "desc": "Fotos, vídeos e músicas catalogados, pastas de projeto prontas e abertura rápida do setup de stream/criação.",
+  "keywords": ["mídia", "midia", "fotos", "vídeos", "música", "criador", "streamer", "obs", "organizar", "wallpaper"],
+  "tools": ["imageorganizer", "videoorganizer", "audioorganizer", "screenshotorganizer", "wallpaperorganizer", "desktoporganizer", "documentorganizer", "photoprojectfolder", "videoprojectfolder", "musicprojectfolder", "mediabackup", "mediaarchive", "creatormode", "launchobs", "launchdiscord", "launchspotify", "opentwitch", "openyoutube", "opensocialapps", "photoslideshow", "createscreenshotfolder", "opendownloads", "openpictures", "openmediatools", "launchbrowser"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "rede-problemas",
+  "order": 5,
+  "title": "Internet e rede não funcionam",
+  "desc": "Sem conexão, DNS falhando ou Wi-Fi fraco. Teste, diagnostique, limpe o DNS e reinicie a rede com um clique.",
+  "keywords": ["internet", "rede", "wi-fi", "wifi", "dns", "conexão", "ip", "lentidão", "caiu", "ping"],
+  "tools": ["internettest", "pingtest", "pingmonitor", "dnsflush", "cleardnscache", "dnslookup", "networkdiagnostics", "networkreset", "restartnetwork", "gatewayinfo", "ipinfo", "localip", "publicip", "wifiinfo", "wifisignal", "wifinetworks", "traceroute", "routetable", "connectionlist", "networkinfo", "networkreport", "opennetworksettings"]
+}

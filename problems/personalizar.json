@@ -1,0 +1,8 @@
+{
+  "id": "personalizar",
+  "order": 14,
+  "title": "Personalizar o Windows",
+  "desc": "Tema claro/escuro, opções do Explorer, atalhos, variáveis de ambiente e tweaks de aparência e comportamento.",
+  "keywords": ["personalizar", "aparência", "tema", "dark mode", "atalho", "explorer", "customizar", "extensões", "ocultos"],
+  "tools": ["darkmode", "lightmode", "toggledarkmode", "hidefileextensions", "showfileextensions", "hidehiddenfiles", "showhiddenfiles", "enabledevelopermode", "disabledevelopermode", "desktoprefresh", "createdesktopshortcut", "createstartmenushortcut", "environmentvariables", "pathviewer", "opentemp", "opensystem32"]
+}

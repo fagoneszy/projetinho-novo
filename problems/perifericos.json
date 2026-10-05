@@ -1,0 +1,8 @@
+{
+  "id": "perifericos",
+  "order": 9,
+  "title": "Impressora e periféricos",
+  "desc": "Impressora não imprime, bluetooth ausente, som ou mouse estranhando. Reinicie o spooler, confira drivers e dispositivos.",
+  "keywords": ["impressora", "printer", "spooler", "bluetooth", "mouse", "som", "áudio", "driver", "periférico", "dispositivo"],
+  "tools": ["restartprintspooler", "opendevicemanager", "driverlist", "hardwareinfo", "opensoundsettings", "openbluetoothsettings", "openmousesettings", "batteryinfo", "gpuinfo"]
+}

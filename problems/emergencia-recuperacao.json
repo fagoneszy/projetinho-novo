@@ -1,0 +1,8 @@
+{
+  "id": "emergencia-recuperacao",
+  "order": 17,
+  "title": "Emergência: o sistema quebrou",
+  "desc": "Tela travada, quer reiniciar em segurança ou resgatar o PATH. Ações de recuperação com desfazer sempre visível.",
+  "keywords": ["emergência", "emergencia", "travou", "reiniciar", "recuperar", "desligar", "blue screen", "problema", "reparo"],
+  "tools": ["quickrestart", "quickshutdown", "restartcomputer", "restartexplorer", "repairsystemfiles", "checkdisk", "diskhealthreport", "systemhealthreport", "eventlogexport", "pathbackup", "pathrestore", "restorebackup", "fulldiagnostic", "systemreport", "systemeventreport", "windowsquicktools", "admincheck", "lockcomputer"]
+}

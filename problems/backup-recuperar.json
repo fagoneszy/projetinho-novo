@@ -1,0 +1,8 @@
+{
+  "id": "backup-recuperar",
+  "order": 4,
+  "title": "Fazer backup e recuperar",
+  "desc": "Proteja pastas importantes, agende cópias automáticas e saiba como restaurar quando algo sumir. Inclui backup do Wi-Fi e do PATH.",
+  "keywords": ["backup", "restaurar", "recuperar", "cópia", "restore", "segurança", "perdi", "zip", "espelho"],
+  "tools": ["autobackup", "scheduledbackup", "smartbackup", "backupfolder", "archivefolder", "restorebackup", "mirrorfolder", "wifipasswordbackup", "pathbackup", "pathrestore", "autoprojectbackup", "mediabackup"]
+}
