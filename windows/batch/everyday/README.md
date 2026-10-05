@@ -31,7 +31,8 @@
 * **Risco / Risk** — 🟢 `low`: somente leitura / read-only. 🟡 `medium`:
   modifica algo e pede confirmacao / changes something and asks first.
   🔴 `high`: exclui ou altera o sistema com confirmacao dupla / destructive,
-  double confirmation.
+  double confirmation. ⚫ `critical`: exige digitar a confirmacao /
+  requires typed confirmation.
 * **Desfazer / Undo** — como reverter / how to revert.
 
 Veja tambem / see also: [RISCOS.md](../../docs/RISCOS.md) •

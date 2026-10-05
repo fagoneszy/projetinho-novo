@@ -4,5 +4,5 @@
   "title": "Disco cheio, sem espaço",
   "desc": "O disco está lotado e você não sabe o que apagar. Encontre os maiores arquivos, duplicatas, lixo e caches com segurança.",
   "keywords": ["disco", "cheio", "espaço", "armazenamento", "gb", "limpar", "lixo", "cache", "espaco"],
-  "tools": ["diskspace", "largefiles", "oldfiles", "cleandownloads", "emptyrecyclebin", "emptyfolders", "cleartemp", "duplicatefinder", "foldersize", "archivefolder", "cleanbuild", "diskinfo"]
+  "tools": ["diskspace", "largefiles", "oldfiles", "cleandownloads", "emptyrecyclebin", "emptyfolders", "cleartemp", "duplicatefinder", "foldersize", "archivefolder", "cleanbuild", "diskinfo", "emergencydiskreport", "drivehealthcheck"]
 }

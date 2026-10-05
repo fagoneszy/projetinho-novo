@@ -20,6 +20,11 @@ $titles = @{
     'automation'    = 'Automacao / Automation & tasks'
     'diagnostics'   = 'Seguranca e diagnostico / Security & diagnostics'
     'everyday'      = 'Usuarios comuns / Everyday users'
+    'system-diagnosis' = 'Diagnostico de inicializacao e eventos / Startup & event diagnosis'
+    'windows-update'   = 'Windows Update / Windows Update'
+    'storage-advanced' = 'Saude e espaco de discos / Disk health & space'
+    'privacy'          = 'Privacidade e telemetria / Privacy & telemetry'
+    'emergency'        = 'Acoes de emergencia / Emergency actions'
 }
 $descriptions = @{
     'productivity'  = 'Pastas, anotacoes, foco e atalhos do dia a dia de trabalho. / Folders, notes, focus and daily work shortcuts.'
@@ -33,6 +38,11 @@ $descriptions = @{
     'automation'    = 'Backups, tarefas agendadas e monitores automaticos. / Backups, scheduled tasks and automatic monitors.'
     'diagnostics'   = 'Auditoria de seguranca, portas, eventos e programas. / Security audit, ports, events and installed programs.'
     'everyday'      = 'Acoes simples de todo dia para usuarios comuns. / Simple everyday actions for regular users.'
+    'system-diagnosis' = 'Boot, eventos criticos e historico de falhas. / Boot, critical events and failure history.'
+    'windows-update'   = 'Status, reparo e manutencao do Windows Update. / Windows Update status, repair and maintenance.'
+    'storage-advanced' = 'Saude SMART, temperatura e espaco dos discos. / SMART health, temperature and disk space.'
+    'privacy'          = 'Telemetria, anuncios, permissoes e historico. / Telemetry, ads, permissions and history.'
+    'emergency'        = 'Relatorios rapidos quando algo quebrou. / Quick reports when something broke.'
 }
 
 function Esc($s) { if ($null -eq $s) { return '' }; ($s -replace '\|', '\|') -replace '\s+$', '' }
@@ -55,7 +65,7 @@ Get-ChildItem -LiteralPath (Join-Path $root 'windows\batch') -Directory |
             }
             $admin = if ($meta['admin'] -eq 'yes') { 'sim' } else { 'no' }
             $risk  = $meta['risk']; if (-not $risk) { $risk = 'low' }
-            $riskIco = switch ($risk) { 'high' { '🔴' } 'medium' { '🟡' } default { '🟢' } }
+            $riskIco = switch ($risk) { 'high' { '🔴' } 'medium' { '🟡' } 'critical' { '⚫' } default { '🟢' } }
             $undo = Esc $meta['undo']; if (-not $undo) { $undo = 'N/A' }
             "| [$($f.Name)]($($f.Name)) | $(Esc $meta['desc']) | $admin | $riskIco ``$risk`` | $undo |"
         }
@@ -75,7 +85,8 @@ $($rows -join "`n")
 * **Risco / Risk** — 🟢 ``low``: somente leitura / read-only. 🟡 ``medium``:
   modifica algo e pede confirmacao / changes something and asks first.
   🔴 ``high``: exclui ou altera o sistema com confirmacao dupla / destructive,
-  double confirmation.
+  double confirmation. ⚫ ``critical``: exige digitar a confirmacao /
+  requires typed confirmation.
 * **Desfazer / Undo** — como reverter / how to revert.
 
 Veja tambem / see also: [RISCOS.md](../../docs/RISCOS.md) •
@@ -87,4 +98,15 @@ Veja tambem / see also: [RISCOS.md](../../docs/RISCOS.md) •
     }
 
 Write-Host "READMEs gerados. Total: $total"
-if ($total -ne 300) { Write-Host "ERRO: esperado 300, obtido $total" -ForegroundColor Red; exit 1 }
+
+# confere contra o manifest (site/projects.json) quando existir
+$pjPath = Join-Path $root 'site\projects.json'
+if (Test-Path -LiteralPath $pjPath) {
+    $pj = Get-Content -LiteralPath $pjPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    $expected = @($pj | Where-Object { $_.platform -eq 'windows' }).Count
+    if ($total -ne $expected) {
+        Write-Host "ERRO: esperado $expected (manifest), obtido $total" -ForegroundColor Red
+        exit 1
+    }
+    Write-Host "OK: total bate com o manifest ($expected ferramentas windows)"
+}

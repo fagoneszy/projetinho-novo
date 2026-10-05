@@ -1,0 +1,9 @@
+# BATLAB — normalizacao de fim de linha (obrigatorio p/ multiplataforma)
+*.bat   text eol=crlf
+*.sh    text eol=lf
+*.ps1   text eol=crlf
+*.json  text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+SHA256SUMS.txt text eol=lf

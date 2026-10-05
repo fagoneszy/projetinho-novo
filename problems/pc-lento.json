@@ -4,5 +4,5 @@
   "title": "Meu PC está lento",
   "desc": "O computador travou, demora para abrir programas ou o uso de CPU/memória está alto. Ferramentas para diagnosticar e aliviar o sistema.",
   "keywords": ["lento", "lentidão", "travando", "travado", "lague", "desempenho", "performance", "cpu", "memória", "processos"],
-  "tools": ["cleartemp", "clearthumbnailcache", "clearwindowscache", "killprocess", "runningprocesses", "startupapps", "startupaudit", "autostartupmanager", "taskmanager", "systemhealthreport", "memoryinfo", "cpuinfo", "autocleanup"]
+  "tools": ["cleartemp", "clearthumbnailcache", "clearwindowscache", "killprocess", "runningprocesses", "startupapps", "startupaudit", "autostartupmanager", "taskmanager", "systemhealthreport", "memoryinfo", "cpuinfo", "autocleanup", "boottimereport"]
 }

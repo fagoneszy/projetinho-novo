@@ -29,7 +29,8 @@
                       "systemhealthreport",
                       "memoryinfo",
                       "cpuinfo",
-                      "autocleanup"
+                      "autocleanup",
+                      "boottimereport"
                   ]
     },
     {
@@ -60,7 +61,9 @@
                       "foldersize",
                       "archivefolder",
                       "cleanbuild",
-                      "diskinfo"
+                      "diskinfo",
+                      "emergencydiskreport",
+                      "drivehealthcheck"
                   ]
     },
     {
@@ -237,7 +240,8 @@
                       "loggedusers",
                       "securityeventreport",
                       "clearthumbnailcache",
-                      "wifipasswordbackup"
+                      "wifipasswordbackup",
+                      "privacyaudit"
                   ]
     },
     {
@@ -263,7 +267,8 @@
                       "systemhealthreport",
                       "eventlogexport",
                       "windowsversion",
-                      "openwindowsupdate"
+                      "openwindowsupdate",
+                      "updateservicerepair"
                   ]
     },
     {
@@ -583,7 +588,8 @@
                       "systemeventreport",
                       "windowsquicktools",
                       "admincheck",
-                      "lockcomputer"
+                      "lockcomputer",
+                      "emergencydiskreport"
                   ]
     }
 ]
