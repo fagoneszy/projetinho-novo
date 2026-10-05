@@ -26,6 +26,7 @@ $titles = @{
     'privacy'          = 'Privacidade e telemetria / Privacy & telemetry'
     'emergency'        = 'Acoes de emergencia / Emergency actions'
     'network-advanced' = 'Rede avancada e conectividade / Advanced network & connectivity'
+    'security-audit'   = 'Auditoria e postura de seguranca / Security audit & posture'
 }
 $descriptions = @{
     'productivity'  = 'Pastas, anotacoes, foco e atalhos do dia a dia de trabalho. / Folders, notes, focus and daily work shortcuts.'
@@ -45,6 +46,7 @@ $descriptions = @{
     'privacy'          = 'Telemetria, anuncios, permissoes e historico. / Telemetry, ads, permissions and history.'
     'emergency'        = 'Relatorios rapidos quando algo quebrou. / Quick reports when something broke.'
     'network-advanced' = 'DNS, DHCP, Wi-Fi, VPN, rotas e reset de rede. / DNS, DHCP, Wi-Fi, VPN, routes and network reset.'
+    'security-audit'   = 'Firewall, contas, logs, BitLocker, TPM e postura. / Firewall, accounts, logs, BitLocker, TPM and posture.'
 }
 
 function Esc($s) { if ($null -eq $s) { return '' }; ($s -replace '\|', '\|') -replace '\s+$', '' }
