@@ -192,7 +192,23 @@
                       "connectionlist",
                       "networkinfo",
                       "networkreport",
-                      "opennetworksettings"
+                      "opennetworksettings",
+                      "dnshealthcheck",
+                      "dnslatencytest",
+                      "gatewayreachability",
+                      "packetlossmonitor",
+                      "jittermonitor",
+                      "wifidisconnectlogger",
+                      "wifireconnecthelper",
+                      "ethernetdiagnostic",
+                      "proxydetector",
+                      "captiveportaldetector",
+                      "internetrouteanalyzer",
+                      "networkincidentreport",
+                      "networkemergencyreset",
+                      "dhcpleasereport",
+                      "mtutest",
+                      "dualstacktest"
                   ]
     },
     {

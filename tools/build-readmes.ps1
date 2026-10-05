@@ -25,6 +25,7 @@ $titles = @{
     'storage-advanced' = 'Saude e espaco de discos / Disk health & space'
     'privacy'          = 'Privacidade e telemetria / Privacy & telemetry'
     'emergency'        = 'Acoes de emergencia / Emergency actions'
+    'network-advanced' = 'Rede avancada e conectividade / Advanced network & connectivity'
 }
 $descriptions = @{
     'productivity'  = 'Pastas, anotacoes, foco e atalhos do dia a dia de trabalho. / Folders, notes, focus and daily work shortcuts.'
@@ -43,6 +44,7 @@ $descriptions = @{
     'storage-advanced' = 'Saude SMART, temperatura e espaco dos discos. / SMART health, temperature and disk space.'
     'privacy'          = 'Telemetria, anuncios, permissoes e historico. / Telemetry, ads, permissions and history.'
     'emergency'        = 'Relatorios rapidos quando algo quebrou. / Quick reports when something broke.'
+    'network-advanced' = 'DNS, DHCP, Wi-Fi, VPN, rotas e reset de rede. / DNS, DHCP, Wi-Fi, VPN, routes and network reset.'
 }
 
 function Esc($s) { if ($null -eq $s) { return '' }; ($s -replace '\|', '\|') -replace '\s+$', '' }
