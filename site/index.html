@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BATLAB — 300 ferramentas .bat para Windows</title>
-<meta name="description" content="BATLAB: 300 microutilitarios .bat para Windows 10/11, organizados em 11 categorias. Busque, veja o risco e baixe direto.">
+<title>BATLAB — microutilitários multiplataforma</title>
+<meta name="description" content="BATLAB: microutilitarios .bat para Windows, .sh para Linux/macOS e scripts Android (adb). Busque por problema, plataforma ou categoria, veja risco e baixe direto.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,11 +12,12 @@
 <header class="hero">
   <div class="wrap">
     <h1><span class="prompt">&gt;_</span> BATLAB</h1>
-    <p class="tagline">Tiny Windows tools. Open source. Free forever.</p>
+    <p class="tagline">Tiny tools. One job each. Open source. Free forever.</p>
     <p class="lead">
-      <strong>300</strong> microutilitários <code>.bat</code> para Windows 10/11 —
-      um arquivo, um trabalho, sem instalação. Cada script declara no cabeçalho
-      se precisa de administrador e qual o nível de risco.
+      Um arquivo, um trabalho, sem instalação. Escolha a porta de entrada:
+      <strong>problema</strong>, <strong>categoria</strong> ou
+      <strong>plataforma</strong>. Cada ferramenta declara no cabeçalho se pede
+      administrador, o nível de risco e como desfazer.
     </p>
     <div id="stats" class="stats"></div>
   </div>
@@ -24,10 +25,15 @@
 
 <section class="controls">
   <div class="wrap">
+    <div id="doors" class="doors" role="tablist" aria-label="Portas de entrada">
+      <button class="door active" data-view="problems" role="tab">🩺 Por problema</button>
+      <button class="door" data-view="cats" role="tab">🗂 Por categoria</button>
+      <button class="door" data-view="platforms" role="tab">🧩 Por plataforma</button>
+    </div>
     <input id="q" type="search" autocomplete="off"
-           placeholder="Buscar ferramenta… (ex.: backup, wifi, git, limpar)"
-           aria-label="Buscar ferramenta">
-    <div id="chips" class="chips" role="tablist" aria-label="Categorias"></div>
+           placeholder="Buscar… (ex.: backup, wifi, git, limpar, pc lento)"
+           aria-label="Buscar">
+    <div id="chips" class="chips"></div>
     <div class="meta">
       <span id="count"></span>
       <label class="admin-filter">
@@ -38,6 +44,7 @@
 </section>
 
 <main class="wrap">
+  <div id="problems" class="plist"></div>
   <div id="grid" class="grid"></div>
   <p id="empty" class="empty" hidden>Nada encontrado. Tente outra palavra.</p>
 </main>
@@ -50,8 +57,9 @@
       como usar: baixe, dê dois cliques, use.
     </p>
     <p class="hint">
-      Risco 🟢 somente leitura · 🟡 modifica e pede confirmação ·
-      🔴 destrutivo com confirmação dupla.
+      Risco 🟢 somente leitura · 🟡 modifica com confirmação ·
+      🔴 destrutivo com confirmação dupla · ⚫ crítico (digitação obrigatória).
+      Clique no hash SHA-256 do card para copiar.
     </p>
   </div>
 </footer>
