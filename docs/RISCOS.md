@@ -68,11 +68,16 @@ Como atribuir:
 
 ## Admin (`@admin yes`)
 
-- Verificar elevação com `net session >nul 2>&1` e **abortar com mensagem
-  clara** se não for admin — nunca falhar em silêncio no meio.
+- Verificar elevação com `net session >nul 2>&1` — **nunca falhar em
+  silêncio** no meio da execução.
+- Quando a **ação principal** exige admin (parar serviço, `sfc`, `chkdsk /f`):
+  abortar com mensagem clara antes de começar.
+- Quando é só um **relatório** que perde seções sem admin (log de
+  diagnóstico, `HKLM`…): aviso no topo + continuação com seções degradadas
+  é aceitável — declare `@admin yes` assim mesmo.
 - Preferir operações que funcionam sem admin; só exigir quando o comando
-  nativo realmente exigir (`sfc`, `chkdsk /f`, `schtasks /create` em pasta
-  protegida, chaves `HKLM`, etc).
+  nativo realmente exigir (`schtasks /create` em pasta protegida, chaves
+  `HKLM`, etc).
 
 ## Dados sensíveis
 

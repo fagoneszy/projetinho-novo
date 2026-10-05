@@ -30,7 +30,11 @@
                       "memoryinfo",
                       "cpuinfo",
                       "autocleanup",
-                      "boottimereport"
+                      "boottimereport",
+                      "highcpudetector",
+                      "highmemorydetector",
+                      "hungprocessdetector",
+                      "systemloadmonitor"
                   ]
     },
     {
@@ -589,7 +593,9 @@
                       "windowsquicktools",
                       "admincheck",
                       "lockcomputer",
-                      "emergencydiskreport"
+                      "emergencydiskreport",
+                      "emergencydiagnostics",
+                      "bootdiagnostic"
                   ]
     }
 ]
