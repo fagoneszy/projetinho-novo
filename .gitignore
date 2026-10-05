@@ -15,7 +15,3 @@ Relatorios/
 # Ambientes Python gerados por scripts
 .venv/
 __pycache__/
-
-# Artefatos do ambiente opencode (não são do projeto)
-.agents/
-skills-lock.json
