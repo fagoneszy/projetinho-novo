@@ -1,23 +1,9 @@
-import { pgTable, serial, text, timestamp, jsonb } from "drizzle-orm/pg-core";
+import { pgTable, text, text as pgText } from "drizzle-orm/pg-core";
 
-export const users = pgTable("users", {
-  id: serial("id").primaryKey(),
-  googleSub: text("google_sub").notNull().unique(),
-  email: text("email").notNull(),
-  name: text("name"),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
-});
-
-export const tools = pgTable("tools", {
-  id: serial("id").primaryKey(),
-  slug: text("slug").notNull().unique(),
-  name: text("name").notNull(),
+export const problems = pgTable("problems", {
+  id: text("id").primaryKey(),
+  title: text("title").notNull(),
   description: text("description"),
-  platform: text("platform").notNull(),
-  severity: text("severity").notNull(),
-  category: text("category").notNull(),
-  type: text("type").notNull(),
-  code: text("code"),
-  securityMeta: jsonb("security_meta"),
-  createdAt: timestamp("created_at").defaultNow().notNull(),
+  keywords: pgText("keywords").array(),
+  tools: pgText("tools").array(),
 });
