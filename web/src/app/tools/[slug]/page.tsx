@@ -1,39 +1,37 @@
-"use client";
-import { useEffect, useState } from "react";
-import { useParams } from "next/navigation";
+import { notFound } from "next/navigation";
+import NavBar from "@/components/NavBar";
+import { db } from "@/lib/db";
+import { tools } from "@/drizzle/schema";
+import { eq } from "drizzle-orm";
 
-type Tool = { name?: string; category?: string; risk?: string; admin?: string; slug?: string; release?: { download_url?: string; sha256?: string } };
+export default async function ToolDetail({ params }: { params: { slug: string } }) {
+  const { slug } = params;
+  const [tool] = await db.select().from(tools).where(eq(tools.slug, slug)).limit(1);
+  if (!tool) return notFound();
 
-export default function ToolDetail() {
-  const { slug } = useParams<{ slug: string }>();
-  const [tool, setTool] = useState<Tool | null>(null);
-
-  useEffect(() => {
-    if (!slug) return;
-    fetch(`/api/tools/${slug}`).then(r=>r.json()).then(setTool).catch(()=>setTool(null));
-  }, [slug]);
-
-  if (!tool) return <div className="p-10 text-zinc-400">Carregando...</div>;
-
+  const meta = tool.securityMeta as any ?? {};
   return (
-    <div className="mx-auto max-w-4xl px-6 py-20">
-      <h1 className="text-4xl font-semibold">{tool.name}</h1>
-      <p className="mt-2 text-zinc-400">{tool.category} • {tool.risk}</p>
-      <div className="mt-8 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
-        <h2 className="text-xl font-medium mb-4">Metadados</h2>
-        <dl className="grid sm:grid-cols-2 gap-4 text-sm">
-          <div><dt className="text-zinc-500">Slug</dt><dd className="text-zinc-200">{tool.slug}</dd></div>
-          <div><dt className="text-zinc-500">Categoria</dt><dd className="text-zinc-200">{tool.category}</dd></div>
-          <div><dt className="text-zinc-500">Risco</dt><dd className="text-zinc-200">{tool.risk}</dd></div>
-          <div><dt className="text-zinc-500">Admin</dt><dd className="text-zinc-200">{tool.admin === "yes" ? "Sim" : "Não"}</dd></div>
-        </dl>
-        {tool.release && (
-          <div className="mt-6">
-            <a href={tool.release.download_url} className="inline-flex items-center rounded-xl bg-zinc-100 text-zinc-900 px-6 py-3 font-medium">Download</a>
-            <p className="mt-2 text-xs text-zinc-500">SHA256: {tool.release.sha256}</p>
+    <main className="min-h-[100dvh] bg-[#0a0a0b] text-zinc-100">
+      <NavBar />
+      <div className="mx-auto max-w-4xl px-6 py-12">
+        <h1 className="text-4xl font-semibold">{tool.name}</h1>
+        <p className="mt-2 text-zinc-400">{tool.category} • {tool.severity} • {tool.platform}</p>
+        <div className="mt-8 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-6">
+          <h2 className="text-xl font-medium mb-4">Descrição</h2>
+          <p className="text-zinc-300">{tool.description}</p>
+          <h3 className="mt-6 text-lg font-medium">Metadados de segurança</h3>
+          <div className="flex flex-wrap gap-2 mt-3">
+            {Object.entries(meta).map(([k,v]) => (
+              <span key={k} className="text-xs bg-zinc-800 border border-zinc-700 rounded-full px-3 py-1">{k}: {String(v)}</span>
+            ))}
           </div>
-        )}
+          <h3 className="mt-6 text-lg font-medium">Código</h3>
+          <pre className="mt-2 bg-black/40 p-4 rounded-lg text-sm overflow-x-auto">{tool.code ?? "—"}</pre>
+          <div className="mt-6">
+            <a href={`/api/tools/${tool.slug}/download`} className="inline-flex items-center rounded-xl bg-zinc-100 text-zinc-900 px-6 py-3 font-medium">Baixar .BAT</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   );
 }
