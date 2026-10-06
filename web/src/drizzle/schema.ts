@@ -5,7 +5,10 @@ export const users = pgTable("users", {
   googleSub: text("google_sub").notNull().unique(),
   email: text("email").notNull(),
   name: text("name"),
+  avatarUrl: text("avatar_url"),
+  bio: text("bio"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
 export const tools = pgTable("tools", {
@@ -35,4 +38,13 @@ export const favorites = pgTable("favorites", {
   userId: integer("user_id").notNull(),
   toolSlug: text("tool_slug").notNull(),
   createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const sessions = pgTable("sessions", {
+  id: serial("id").primaryKey(),
+  tokenHash: text("token_hash").notNull().unique(),
+  userId: integer("user_id").notNull().references(() => users.id),
+  expiresAt: timestamp("expires_at").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  lastSeenAt: timestamp("last_seen_at").defaultNow().notNull(),
 });

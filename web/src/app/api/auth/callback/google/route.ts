@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { db } from "@/lib/db";
 import { users } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
+import { createSession } from "@/lib/session";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -22,6 +23,7 @@ export async function GET(req: Request) {
       grant_type: "authorization_code",
     }),
   });
+
   const tokens = await tokenRes.json();
   const userRes = await fetch("https://www.googleapis.com/oauth2/v2/userinfo", {
     headers: { Authorization: `Bearer ${tokens.access_token}` },
@@ -38,18 +40,23 @@ export async function GET(req: Request) {
         googleSub: profile.id,
         email: profile.email,
         name: profile.name,
+        // avatarUrl could be set from profile.picture if available
+        // avatarUrl: profile.picture,
       }).returning({ id: users.id });
       userId = inserted[0]?.id ?? null;
     }
   }
 
   const res = NextResponse.redirect(new URL("/tools", url.origin));
-  res.cookies.set("batlab_session", JSON.stringify({ userId, email: profile.email, name: profile.name }), {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
-    sameSite: 'lax',
-    path: '/',
-    maxAge: 60 * 60 * 24 * 7,
-  });
+  if (userId && db) {
+    const { token } = await createSession(userId);
+    res.cookies.set("batlab_session", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === 'production',
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 60 * 60 * 24 * 7, // 7 days
+    });
+  }
   return res;
 }

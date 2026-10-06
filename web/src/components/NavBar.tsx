@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getSession } from "@/lib/session";
+import { Button } from "@/components/ui/button";
 
 export default async function NavBar() {
   const session = await getSession();
