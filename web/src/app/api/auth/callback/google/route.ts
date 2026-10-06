@@ -46,9 +46,9 @@ export async function GET(req: Request) {
   const res = NextResponse.redirect(new URL("/tools", url.origin));
   res.cookies.set("batlab_session", JSON.stringify({ userId, email: profile.email, name: profile.name }), {
     httpOnly: true,
-    secure: true,
-    sameSite: "lax",
-    path: "/",
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax',
+    path: '/',
     maxAge: 60 * 60 * 24 * 7,
   });
   return res;

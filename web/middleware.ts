@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { getSession } from "@/lib/session";
 
 const RATE_LIMIT = 60;
 const WINDOW_MS = 60_000;
@@ -10,7 +11,7 @@ function getIp(req: NextRequest) {
   return forwarded?.split(",")[0]?.trim() ?? "unknown";
 }
 
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
   const ip = getIp(req);
   const now = Date.now();
   const bucket = buckets.get(ip);
@@ -30,11 +31,15 @@ export function middleware(req: NextRequest) {
 
   const publicPaths = ["/", "/login", "/api/auth/signin/google", "/api/auth/callback/google", "/api/tools"];
   const isPublic = publicPaths.some(p => req.nextUrl.pathname === p || req.nextUrl.pathname.startsWith("/api/tools/"));
-  const session = req.cookies.get("batlab_session");
-  if (!isPublic && !session) {
-    return NextResponse.redirect(new URL("/login", req.url));
+
+  if (!isPublic) {
+    const session = await getSession();
+    if (!session) {
+      return NextResponse.redirect(new URL("/login", req.url));
+    }
   }
+
   return res;
 }
 
-export const config = { matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"] };
+export const config = { matcher: ["/((?!_next/static|_next/image|favicon.ico).* )"] };
