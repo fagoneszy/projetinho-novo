@@ -18,7 +18,7 @@ export default async function Home() {
   const countTools = await getToolCount();
   const display = countTools > 0 ? `${countTools}+` : "400+";
   return (
-    <main className="min-h-[100dvh] bg-[--background] text-zinc-100">
+    <main className="min-h-[100dvh] bg-[#030303] text-zinc-100">
       <NavBar />
       <HeroWaves />
       <ToolsCatalog />
