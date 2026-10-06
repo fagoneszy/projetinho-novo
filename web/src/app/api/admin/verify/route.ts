@@ -1,25 +1,24 @@
-import { z } from "zod";
-import { timingSafeEqual } from "node:crypto";
+import { NextResponse } from "next/server";
+import { getSession } from "@/lib/session";
+import { db } from "@/lib/db";
+import { adminUsers } from "@/drizzle/schema";
+import { eq } from "drizzle-orm";
 
-function checkAdminKey(sent: string | null): boolean {
-  const expected = process.env.ADMIN_KEY ?? "";
-  if (!sent || !expected) return false;
-  const a = Buffer.from(sent);
-  const b = Buffer.from(expected);
-  if (a.length !== b.length) return false;
-  return timingSafeEqual(a, b);
-}
+export async function GET(req: Request) {
+  const session = await getSession();
+  if (!session) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
 
-export async function POST(req: Request) {
-  const body = await req.json().catch(() => null);
-  const schema = z.object({ token: z.string().min(1) });
-  const parsed = schema.safeParse(body);
-  if (!parsed.success) {
-    return Response.json({ ok: false, error: "requisição inválida" }, { status: 400 });
+  const [adminRecord] = await db
+    .select()
+    .from(adminUsers)
+    .where(eq(adminUsers.userId, session.user.id))
+    .limit(1);
+
+  if (!adminRecord) {
+    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
   }
-  const ok = checkAdminKey(parsed.data.token);
-  if (!ok) {
-    return Response.json({ ok: false, error: "não autorizado" }, { status: 401 });
-  }
-  return Response.json({ ok: true });
+
+  return NextResponse.json({ message: "Admin access granted" });
 }

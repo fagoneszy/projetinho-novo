@@ -1,81 +1,95 @@
-import { cookies } from "next/headers";
 import { db } from "./db";
 import { sessions, users } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
-import { hash } from "bcryptjs";
 
+// Server-only function to get session from cookies
 export async function getSession() {
-  const cookieStore = await cookies();
-  const sessionCookie = cookieStore.get("batlab_session");
-  if (!sessionCookie?.value) return null;
+  // This function should only be called in Server Components
+  // For Client Components, use the getSessionData hook or pass data as props
+  
+  try {
+    // Dynamically import next/headers to avoid issues in edge/runtime contexts
+    const { cookies } = await import("next/headers");
+    const cookieStore = cookies();
+    const token = cookieStore.get("batlab_session")?.value;
+    
+    if (!token) {
+      return null;
+    }
 
-  const sessionToken = sessionCookie.value;
-  if (!sessionToken) return null;
+    const [session] = await db
+      .select()
+      .from(sessions)
+      .where(eq(sessions.tokenHash, Buffer.from(token, "hex").toString("base64")))
+      .limit(1);
 
-  // Hash the token to use as lookup key
-  const tokenHash = await hash(sessionToken, 10);
+    if (!session) {
+      return null;
+    }
 
-  // Find session by token hash
-  const [session] = await db
-    .select()
-    .from(sessions)
-    .where(eq(sessions.tokenHash, tokenHash))
-    .limit(1);
+    // Check if session has expired
+    if (session.expiresAt < new Date()) {
+      await db.delete(sessions).where(eq(sessions.id, session.id));
+      return null;
+    }
 
-  if (!session) return null;
+    // Update last seen at
+    await db
+      .update(sessions)
+      .set({ lastSeenAt: new Date() })
+      .where(eq(sessions.id, session.id));
 
-  // Check if session is expired
-  if (new Date(session.expiresAt) < new Date()) {
-    // Delete expired session
-    await db.delete(sessions).where(eq(sessions.id, session.id));
+    // Get user data
+    const [user] = await db
+      .select()
+      .from(users)
+      .where(eq(users.id, session.userId))
+      .limit(1);
+
+    if (!user) {
+      return null;
+    }
+
+    return {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+    };
+  } catch (error) {
+    // Handle cases where next/headers is not available (e.g., in client components)
+    // In practice, this function should only be called from server components
     return null;
   }
-
-  // Update last seen
-  await db
-    .update(sessions)
-    .set({ lastSeenAt: new Date() })
-    .where(eq(sessions.id, session.id));
-
-  // Get user data
-  const [user] = await db
-    .select()
-    .from(users)
-    .where(eq(users.id, session.userId))
-    .limit(1);
-
-  if (!user) return null;
-
-  return { user };
 }
 
-// Helper function to create a session
 export async function createSession(userId: number) {
-  // Generate a random session token
-  const token = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-  
-  // Hash the token for storage
-  const tokenHash = await hash(token, 10);
+  // Generate a random token
+  const token = Array.from({ length: 32 }, () => 
+    Math.floor(Math.random() * 16).toString(16)
+  ).join("");
 
-  const [session] = await db
-    .insert(sessions)
-    .values({
-      tokenHash,
-      userId,
-      expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
-    })
-    .returning();
+  const tokenHash = Buffer.from(token, "hex").toString("base64");
 
-  return { token, sessionId: session.id };
+  await db.insert(sessions).values({
+    tokenHash,
+    userId,
+    expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), // 7 days
+    createdAt: new Date(),
+    lastSeenAt: new Date(),
+  });
+
+  return token;
 }
 
-// Function to delete a session by token hash
-export async function deleteSessionByToken(token: string) {
-  const tokenHash = await hash(token, 10);
+export async function deleteSession(tokenHash: string) {
   await db.delete(sessions).where(eq(sessions.tokenHash, tokenHash));
 }
 
-// Function to delete a session by sessionId (if needed)
-export async function deleteSession(sessionId: number) {
-  await db.delete(sessions).where(eq(sessions.id, sessionId));
+export async function deleteSessionByToken(token: string) {
+  const tokenHash = Buffer.from(token, "hex").toString("base64");
+  await deleteSession(tokenHash);
+}
+
+export async function deleteSessionByUserId(userId: number) {
+  await db.delete(sessions).where(eq(sessions.userId, userId));
 }

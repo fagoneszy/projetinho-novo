@@ -1,514 +1,566 @@
-Com esse estado atual, eu **não começaria pela comunidade ainda**. O BATLAB já tem uma base funcional suficientemente grande; agora o risco é adicionar funcionalidades sociais antes de fechar a fundação do produto.
+Sim. E, na verdade, eu mudaria a prioridade para isso.
 
-Eu seguiria esta ordem:
+O **Admin é o melhor próximo passo**, porque resolve o problema central do BATLAB: você já tem 439 ferramentas no banco, mas precisa de uma forma organizada de alimentar, revisar e publicar novas ferramentas sem mexer diretamente no código.
 
-### 1. Fechar a fundação de segurança
+Eu faria o `/admin` como um pequeno CMS interno do BATLAB.
 
-Primeiro implementaria a sessão baseada em token.
-
-Hoje:
+### Estrutura que eu recomendo
 
 ```text
-cookie
-   ↓
-userId
+/admin
+│
+├── Dashboard
+│
+├── Ferramentas
+│   ├── Todas
+│   ├── Publicadas
+│   ├── Rascunhos
+│   └── Pendentes
+│
+├── Nova ferramenta
+│
+├── Problemas
+│
+└── Usuários
 ```
 
-Evoluir para:
+A tela mais importante seria:
 
 ```text
-cookie
-   ↓
-sessionToken
-   ↓
-sessions
-   ↓
-user
-```
-
-Com:
-
-```text
-sessions
-├── id
-├── token_hash
-├── user_id
-├── expires_at
-├── created_at
-└── last_seen_at
-```
-
-Isso é especialmente importante porque você pretende ter favoritos, perfil, publicações, comentários e futuramente reputação. Não vale construir essas coisas em cima de uma sessão que ainda precisa ser endurecida.
-
-Também aproveitaria para revisar:
-
-* autorização das APIs;
-* rotas `/api/admin`;
-* validação de entrada;
-* rate limiting;
-* download protegido;
-* expiração de sessão;
-* logout/invalidação;
-* CSRF quando aplicável;
-* exposição de dados do usuário.
-
-**Essa seria a primeira etapa.**
-
----
-
-### 2. Fazer um “Product Polish” antes de criar funcionalidades novas
-
-Aqui eu gastaria um pouco de tempo.
-
-Você já tem:
-
-* 439 ferramentas;
-* 17 problemas;
-* catálogo;
-* páginas individuais;
-* favoritos;
-* login;
-* SEO;
-* HeroWaves;
-* middleware;
-* APIs.
-
-Então o BATLAB já tem conteúdo suficiente para parecer um produto.
-
-Agora precisamos fazer tudo parecer parte do **mesmo produto**.
-
-Eu revisaria:
-
-```text
-Home
-Tools
-Tool detail
-Problems
-Problem detail
-Login
-Account
-Navbar
-Buttons
-Cards
-Forms
-Loading
-Errors
-404
-Mobile
-```
-
-E criaria um pequeno design system:
-
-```text
-Typography
-Colors
-Spacing
-Radius
-Borders
-Shadows
-Buttons
-Inputs
-Cards
-Badges
-Avatars
-Dropdowns
-Modals
-Skeletons
-```
-
-O objetivo é chegar a:
-
-> “isso parece uma plataforma profissional”
-
-e não:
-
-> “isso é um projeto Next.js bem feito”.
-
-Essa diferença é importante.
-
----
-
-### 3. Transformar `/account` em um verdadeiro perfil
-
-Antes da comunidade, eu faria o usuário ter uma identidade.
-
-Hoje:
-
-```text
-/account
+Nova ferramenta
+────────────────────────────────────────
 
 Nome
-Email
-Favoritos
+[ Flush DNS                         ]
+
+Slug
+[ flush-dns                         ]
+
+Descrição
+[ Limpa o cache DNS do Windows...   ]
+
+Categoria
+[ Rede                         ▼ ]
+
+Problemas
+[ DNS ] [ Internet ] [ Rede ]
+
+Tags
+[ dns ] [ network ] [ windows ]
+
+Tipo
+[ BAT ▼ ]
+
+Script
+┌─────────────────────────────────────┐
+│ @echo off                           │
+│ ipconfig /flushdns                  │
+│ pause                               │
+└─────────────────────────────────────┘
+
+────────────────────────────────────────
+
+ANÁLISE DE SEGURANÇA
+
+Risk:        LOW
+Network:     NO
+Registry:    NO
+Files:       NO
+Admin:       NO
+Downloads:   NO
+
+[ Executar análise ]
+
+────────────────────────────────────────
+
+[ Salvar rascunho ]    [ Publicar ]
 ```
 
-Evoluiria para:
+E aqui está a parte interessante: **o administrador não deveria escolher manualmente o nível de risco**.
+
+Ele fornece o script.
+
+O sistema analisa.
 
 ```text
-/account
-
-        [ avatar ]
-
-        Fagner
-        @fagner
-
-        Desenvolvedor / Windows
-
-        12 ferramentas salvas
-        8 downloads
-        4 publicações
-
-────────────────────────
-
-Favoritos
-Downloads
-Publicações
-Atividade
-Configurações
+script
+   ↓
+analisador
+   ↓
+security_metadata
+   ↓
+LOW / MEDIUM / HIGH
+   ↓
+admin revisa
+   ↓
+publica
 ```
 
-Banco:
+Isso deixa o BATLAB muito mais consistente.
+
+### Banco de dados
+
+Eu separaria `tools` da análise de segurança.
+
+Algo nessa linha:
 
 ```text
-users
+tools
 ├── id
-├── google_sub
-├── email
 ├── name
-├── username
-├── avatar_url
-├── bio
+├── slug
+├── description
+├── type
+├── category_id
+├── content
+├── status
+├── created_by
 ├── created_at
 └── updated_at
 ```
 
-Isso prepara o terreno para a comunidade.
-
----
-
-### 4. Histórico de downloads
-
-Eu faria isso antes da comunidade porque é pequeno e agrega bastante valor ao produto.
+Categorias:
 
 ```text
-downloads
+categories
 ├── id
-├── user_id
+├── name
+├── slug
+└── description
+```
+
+Tags:
+
+```text
+tags
+├── id
+└── name
+```
+
+Relação:
+
+```text
+tool_tags
 ├── tool_id
-├── tool_version_id
-├── downloaded_at
-└── ip_hash
+└── tag_id
 ```
 
-No perfil:
+Problemas:
 
 ```text
-Histórico
-
-Flush DNS
-v1.2
-Hoje
-
-Windows Cleanup
-v2.1
-Ontem
-
-Network Reset
-v1.0
-03/10
-```
-
-E isso abre caminho para métricas reais:
-
-```text
-1.284 downloads
-```
-
-em vez de números artificiais.
-
----
-
-### 5. Melhorar profundamente a página da ferramenta
-
-Essa é provavelmente a parte que mais merece investimento.
-
-A página deveria responder rapidamente:
-
-**O que isso faz?**
-
-**É seguro?**
-
-**Para qual Windows?**
-
-**O que ele altera?**
-
-**Como usar?**
-
-**Qual versão estou baixando?**
-
-**Posso ver o código?**
-
-Exemplo:
-
-```text
-Flush DNS
-
-Limpa o cache DNS do Windows.
-
-[ Download ] [ Ver código ]
-
-LOW RISK
-✓ Sem download externo
-✓ Sem alteração de registro
-✓ Sem privilégios elevados
-
-Compatibilidade
-Windows 10
-Windows 11
-
-────────────────────────
-
-Como funciona
-
-...
-
-Código
-
-...
-
-Versões
-
-v1.2
-v1.1
-v1.0
-
-────────────────────────
-
-Discussão
-```
-
-Isso transforma o BATLAB de catálogo em **produto técnico confiável**.
-
----
-
-### 6. Busca global
-
-Depois disso:
-
-```text
-⌕ Pesquisar BATLAB...
-```
-
-Pesquisar em:
-
-```text
-tools
 problems
-posts
-```
-
-Resultado:
-
-```text
-Ferramentas
-───────────
-Flush DNS
-DNS Reset
-
-Problemas
-─────────
-DNS
-Network
-
-Comunidade
-──────────
-Como resolver DNS...
-```
-
-Essa funcionalidade vai se tornar essencial quando a comunidade começar a crescer.
-
----
-
-### 7. Só então começar a comunidade
-
-Aqui sim eu criaria:
-
-```text
-/comunidade
-```
-
-Primeira versão:
-
-```text
-Comunidade
-
-[ + Nova publicação ]
-
-Discussões
-Tutoriais
-Dúvidas
-Soluções
-
-──────────────────
-
-Post
-Post
-Post
-Post
-```
-
-Não começaria com reputação, badges, notificações, seguidores, mensagens privadas etc.
-
-MVP da comunidade:
-
-```text
-posts
-post_comments
-post_likes
-post_tags
-```
-
-Só isso.
-
----
-
-### 8. Depois adicionar reputação e moderação
-
-Quando houver usuários reais:
-
-```text
-Reputação
-Likes
-Soluções
-Badges
+├── id
+├── name
+├── slug
+└── description
 ```
 
 E:
 
 ```text
-reports
-moderation
-user_status
-post_status
+tool_problems
+├── tool_id
+└── problem_id
 ```
 
-Não vale gastar muito tempo implementando um sistema de reputação para uma comunidade que ainda não possui usuários ativos.
+Para segurança:
+
+```text
+tool_security
+├── tool_id
+├── risk_level
+├── requires_admin
+├── accesses_network
+├── modifies_registry
+├── writes_files
+├── deletes_files
+├── executes_external
+├── downloads_files
+├── creates_processes
+├── detected_patterns
+├── analysis_version
+└── analyzed_at
+```
+
+Isso permitiria mostrar exatamente por que determinada ferramenta recebeu determinado nível.
 
 ---
 
-## Portanto, minha ordem seria esta
+### O analisador
+
+Eu não faria:
+
+> “olhou o script e achou que parece perigoso.”
+
+Faria análise baseada em regras.
+
+Por exemplo:
 
 ```text
-FASE 1
-Segurança
-│
-├── Sessions
-├── Authorization
-├── API security
-└── Download security
+LOW
 
-        ↓
-
-FASE 2
-Design System
-│
-├── Navbar
-├── Cards
-├── Buttons
-├── Forms
-├── Loading
-├── Errors
-└── Mobile
-
-        ↓
-
-FASE 3
-Perfil
-│
-├── Avatar
-├── Username
-├── Bio
-├── Estatísticas
-├── Favoritos
-└── Histórico
-
-        ↓
-
-FASE 4
-Ferramentas
-│
-├── Tool detail
-├── Security analysis
-├── Versions
-├── Downloads
-└── Changelog
-
-        ↓
-
-FASE 5
-Discovery
-│
-├── Global search
-├── Filters
-├── Tags
-└── Problems
-
-        ↓
-
-FASE 6
-Comunidade
-│
-├── Posts
-├── Comments
-├── Likes
-└── Tags
-
-        ↓
-
-FASE 7
-Community 2.0
-│
-├── Reputation
-├── Badges
-├── Notifications
-├── Reports
-└── Moderation
+ipconfig
+ping
+whoami
+hostname
+systeminfo
+echo
+set
+dir
+cls
 ```
 
-### O ponto mais importante
-
-Eu **não tentaria implementar as 30 coisas da visão agora**.
-
-Você já chegou em um ponto interessante: **439 ferramentas + 17 problemas + autenticação + catálogo + favoritos + páginas individuais**.
-
-Agora precisamos fazer o BATLAB parecer uma plataforma acabada.
-
-Eu colocaria o próximo milestone como:
-
-> **BATLAB v1 — Product Polish**
-
-E o objetivo seria:
+Comandos potencialmente sensíveis:
 
 ```text
-✓ Sessão segura
-✓ Design system
-✓ Navbar definitiva
-✓ Home refinada
-✓ Tools refinado
-✓ Tool detail refinado
-✓ Account/Profile
-✓ Avatar
-✓ Download history
-✓ Mobile
-✓ Loading/Error/404
-✓ SEO/OG
-✓ Busca
+MEDIUM
+
+reg
+schtasks
+sc
+net user
+net localgroup
+powershell
+wmic
+wevtutil
+takeown
+icacls
 ```
 
-Depois disso:
+E padrões mais críticos:
 
-> **BATLAB v2 — Community**
+```text
+HIGH
 
-Aí sim entramos em publicações, comentários, curtidas e perfis sociais.
+powershell -enc
+EncodedCommand
+DownloadString
+Invoke-WebRequest
+curl
+wget
+certutil
+bitsadmin
+mshta
+rundll32
+regsvr32
+```
 
-Esse caminho reduz retrabalho e, principalmente, evita que o BATLAB fique com aquela aparência de **“tem muitas funcionalidades, mas nenhuma delas parece completamente finalizada”**. O que você já construiu é suficiente para fazer o próximo salto de qualidade sem precisar adicionar complexidade indiscriminadamente.
+Também procuraria:
+
+```text
+del /f
+format
+diskpart
+bcdedit
+cipher /w
+Remove-Item
+Set-ExecutionPolicy
+```
+
+Mas existe uma distinção importante:
+
+**detectar comando perigoso ≠ afirmar que o script é malware.**
+
+O BATLAB deveria dizer algo como:
+
+```text
+MEDIUM RISK
+
+Motivos:
+
+⚠ Executa PowerShell
+⚠ Modifica configurações do sistema
+
+Não foram detectados:
+
+✓ Downloads externos
+✓ Código ofuscado
+✓ Execução remota
+```
+
+Isso é muito mais profissional.
+
+---
+
+## E eu colocaria uma segunda camada
+
+Além do analisador automático:
+
+```text
+Automated analysis
+        ↓
+Admin review
+        ↓
+Approved
+```
+
+Na ferramenta:
+
+```text
+Security
+
+MEDIUM RISK
+
+Automated analysis
+06 Oct 2026
+
+Reviewed by BATLAB
+06 Oct 2026
+
+Analysis v1.0
+```
+
+Assim você não vende a análise automática como uma garantia absoluta de segurança.
+
+---
+
+# Sobre a conta Google de administrador
+
+Sim. E eu **não criaria um segundo sistema de login**.
+
+Você já tem Google OAuth.
+
+Basta definir quais contas têm privilégio administrativo.
+
+A opção mais simples:
+
+```text
+admin_users
+├── id
+├── user_id
+├── created_at
+└── created_by
+```
+
+Então:
+
+```text
+Google login
+      ↓
+users
+      ↓
+admin_users?
+    /     \
+  não      sim
+  ↓         ↓
+site      /admin
+```
+
+Eu prefiro isso a colocar:
+
+```env
+ADMIN_EMAIL=fagner@gmail.com
+```
+
+porque depois você pode ter mais de um administrador.
+
+Por exemplo:
+
+```text
+Admin
+ ├── Fagner
+ ├── João
+ └── Maria
+```
+
+E futuramente:
+
+```text
+role
+├── admin
+├── moderator
+└── editor
+```
+
+---
+
+# O `/admin` precisa ser protegido no servidor
+
+Não basta esconder o botão.
+
+Errado:
+
+```text
+if (user.email === admin) {
+   mostrar botão
+}
+```
+
+O correto:
+
+```text
+request /admin
+       ↓
+getSession()
+       ↓
+user
+       ↓
+isAdmin(user.id)
+       ↓
+database
+       ↓
+allow / deny
+```
+
+E todas as APIs:
+
+```text
+POST /api/admin/tools
+PUT  /api/admin/tools/:id
+DELETE /api/admin/tools/:id
+POST /api/admin/analyze
+```
+
+também precisam verificar admin **no servidor**.
+
+---
+
+# Upload dos arquivos
+
+Aqui eu faria uma separação importante.
+
+O banco guarda:
+
+```text
+metadados
++
+código
++
+análise
+```
+
+Mas os arquivos executáveis/downloadáveis podem ir para Object Storage.
+
+Arquitetura:
+
+```text
+                 BATLAB ADMIN
+                      │
+                 upload .bat
+                      │
+                      ▼
+                análise automática
+                      │
+              ┌───────┴───────┐
+              │               │
+           Neon DB       Object Storage
+              │               │
+       metadata/security     arquivo
+              │               │
+              └───────┬───────┘
+                      │
+                      ▼
+                 usuário
+```
+
+Isso combina exatamente com a arquitetura que já discutimos:
+
+**Vercel** → aplicação
+**Neon** → banco
+**Object Storage** → arquivos
+**Google** → autenticação
+**GitHub** → código-fonte do projeto
+
+---
+
+# E eu adicionaria “rascunho”
+
+Isso é muito importante.
+
+Nunca faça:
+
+```text
+Upload
+↓
+PUBLICADO
+```
+
+Faça:
+
+```text
+DRAFT
+  ↓
+ANALYZING
+  ↓
+REVIEW
+  ↓
+PUBLISHED
+```
+
+Assim você pode subir 20 scripts, analisar todos e revisar antes de disponibilizar.
+
+---
+
+# Dashboard
+
+O `/admin` poderia começar extremamente simples:
+
+```text
+BATLAB ADMIN
+
+─────────────────────────────────────
+
+439       17        12        3
+Tools    Problems  Drafts   Review
+
+─────────────────────────────────────
+
+Ferramentas recentes
+
+Flush DNS             LOW       Published
+Network Reset         MEDIUM    Review
+Windows Cleanup       LOW       Draft
+PowerShell Helper     HIGH      Review
+
+─────────────────────────────────────
+
+[ + Nova ferramenta ]
+```
+
+Nada de dashboard cheio de gráficos sem utilidade.
+
+---
+
+# O fluxo ideal
+
+No final, você teria algo muito eficiente:
+
+```text
+1. Entrar com Google
+
+2. Abrir /admin
+
+3. Nova ferramenta
+
+4. Colar/upload do .bat
+
+5. Escolher:
+   categoria
+   problemas
+   tags
+
+6. Sistema analisa automaticamente
+
+7. Sistema mostra:
+   LOW / MEDIUM / HIGH
+   + motivos
+
+8. Você revisa
+
+9. Publicar
+
+10. Ferramenta aparece automaticamente
+    em /tools
+```
+
+Isso é muito mais importante agora do que construir comunidade.
+
+Porque depois que esse CMS estiver pronto, você consegue **alimentar o BATLAB rapidamente**.
+
+E tem outro benefício: você deixa de depender dos 439 registros que já estão no banco. O BATLAB passa a ter um **pipeline real de publicação de ferramentas**.
+
+Eu colocaria isso como o próximo milestone:
+
+> **BATLAB Admin v1 — Tool Management & Security Analysis**
+
+E faria primeiro apenas **3 coisas**: autenticação/admin, criação/edição de ferramenta e analisador de segurança. Depois acrescentamos upload para Object Storage, versionamento e publicação.
