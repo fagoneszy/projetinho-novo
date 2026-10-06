@@ -12,10 +12,7 @@ export default function HeroWaves() {
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
 
       <div className="relative z-10 mx-auto max-w-2xl px-6 py-32 text-center">
-        <span className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/80 px-3 py-1 text-xs text-zinc-400 backdrop-blur-sm">
-          <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-          Catálogo Atualizado
-        </span>
+        
 
         <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.8 }} className="mt-4 text-5xl md:text-6xl font-extrabold tracking-tight text-white sm:text-7xl">
           BATLAB
