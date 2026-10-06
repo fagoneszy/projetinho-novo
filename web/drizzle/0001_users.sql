@@ -1,0 +1,1 @@
+CREATE TABLE users (id SERIAL PRIMARY KEY, google_sub TEXT NOT NULL UNIQUE, email TEXT NOT NULL, name TEXT, created_at TIMESTAMP DEFAULT now());

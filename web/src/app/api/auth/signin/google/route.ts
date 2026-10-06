@@ -1,10 +1,11 @@
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request) {
-  const url = new URL(req.url);
+export async function GET() {
+  const site = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+  const redirectUri = `${site}/api/auth/callback/google`;
   const params = new URLSearchParams({
     client_id: process.env.GOOGLE_CLIENT_ID ?? "",
-    redirect_uri: `${url.origin}/api/auth/callback/google`,
+    redirect_uri: redirectUri,
     response_type: "code",
     scope: "openid email profile",
     access_type: "offline",
