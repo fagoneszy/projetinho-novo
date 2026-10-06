@@ -1,10 +1,24 @@
+import NavBar from "@/components/NavBar";
 import HeroWaves from "@/components/HeroWaves";
 import ToolsCatalog from "@/components/ToolsCatalog";
-import NavBar from "@/components/NavBar";
+import { db } from "@/lib/db";
+import { tools } from "@/drizzle/schema";
+import { count } from "drizzle-orm";
 
-export default function Home() {
+async function getToolCount() {
+  try {
+    const [result] = await db.select({ count: count() }).from(tools);
+    return Number(result?.count ?? 0);
+  } catch {
+    return 0;
+  }
+}
+
+export default async function Home() {
+  const countTools = await getToolCount();
+  const display = countTools > 0 ? `${countTools}+` : "400+";
   return (
-    <main className="min-h-[100dvh] bg-[#0a0a0b] text-zinc-100">
+    <main className="min-h-[100dvh] bg-[--background] text-zinc-100">
       <NavBar />
       <HeroWaves />
       <ToolsCatalog />
