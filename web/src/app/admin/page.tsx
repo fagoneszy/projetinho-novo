@@ -2,8 +2,8 @@ import Link from "next/link";
 import { getSession } from "@/lib/session";
 import { redirect } from "next/navigation";
 import { db } from "@/lib/db";
-import { tools, toolSecurity, adminUsers, categories } from "@/drizzle/schema";
-import { eq } from "drizzle-orm";
+import { tools, toolSecurity, adminUsers } from "@/drizzle/schema";
+import { count, desc, eq } from "drizzle-orm";
 
 export default async function AdminDashboard() {
   const session = await getSession();
@@ -20,10 +20,10 @@ export default async function AdminDashboard() {
 
   // Fetch statistics
   const [toolsCount, publishedCount, draftCount, pendingCount] = await Promise.all([
-    db.select({ count: db.count() }).from(tools),
-    db.select({ count: db.count() }).from(tools).where(eq(tools.status, "published")),
-    db.select({ count: db.count() }).from(tools).where(eq(tools.status, "draft")),
-    db.select({ count: db.count() }).from(tools).where(eq(tools.status, "review")), // pending review
+    db.select({ count: count() }).from(tools),
+    db.select({ count: count() }).from(tools).where(eq(tools.status, "published")),
+    db.select({ count: count() }).from(tools).where(eq(tools.status, "draft")),
+    db.select({ count: count() }).from(tools).where(eq(tools.status, "review")),
   ]);
 
   // Fetch recent tools
@@ -38,7 +38,7 @@ export default async function AdminDashboard() {
     })
     .from(tools)
     .leftJoin(toolSecurity, eq(tools.id, toolSecurity.toolId))
-    .orderBy(tools.createdAt.desc())
+    .orderBy(desc(tools.createdAt))
     .limit(5);
 
   return (

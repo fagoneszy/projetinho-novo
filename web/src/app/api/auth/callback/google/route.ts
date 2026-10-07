@@ -49,7 +49,7 @@ export async function GET(req: Request) {
 
   const res = NextResponse.redirect(new URL("/tools", url.origin));
   if (userId && db) {
-    const { token } = await createSession(userId);
+    const token = await createSession(userId);
     res.cookies.set("batlab_session", token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',

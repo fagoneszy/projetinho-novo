@@ -1,65 +1,55 @@
+import { cookies } from "next/headers";
 import { db } from "./db";
 import { sessions, users } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
 
 // Server-only function to get session from cookies
 export async function getSession() {
-  // This function should only be called in Server Components
-  // For Client Components, use the getSessionData hook or pass data as props
-  
-  try {
-    // Dynamically import next/headers to avoid issues in edge/runtime contexts
-    const { cookies } = await import("next/headers");
-    const cookieStore = cookies();
-    const token = cookieStore.get("batlab_session")?.value;
-    
-    if (!token) {
-      return null;
-    }
+  const cookieStore = await cookies();
+  const token = cookieStore.get("batlab_session")?.value;
 
-    const [session] = await db
-      .select()
-      .from(sessions)
-      .where(eq(sessions.tokenHash, Buffer.from(token, "hex").toString("base64")))
-      .limit(1);
+  if (!token) {
+    return null;
+  }
 
-    if (!session) {
-      return null;
-    }
+  const [session] = await db
+    .select()
+    .from(sessions)
+    .where(eq(sessions.tokenHash, Buffer.from(token, "hex").toString("base64")))
+    .limit(1);
 
-    // Check if session has expired
-    if (session.expiresAt < new Date()) {
-      await db.delete(sessions).where(eq(sessions.id, session.id));
-      return null;
-    }
+  if (!session) {
+    return null;
+  }
 
-    // Update last seen at
-    await db
-      .update(sessions)
-      .set({ lastSeenAt: new Date() })
-      .where(eq(sessions.id, session.id));
+  if (session.expiresAt < new Date()) {
+    await db.delete(sessions).where(eq(sessions.id, session.id));
+    return null;
+  }
 
-    // Get user data
-    const [user] = await db
-      .select()
-      .from(users)
-      .where(eq(users.id, session.userId))
-      .limit(1);
+  await db
+    .update(sessions)
+    .set({ lastSeenAt: new Date() })
+    .where(eq(sessions.id, session.id));
 
-    if (!user) {
-      return null;
-    }
+  const [user] = await db
+    .select()
+    .from(users)
+    .where(eq(users.id, session.userId))
+    .limit(1);
 
-    return {
+  if (!user) {
+    return null;
+  }
+
+  return {
+    user: {
       id: user.id,
       name: user.name,
       email: user.email,
-    };
-  } catch (error) {
-    // Handle cases where next/headers is not available (e.g., in client components)
-    // In practice, this function should only be called from server components
-    return null;
-  }
+      avatarUrl: user.avatarUrl,
+    },
+  };
 }
 
 export async function createSession(userId: number) {
