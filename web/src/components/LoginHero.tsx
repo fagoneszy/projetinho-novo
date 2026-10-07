@@ -4,7 +4,7 @@ import VideoBackground from "./VideoBackground";
 
 export default function LoginHero() {
   return (
-    <div className="relative flex min-h-[100dvh] items-center justify-center bg-[#030303] px-4 overflow-hidden">
+    <div className="relative isolate flex min-h-[100dvh] items-center justify-center bg-[#030303] px-4 overflow-hidden">
       <VideoBackground src="/login.mp4" overlay="from-[#030303]/85 via-[#030303]/70 to-[#030303]" />
       <motion.div
         initial={{ y: 20, opacity: 0 }}

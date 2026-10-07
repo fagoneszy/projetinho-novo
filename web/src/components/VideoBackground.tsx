@@ -1,6 +1,6 @@
 export default function VideoBackground({ src, overlay = "from-[#030303]/80 via-[#030303]/60 to-[#030303]" }: { src: string; overlay?: string }) {
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden">
+    <div className="absolute inset-0 z-0 overflow-hidden">
       <video
         autoPlay
         muted

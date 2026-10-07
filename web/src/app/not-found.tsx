@@ -3,7 +3,7 @@ import VideoBackground from "@/components/VideoBackground";
 
 export default function NotFound() {
   return (
-    <main className="relative min-h-[100dvh] flex flex-col items-center justify-center bg-[#030303] text-zinc-100 px-6 overflow-hidden">
+    <main className="relative isolate min-h-[100dvh] flex flex-col items-center justify-center bg-[#030303] text-zinc-100 px-6 overflow-hidden">
       <VideoBackground src="/404NotFound.mp4" overlay="from-black/80 via-black/60 to-black" />
       <div className="relative z-10 text-center">
         <h1 className="text-8xl font-extrabold tracking-tighter text-white mb-4 drop-shadow-[0_0_30px_rgba(255,255,255,0.08)]">
