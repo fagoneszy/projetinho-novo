@@ -28,7 +28,7 @@ export default async function ToolDetail({ params }: { params: { slug: string } 
           <h3 className="mt-6 text-lg font-medium">Código</h3>
           <pre className="mt-2 bg-black/40 p-4 rounded-lg text-sm overflow-x-auto">{tool.code ?? "—"}</pre>
           <div className="mt-6">
-            <a href={`/api/tools/${tool.slug}/download`} className="inline-flex items-center rounded-xl bg-zinc-100 text-zinc-900 px-6 py-3 font-medium">Baixar .BAT</a>
+            <a href={`/api/tools/${tool.slug}/download`} className="batlab-button inline-flex items-center rounded-full bg-zinc-100 text-zinc-900 px-6 py-3 font-medium">Baixar .BAT</a>
           </div>
         </div>
       </div>

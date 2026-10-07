@@ -447,21 +447,21 @@ export default function NewToolForm() {
               onClick={() => {
                 runSecurityAnalysis();
               }}
-              className="px-6 py-3 rounded-xl bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors duration-200"
+              className="batlab-button px-6 py-3 rounded-full bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors duration-200"
             >
               Executar Análise
             </button>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-6 py-3 rounded-xl bg-white text-black font-medium hover:bg-zinc-100 transition-colors duration-200"
+              className="batlab-button px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-zinc-100 transition-colors duration-200"
             >
               Salvar Rascunho
             </button>
             <button
               type="submit"
               disabled={isSubmitting || !formData.analysisResults}
-              className="px-6 py-3 rounded-xl bg-white text-black font-medium hover:bg-zinc-100 transition-colors duration-200"
+              className="batlab-button px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-zinc-100 transition-colors duration-200"
             >
               Publicar
             </button>

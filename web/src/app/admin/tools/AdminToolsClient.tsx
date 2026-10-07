@@ -59,13 +59,13 @@ export default function AdminToolsClient({
           <div className="flex space-x-3">
             <Link 
               href="/admin/tools/new" 
-              className="px-4 py-2 rounded-xl bg-white text-black font-medium hover:bg-zinc-100 transition-colors duration-200"
+              className="batlab-button px-5 py-2.5 rounded-full bg-white text-black font-medium hover:bg-zinc-100 transition-colors duration-200"
             >
               + Nova Ferramenta
             </Link>
             <button
               onClick={handleResetFilters}
-              className="px-4 py-2 rounded-xl bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors duration-200"
+              className="batlab-button px-5 py-2.5 rounded-full bg-zinc-800/50 text-zinc-300 hover:bg-zinc-700/50 transition-colors duration-200"
             >
               Reset Filtros
             </button>

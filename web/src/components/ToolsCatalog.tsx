@@ -57,9 +57,9 @@ export default function ToolsCatalog() {
               <p className="text-zinc-400 text-sm mb-4 line-clamp-2">{tool.category}</p>
               <p className="text-zinc-300 text-base line-clamp-3">{tool.description}</p>
               <div className="mt-4 pt-3 border-t border-zinc-800/20">
-                <a href={`/tools/${tool.slug}`} className="text-sm font-medium text-zinc-200 hover:text-zinc-100 transition-colors duration-200">
+                <span className="batlab-button inline-flex rounded-full border border-white/10 px-3 py-1.5 text-sm font-medium text-zinc-200 hover:border-white/20 hover:bg-white/5 hover:text-white">
                   Ver detalhes →
-                </a>
+                </span>
               </div>
             </div>
           </Link>

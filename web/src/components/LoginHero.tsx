@@ -15,7 +15,7 @@ export default function LoginHero() {
         <h1 className="text-2xl font-semibold mb-6 text-center text-white">Entrar</h1>
         <a
           href="/api/auth/signin/google"
-          className="block w-full rounded-full bg-white text-black text-center py-3 font-medium transition-colors duration-200 hover:bg-zinc-100"
+          className="batlab-button block w-full rounded-full bg-white text-black text-center py-3 font-medium transition-colors duration-200 hover:bg-zinc-100"
         >
           Continuar com Google
         </a>

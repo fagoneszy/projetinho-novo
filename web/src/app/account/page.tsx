@@ -20,7 +20,7 @@ export default async function AccountPage() {
             </div>
           )}
           <p className="mt-4"><strong>ID:</strong> {session.user.id}</p>
-          <a href="/api/auth/signout" className="mt-6 inline-block rounded-lg border border-zinc-700 px-4 py-2 text-sm">Sair</a>
+          <a href="/api/auth/signout" className="batlab-button mt-6 inline-block rounded-full border border-zinc-700 px-5 py-2.5 text-sm hover:border-zinc-500 hover:bg-white/5">Sair</a>
         </div>
       </div>
     </main>

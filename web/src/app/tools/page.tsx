@@ -31,7 +31,7 @@ export default async function ToolsHome({ searchParams }: { searchParams?: { pla
             <option value="diagnostics">Diagnostics</option>
           </select>
           <input name="search" placeholder="Buscar..." className="bg-zinc-900 border border-zinc-800 rounded-lg px-3 py-2 w-48" />
-          <button className="bg-zinc-100 text-zinc-900 rounded-lg px-4 py-2">Filtrar</button>
+          <button className="batlab-button bg-zinc-100 text-zinc-900 rounded-full px-5 py-2.5 font-medium">Filtrar</button>
         </form>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {tools.map((t: any) => (

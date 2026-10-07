@@ -12,7 +12,7 @@ export default async function NavBar() {
           {session?.user ? (
             <span className="text-sm text-zinc-300">{session.user.name ?? session.user.email}</span>
           ) : (
-            <Link href="/login" className="text-sm rounded-lg border border-zinc-700 bg-zinc-900/50 px-3 py-1.5 hover:bg-zinc-800 hover:border-zinc-600 transition-colors duration-200">Entrar</Link>
+            <Link href="/login" className="batlab-button text-sm rounded-full border border-zinc-700 bg-zinc-900/50 px-4 py-2 hover:bg-zinc-800 hover:border-zinc-600 transition-colors duration-200">Entrar</Link>
           )}
         </div>
       </div>
