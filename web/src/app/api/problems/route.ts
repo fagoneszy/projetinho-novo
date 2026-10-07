@@ -1,8 +1,15 @@
 import { NextResponse } from "next/server";
-import { db } from "@/lib/db";
-import { problems } from "@/drizzle/schema";
+import { getCatalogProblems } from "@/lib/catalog";
 
 export async function GET() {
-  const data = await db.select().from(problems);
+  const data = getCatalogProblems().map((problem) => ({
+    id: problem.id,
+    name: problem.title,
+    slug: problem.id,
+    description: problem.desc,
+    order: problem.order,
+    keywords: problem.keywords,
+    tools: problem.tools,
+  }));
   return NextResponse.json({ problems: data });
 }

@@ -19,6 +19,25 @@ Only download BATLAB files from this repository's official pages.
 - Nenhum script oculta janela (`Start-Transcript`/janelas invisíveis proibidas):
   tudo que acontece deve ficar visível na janela do console.
 
+## Aplicação web
+
+- `/tools`, os detalhes de ferramenta e `/api/tools/*` exigem uma sessão
+  autenticada. Páginas redirecionam para o login preservando o destino interno;
+  APIs recusam visitantes com `401`.
+- `/problems` e `/api/problems` são públicos e expõem apenas descrições,
+  palavras-chave e slugs relacionados, nunca o conteúdo dos scripts.
+- Downloads exigem sessão. URLs do manifesto são aceitas somente via
+  `https://raw.githubusercontent.com`; ferramentas publicadas pelo CMS são
+  entregues a partir do conteúdo armazenado no banco.
+- Ferramentas publicadas no banco são combinadas com o manifesto versionado.
+  Se o banco falhar, o catálogo sinaliza que está degradado e registra o erro;
+  não deve apresentar a falha como se o banco tivesse respondido com sucesso.
+- Rotas administrativas e operações de escrita devem verificar a sessão e a
+  autorização de administrador no servidor. Esconder links na interface não é
+  controle de acesso.
+- Credenciais OAuth e URLs privadas de banco ficam somente em variáveis de
+  ambiente e nunca devem ser incluídas em commits, issues ou logs.
+
 ## Como reportar um problema
 
 Abra uma **Issue** com a label `segurança` informando:

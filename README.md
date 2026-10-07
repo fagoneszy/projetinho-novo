@@ -3,32 +3,36 @@
 > **Tiny tools. One job each. Open source. Free forever.**
 > Microutilitários para Windows, Linux, macOS e Android — baixe, rode, use.
 
-**PT-BR:** o BATLAB é uma coleção de **310 microutilitários** — na maioria
-`.bat` para Windows 10/11 (305), além de scripts `.sh` para Linux (3),
+**PT-BR:** o manifesto atual do BATLAB contém **439 microutilitários** —
+`.bat` para Windows 10/11 (434), além de scripts `.sh` para Linux (3),
 macOS (1) e Android via `adb` (1). Cada arquivo resolve **uma coisa
 específica**, pesa poucos KB, não precisa de instalação e declara no próprio
 cabeçalho se precisa de administrador, qual o nível de risco e como desfazer.
 
-**EN:** BATLAB is a collection of **310 tiny utilities** — mostly `.bat` for
-Windows 10/11 (305), plus `.sh` scripts for Linux (3), macOS (1) and Android
+**EN:** BATLAB is a collection of **439 tiny utilities** — `.bat` for
+Windows 10/11 (434), plus `.sh` scripts for Linux (3), macOS (1) and Android
 via `adb` (1). One file, one job, no install. Every script declares admin
 needs, risk level and how to undo in its header.
 
-## Site
+## Sites
 
-O site tem **três portas de entrada** — escolha a sua:
+O repositório contém duas interfaces:
 
-- **Por problema** — 17 situações reais ("Meu PC está lento", "Disco cheio",
-  "Windows Update com erro"…), cada uma com as ferramentas que resolvem;
-- **Por categoria** — navegação clássica por tema;
-- **Por plataforma** — Windows, Linux, macOS, Android.
+- **`web/`** — aplicação Next.js publicada na Vercel. A busca, o catálogo e
+  os problemas usam os manifests versionados; catálogo e downloads exigem
+  sessão.
+- **`site/`** — versão estática legada, com navegação por problema, categoria
+  e plataforma. Seus dados são `site/projects.json` e `site/problems.json`.
 
-Com busca, filtro "esconder as que pedem admin", badge de risco (incluindo
-`critical`), chips de segurança da ferramenta e **SHA-256 clicável** para
-conferir o download. Tudo em HTML/JS puro lendo `site/projects.json` e
-`site/problems.json` — sem build de frontend.
+O manifesto atual contém 439 ferramentas e 17 problemas. A aplicação web
+oferece busca e filtros por risco, categoria e plataforma, além de detalhes
+com metadados de segurança, fonte e SHA-256. Veja `web/README.md` para a
+aplicação Next.js.
 
-Antes de publicar, troque o `owner`/`repo` em `site/config.js`.
+Os geradores sincronizam cópias dos manifests para `web/src/data/`, a raiz
+usada pela Vercel; atualize os dados executando os scripts de build, não
+editando essas cópias. Ao fazer fork, confira o `owner`/`repo` em
+`site/config.js`.
 
 ## Como usar
 
@@ -66,8 +70,8 @@ Do `medium` em diante, o cabeçalho declara também **7 campos de segurança**
 `@restart`) que o site exibe em chips antes do download. O build falha se
 faltarem.
 
-**Situação atual:** 217 `low`, 86 `medium`, 7 `high`, 0 `critical`.
-34 pedem administrador.
+**Situação no manifesto atual:** 310 `low`, 120 `medium`, 9 `high`,
+0 `critical`. Cada ferramenta também declara se pede administrador.
 
 Detalhes em [`docs/RISCOS.md`](docs/RISCOS.md). Padrão de código (`.bat` e
 `.sh`) em [`docs/TEMPLATE.md`](docs/TEMPLATE.md).
@@ -76,14 +80,15 @@ Detalhes em [`docs/RISCOS.md`](docs/RISCOS.md). Padrão de código (`.bat` e
 
 ```text
 batlab/
-├── windows/batch/<categoria>/*.bat   305 ferramentas Windows
+├── windows/batch/<categoria>/*.bat   434 ferramentas Windows
 ├── linux/shell/<categoria>/*.sh        3 ferramentas Linux
 ├── macos/shell/<categoria>/*.sh        1 ferramenta macOS
 ├── android/adb/<categoria>/*.sh        1 ferramenta Android (adb)
 ├── problems/<id>.json                 17 problemas -> slugs das ferramentas
 ├── docs/                              TEMPLATE.md, RISCOS.md, catalogo
 ├── tools/                             builds (manifest, readmes, problems)
-├── site/                              site estatico (3 portas de entrada)
+├── site/                              manifests + site estatico legado
+├── web/                               aplicacao Next.js da Vercel
 ├── SHA256SUMS.txt                     hash de todos os arquivos (sha256sum -c)
 └── .gitattributes                     .bat=CRLF, .sh/.json/.js=LF
 ```
@@ -103,14 +108,15 @@ batlab/
 | `automation/` | Automação | 30 | ScheduledBackup, TaskManager, AutoGitBackup |
 | `diagnostics/` | Segurança e diagnóstico | 20 | FirewallStatus, InstalledPrograms, FullDiagnostic |
 | `everyday/` | Usuários comuns | 20 | ShutdownTimer, EmptyRecycleBin, OpenSoundSettings |
-| `system-diagnosis/` | Diagnóstico de inicialização | 1 | BootTimeReport |
-| `windows-update/` | Windows Update | 1 | UpdateServiceRepair |
-| `storage-advanced/` | Saúde de discos | 1 | DriveHealthCheck |
+| `system-diagnosis/` | Diagnóstico de inicialização | 25 | BootTimeReport |
+| `windows-update/` | Windows Update | 25 | UpdateServiceRepair |
+| `storage-advanced/` | Saúde de discos | 23 | DriveHealthCheck |
 | `privacy/` | Privacidade e telemetria | 1 | PrivacyAudit |
 | `emergency/` | Ações de emergência | 1 | EmergencyDiskReport |
+| `security-audit/` | Auditoria de segurança | 29 | SecurityPostureReport |
+| `network-advanced/` | Rede avançada | 30 | Network diagnostics |
 
-Linux/macOS/Android usam `system/` dentro das próprias raízes
-(`linux/shell/system/`, `macos/shell/system/`, `android/adb/system/`).
+`system/` inclui ainda 3 ferramentas Linux, 1 macOS e 1 Android.
 
 ## Builds
 
@@ -130,12 +136,14 @@ plataforma coerente com a pasta, enums de segurança, `@confirm typed` em
   migração para `windows/batch/`, metadata v2 de segurança, builds com
   SHA-256, taxonomia de 17 problemas, site com 3 portas, piloto de 10
   ferramentas multiplataforma e docs v2.
-- [ ] **Fase 1** — massa Windows: 582 ferramentas restantes do catálogo
-  (`docs/catalog-v2.csv`), em lotes por categoria.
-- [ ] **Fase 2** — Linux/macOS/Android: 65 `.sh`/adb restantes
-  (22 Linux, 19 macOS, 24 Android).
-- [ ] **Fase 3** — fechamento: contagens finais (**957 ferramentas** no
-  total, incluindo os 300 originais), docs e site.
+- [ ] **Fase 1** — continuar a expansão Windows a partir das 434 ferramentas
+  no manifesto; recalcular itens restantes após deduplicar `docs/catalog-v2.csv`.
+- [ ] **Fase 2** — expandir Linux/macOS/Android. Os números planejados
+  (22 Linux, 19 macOS, 24 Android) são metas adicionais, não o inventário
+  atual, que tem 3, 1 e 1, respectivamente.
+- [ ] **Fase 3** — reconciliar a meta histórica de 957 ferramentas (incluindo
+  os 300 originais) com o inventário e deduplicação finais antes de publicar
+  uma contagem restante.
 
 ## Contribuindo
 

@@ -153,6 +153,11 @@ if (-not (Test-Path $site)) { New-Item -ItemType Directory -Path $site | Out-Nul
 $out = Join-Path $site 'projects.json'
 $json = $tools | ConvertTo-Json -Depth 4
 [System.IO.File]::WriteAllText($out, $json, $enc)
+$webData = Join-Path $root 'web\src\data'
+if (Test-Path (Join-Path $root 'web')) {
+    if (-not (Test-Path $webData)) { New-Item -ItemType Directory -Path $webData | Out-Null }
+    [System.IO.File]::WriteAllText((Join-Path $webData 'projects.json'), $json, $enc)
+}
 
 # SHA256SUMS.txt (formato sha256sum: hash<2 espacos>caminho)
 $sumsOut = Join-Path $root 'SHA256SUMS.txt'

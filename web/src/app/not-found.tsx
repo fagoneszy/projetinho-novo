@@ -9,7 +9,7 @@ export default function NotFound() {
         <h1 className="text-8xl font-extrabold tracking-tighter text-white mb-4 drop-shadow-[0_0_30px_rgba(255,255,255,0.08)]">
           404
         </h1>
-        <h2 className="text-2xl font-semibold text-zinc-200 mb-2">Not Found</h2>
+        <h2 className="text-2xl font-semibold text-zinc-200 mb-2">Página não encontrada</h2>
         <p className="mb-8 text-zinc-400 max-w-md mx-auto">
           Essa página não existe no laboratório do BATLAB.
         </p>

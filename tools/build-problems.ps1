@@ -67,7 +67,13 @@ if ($bad.Count -gt 0) {
 $out = $items | Sort-Object order
 if (-not (Test-Path $site)) { New-Item -ItemType Directory -Path $site | Out-Null }
 $outPath = Join-Path $site 'problems.json'
-[System.IO.File]::WriteAllText($outPath, ($out | ConvertTo-Json -Depth 4), $enc)
+$json = $out | ConvertTo-Json -Depth 4
+[System.IO.File]::WriteAllText($outPath, $json, $enc)
+$webData = Join-Path $root 'web\src\data'
+if (Test-Path (Join-Path $root 'web')) {
+    if (-not (Test-Path $webData)) { New-Item -ItemType Directory -Path $webData | Out-Null }
+    [System.IO.File]::WriteAllText((Join-Path $webData 'problems.json'), $json, $enc)
+}
 
 Write-Host "Gerado: $outPath" -ForegroundColor Green
 Write-Host "Total : $($out.Count) problemas" -ForegroundColor Green

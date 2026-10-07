@@ -1,54 +1,41 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { useRouter } from "next/navigation";
+import { normalizeSearchText } from "@/lib/search-text";
 
-const categories = [
-  ["automation", "Automação"],
-  ["developer", "Desenvolvimento"],
-  ["diagnostics", "Diagnóstico"],
-  ["security-audit", "Segurança"],
-  ["network", "Rede"],
-  ["privacy", "Privacidade"],
-  ["productivity", "Produtividade"],
-  ["files", "Arquivos"],
-  ["media", "Mídia"],
-  ["system", "Sistema"],
-  ["emergency", "Emergência"],
-  ["everyday", "Dia a dia"],
-  ["customization", "Personalização"],
-  ["games", "Jogos"],
-  ["network-advanced", "Rede avançada"],
-  ["storage-advanced", "Armazenamento avançado"],
-  ["windows-update", "Windows Update"],
-  ["rede", "Rede (categoria BATLAB)"],
-  ["seguranca", "Segurança (categoria BATLAB)"],
-  ["utilitarios", "Utilitários"],
-  ["desenvolvimento", "Desenvolvimento (categoria BATLAB)"],
-  ["automacao", "Automação (categoria BATLAB)"],
-  ["arquivos", "Arquivos (categoria BATLAB)"],
-  ["midia", "Mídia (categoria BATLAB)"],
-  ["sistema", "Sistema (categoria BATLAB)"],
-] as const;
+type CategoryOption = { slug: string; label: string };
 
-const popularSearches = ["Segurança", "Automação", "APIs"];
+const popularCategories = ["security-audit", "automation", "network"];
 
-export default function HeroSearch() {
+export default function HeroSearch({ categories }: { categories: CategoryOption[] }) {
   const [query, setQuery] = useState("");
   const [severity, setSeverity] = useState("");
   const [category, setCategory] = useState("");
   const [expanded, setExpanded] = useState(false);
+  const [categoryOpen, setCategoryOpen] = useState(false);
+  const [categorySearch, setCategorySearch] = useState("");
+  const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
   const router = useRouter();
+  const reduceMotion = useReducedMotion();
+  const categorySearchRef = useRef<HTMLInputElement>(null);
+  const categoryTriggerRef = useRef<HTMLButtonElement>(null);
+  const filteredCategories = useMemo(() => {
+    const normalizedSearch = normalizeSearchText(categorySearch);
+    return categories.filter(({ slug, label }) =>
+      normalizeSearchText(`${label} ${slug}`).includes(normalizedSearch),
+    );
+  }, [categories, categorySearch]);
 
-  const searchTools = (searchQuery = query) => {
+  const searchTools = (searchQuery = query, searchCategory = category) => {
     const params = new URLSearchParams();
     const trimmedQuery = searchQuery.trim();
 
     if (trimmedQuery) params.set("search", trimmedQuery);
     if (severity) params.set("severity", severity);
-    if (category) params.set("category", category);
+    if (searchCategory) params.set("category", searchCategory);
 
     const search = params.toString();
     router.push(search ? `/tools?${search}` : "/tools");
@@ -64,6 +51,12 @@ export default function HeroSearch() {
     setSeverity("");
     setCategory("");
   };
+
+  useEffect(() => {
+    if (categoryOpen) {
+      categorySearchRef.current?.focus();
+    }
+  }, [categoryOpen]);
 
   const hasFilters = Boolean(query || severity || category);
 
@@ -93,10 +86,11 @@ export default function HeroSearch() {
           <input
             id="hero-search"
             type="search"
+            maxLength={100}
             value={query}
             onFocus={() => setExpanded(true)}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Busque ferramentas, categorias..."
+            placeholder="Nome, categoria ou função..."
             className="min-w-0 flex-1 bg-transparent py-3.5 text-sm text-white outline-none placeholder:text-zinc-500 sm:text-base"
           />
         </div>
@@ -148,11 +142,11 @@ export default function HeroSearch() {
             initial={{ height: 0, opacity: 0, y: -6 }}
             animate={{ height: "auto", opacity: 1, y: 0 }}
             exit={{ height: 0, opacity: 0, y: -6 }}
-            transition={{ duration: 0.24, ease: "easeOut" }}
+            transition={{ duration: reduceMotion ? 0 : 0.24, ease: "easeOut" }}
             className="overflow-hidden"
           >
             <div className="border-t border-white/[0.08] px-4 pb-4 pt-4 sm:px-6 sm:pb-5">
-              <div className="grid gap-3 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
+              <div className="grid gap-4 sm:grid-cols-2 sm:items-start">
                 <label className="block min-w-0">
                   <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.12em] text-zinc-500">
                     Nível de risco
@@ -168,46 +162,199 @@ export default function HeroSearch() {
                     <option value="high" className="bg-zinc-900">Risco alto</option>
                   </select>
                 </label>
-                <label className="block min-w-0">
+
+                <div className="relative min-w-0">
                   <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.12em] text-zinc-500">
                     Categoria
                   </span>
-                  <select
-                    value={category}
-                    onChange={(event) => setCategory(event.target.value)}
-                    className="w-full rounded-full border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-zinc-200 outline-none transition focus:border-cyan-200/40 focus:ring-2 focus:ring-cyan-200/10"
-                  >
-                    <option value="" className="bg-zinc-900">Todas as categorias</option>
-                    {categories.map(([value, label]) => (
-                      <option key={value} value={value} className="bg-zinc-900">
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                {hasFilters && (
                   <button
+                    ref={categoryTriggerRef}
                     type="button"
-                    onClick={clearFilters}
-                    className="batlab-button h-[42px] rounded-full border border-white/10 px-4 text-sm text-zinc-400 hover:border-white/20 hover:bg-white/[0.05] hover:text-white"
+                    aria-haspopup="listbox"
+                    aria-expanded={categoryOpen}
+                    aria-controls="hero-category-options"
+                    aria-label="Escolher categoria"
+                    onClick={() => {
+                      setCategoryOpen((open) => !open);
+                      setCategorySearch("");
+                      setActiveCategoryIndex(0);
+                    }}
+                    onKeyDown={(event) => {
+                      if (event.key === "ArrowDown" || event.key === "Enter" || event.key === " ") {
+                        event.preventDefault();
+                        setCategoryOpen(true);
+                        setCategorySearch("");
+                        setActiveCategoryIndex(0);
+                      }
+                    }}
+                    className="flex w-full items-center justify-between gap-3 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2.5 text-left text-sm text-zinc-200 outline-none transition hover:border-white/20 focus:border-cyan-200/40 focus:ring-2 focus:ring-cyan-200/10"
                   >
-                    Limpar
+                    <span className={category ? "truncate" : "truncate text-zinc-400"}>
+                      {categories.find((option) => option.slug === category)?.label ?? "Todas as categorias"}
+                    </span>
+                    <svg
+                      aria-hidden="true"
+                      className={`h-4 w-4 shrink-0 text-zinc-500 transition-transform ${categoryOpen ? "rotate-180" : ""}`}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path d="m6 9 6 6 6-6" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
                   </button>
-                )}
+                  <AnimatePresence initial={false}>
+                    {categoryOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: reduceMotion ? 0 : 0.18, ease: "easeOut" }}
+                        className="overflow-hidden"
+                      >
+                        <div className="mt-2 rounded-2xl border border-white/10 bg-[#101012] p-2">
+                          <label htmlFor="hero-category-search" className="sr-only">
+                            Filtrar categorias
+                          </label>
+                          <input
+                            ref={categorySearchRef}
+                            id="hero-category-search"
+                            type="search"
+                            role="combobox"
+                            aria-autocomplete="list"
+                            aria-expanded="true"
+                            aria-controls="hero-category-options"
+                            aria-activedescendant={
+                              filteredCategories[activeCategoryIndex]
+                                ? `hero-category-${filteredCategories[activeCategoryIndex].slug}`
+                                : undefined
+                            }
+                            value={categorySearch}
+                            onChange={(event) => {
+                              setCategorySearch(event.target.value);
+                              setActiveCategoryIndex(0);
+                            }}
+                            onKeyDown={(event) => {
+                              if (event.key === "ArrowDown") {
+                                event.preventDefault();
+                                setActiveCategoryIndex((index) =>
+                                  filteredCategories.length
+                                    ? Math.min(index + 1, filteredCategories.length - 1)
+                                    : 0,
+                                );
+                              } else if (event.key === "ArrowUp") {
+                                event.preventDefault();
+                                setActiveCategoryIndex((index) => Math.max(index - 1, 0));
+                              } else if (event.key === "Enter" && filteredCategories[activeCategoryIndex]) {
+                                event.preventDefault();
+                                setCategory(filteredCategories[activeCategoryIndex].slug);
+                                setCategoryOpen(false);
+                                setCategorySearch("");
+                                categoryTriggerRef.current?.focus();
+                              } else if (event.key === "Escape") {
+                                event.preventDefault();
+                                setCategoryOpen(false);
+                                setCategorySearch("");
+                                categoryTriggerRef.current?.focus();
+                              }
+                            }}
+                            placeholder="Digite para filtrar..."
+                            className="mb-2 w-full rounded-xl border border-white/[0.08] bg-black/40 px-3 py-2 text-sm text-white outline-none placeholder:text-zinc-600 focus:border-cyan-200/30"
+                          />
+                          <div
+                            id="hero-category-options"
+                            role="listbox"
+                            aria-label="Categorias disponíveis"
+                            className="max-h-40 overflow-y-auto overscroll-contain"
+                          >
+                            <button
+                              type="button"
+                              id="hero-category-all"
+                              role="option"
+                              aria-selected={!category}
+                              onClick={() => {
+                                setCategory("");
+                                setCategoryOpen(false);
+                                setCategorySearch("");
+                                categoryTriggerRef.current?.focus();
+                              }}
+                              className={`w-full rounded-xl px-3 py-2 text-left text-sm transition ${
+                                !category ? "bg-cyan-200/10 text-cyan-100" : "text-zinc-300 hover:bg-white/[0.06]"
+                              }`}
+                            >
+                              Todas as categorias
+                            </button>
+                            {filteredCategories.map(({ slug, label }, index) => (
+                              <button
+                                key={slug}
+                                type="button"
+                                id={`hero-category-${slug}`}
+                                role="option"
+                                aria-selected={category === slug}
+                                onMouseEnter={() => setActiveCategoryIndex(index)}
+                                onClick={() => {
+                                  setCategory(slug);
+                                  setCategoryOpen(false);
+                                  setCategorySearch("");
+                                  categoryTriggerRef.current?.focus();
+                                }}
+                                className={`w-full rounded-xl px-3 py-2 text-left text-sm transition ${
+                                  activeCategoryIndex === index
+                                    ? "bg-white/[0.08] text-white"
+                                    : category === slug
+                                      ? "text-cyan-100"
+                                      : "text-zinc-300 hover:bg-white/[0.06]"
+                                }`}
+                              >
+                                {label}
+                              </button>
+                            ))}
+                            {filteredCategories.length === 0 && (
+                              <p className="px-3 py-3 text-sm text-zinc-500">
+                                Nenhuma categoria encontrada.
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
               </div>
 
               <div className="mt-4 flex flex-wrap items-center gap-2">
                 <span className="mr-1 text-xs text-zinc-500">Buscas populares</span>
-                {popularSearches.map((term) => (
+                {popularCategories.map((slug) => {
+                  const option = categories.find((item) => item.slug === slug);
+                  if (!option) return null;
+                  return (
+                    <button
+                      key={slug}
+                      type="button"
+                      onClick={() => searchTools(query, slug)}
+                      className="batlab-button rounded-full border border-white/[0.08] bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-zinc-300 hover:border-cyan-200/25 hover:bg-cyan-200/[0.06] hover:text-cyan-100"
+                    >
+                      {option.label}
+                    </button>
+                  );
+                })}
+              </div>
+
+              <div className="mt-4 flex items-center justify-end gap-2 border-t border-white/[0.08] pt-3">
+                {hasFilters && (
                   <button
-                    key={term}
                     type="button"
-                    onClick={() => searchTools(term)}
-                    className="batlab-button rounded-full border border-white/[0.08] bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-zinc-300 hover:border-cyan-200/25 hover:bg-cyan-200/[0.06] hover:text-cyan-100"
+                    onClick={clearFilters}
+                    className="batlab-button rounded-full border border-white/10 px-4 py-2 text-sm text-zinc-400 hover:border-white/20 hover:bg-white/[0.05] hover:text-white"
                   >
-                    {term}
+                    Limpar filtros
                   </button>
-                ))}
+                )}
+                <button
+                  type="submit"
+                  className="batlab-button rounded-full bg-white px-5 py-2 text-sm font-semibold text-black hover:bg-cyan-50"
+                >
+                  Aplicar busca
+                </button>
               </div>
             </div>
           </motion.div>

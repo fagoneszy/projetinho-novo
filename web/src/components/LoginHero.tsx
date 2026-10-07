@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import VideoBackground from "./VideoBackground";
 
-export default function LoginHero() {
+export default function LoginHero({ returnTo = "/tools" }: { returnTo?: string }) {
   return (
     <div className="relative isolate flex min-h-[100dvh] items-center justify-center bg-[#030303] px-4 overflow-hidden">
       <VideoBackground src="/login.mp4" overlay="from-[#030303]/85 via-[#030303]/70 to-[#030303]" />
@@ -14,7 +14,7 @@ export default function LoginHero() {
       >
         <h1 className="text-2xl font-semibold mb-6 text-center text-white">Entrar</h1>
         <a
-          href="/api/auth/signin/google"
+          href={`/api/auth/signin/google?returnTo=${encodeURIComponent(returnTo)}`}
           className="batlab-button block w-full rounded-full bg-white text-black text-center py-3 font-medium transition-colors duration-200 hover:bg-zinc-100"
         >
           Continuar com Google

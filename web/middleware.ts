@@ -29,17 +29,36 @@ export async function middleware(req: NextRequest) {
   res.headers.set("Permissions-Policy", "geolocation=(), microphone=(), camera=()");
   res.headers.set("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';");
 
-  const publicPaths = ["/", "/login", "/api/auth/signin/google", "/api/auth/callback/google", "/api/tools"];
-  const isPublic = publicPaths.some(p => req.nextUrl.pathname === p || req.nextUrl.pathname.startsWith("/api/tools/"));
+  const protectedPrefixes = [
+    "/tools",
+    "/account",
+    "/admin",
+    "/api/tools",
+    "/api/favorites",
+    "/api/admin",
+    "/api/auth/signout",
+  ];
+  const requiresAuthentication = protectedPrefixes.some(
+    (prefix) => req.nextUrl.pathname === prefix || req.nextUrl.pathname.startsWith(`${prefix}/`),
+  );
 
-  if (!isPublic) {
+  if (requiresAuthentication) {
     const session = await getSession();
     if (!session) {
-      return NextResponse.redirect(new URL("/login", req.url));
+      if (req.nextUrl.pathname.startsWith("/api/")) {
+        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+      }
+      const loginUrl = new URL("/login", req.url);
+      loginUrl.searchParams.set("callbackUrl", `${req.nextUrl.pathname}${req.nextUrl.search}`);
+      return NextResponse.redirect(loginUrl);
     }
   }
 
   return res;
 }
 
-export const config = { matcher: ["/((?!_next/static|_next/image|favicon.ico).* )"] };
+export const config = {
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|mp4|webm|woff2?|ttf|otf|css|js)$).*)",
+  ],
+};

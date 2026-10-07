@@ -1,10 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import HeroSearch from "./HeroSearch";
 import TerminalCodeBackground from "./TerminalCodeBackground";
 
-export default function HeroWaves() {
+type CategoryOption = { slug: string; label: string };
+
+export default function HeroWaves({ categories }: { categories: CategoryOption[] }) {
+  const reduceMotion = useReducedMotion();
+
   return (
     <section className="relative isolate flex min-h-[min(82vh,820px)] items-center justify-center overflow-hidden bg-black px-4 py-20 sm:px-6">
       <TerminalCodeBackground />
@@ -13,9 +17,9 @@ export default function HeroWaves() {
         className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[420px] w-[min(90vw,900px)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-300/[0.07] blur-[120px]"
       />
       <motion.div
-        initial={{ y: 18, opacity: 0 }}
+        initial={reduceMotion ? false : { y: 18, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.65 }}
+        transition={{ duration: reduceMotion ? 0 : 0.65 }}
         className="relative z-10 w-full max-w-5xl"
       >
         <div className="mx-auto mb-9 max-w-4xl text-center sm:mb-11">
@@ -31,7 +35,7 @@ export default function HeroWaves() {
           </p>
         </div>
         <div className="mx-auto max-w-3xl">
-          <HeroSearch />
+          <HeroSearch categories={categories} />
         </div>
       </motion.div>
     </section>

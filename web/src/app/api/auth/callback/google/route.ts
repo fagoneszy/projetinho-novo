@@ -3,6 +3,8 @@ import { db } from "@/lib/db";
 import { users } from "@/drizzle/schema";
 import { eq } from "drizzle-orm";
 import { createSession } from "@/lib/session";
+import { cookies } from "next/headers";
+import { safeReturnTo } from "@/lib/safe-return-to";
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -47,7 +49,16 @@ export async function GET(req: Request) {
     }
   }
 
-  const res = NextResponse.redirect(new URL("/tools", url.origin));
+  const cookieStore = await cookies();
+  const returnTo = safeReturnTo(cookieStore.get("batlab_return_to")?.value);
+  const res = NextResponse.redirect(new URL(returnTo, url.origin));
+  res.cookies.set("batlab_return_to", "", {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/api/auth/callback/google",
+    maxAge: 0,
+  });
   if (userId && db) {
     const token = await createSession(userId);
     res.cookies.set("batlab_session", token, {
