@@ -3,8 +3,8 @@
 ## Escopo e estado
 
 Correções implementadas, verificadas localmente e publicadas na Vercel.
-O commit `9a81e8c` foi sincronizado com `main`; o check Vercel reportou
-sucesso e os smoke tests públicos em produção passaram.
+Os commits `9a81e8c` e `a47b04a` foram sincronizados com `main`; os checks
+Vercel reportaram sucesso e os smoke tests públicos em produção passaram.
 
 ## Achados corrigidos
 
@@ -82,6 +82,11 @@ sucesso e os smoke tests públicos em produção passaram.
   `y=523 px` durante toda a animação. O overlay mantém o painel fora do fluxo.
 - [x] Build e ESLint da versão com `max-height` passaram; o fechamento retorna
   o painel a altura 0/opacidade 0 e o marca como `inert`.
+- [x] Após o deploy de `a47b04a`, a animação foi medida no domínio público:
+  ao abrir, `max-height` interpolou de 0 a 640 px, a opacidade chegou a 1 e o
+  conteúdo visível atingiu 213,5 px; ao fechar, voltou a `max-height: 0`,
+  opacidade 0 e `inert`. A posição superior da busca ficou estável em
+  `y=435,4 px` durante a abertura e o fechamento.
 - [x] Teste do filtro de categorias acessível por teclado e da preferência de
   movimento reduzido em browser; a variante CSS elimina a transição quando a
   preferência está ativa.
@@ -96,6 +101,7 @@ sucesso e os smoke tests públicos em produção passaram.
 - [x] HEAD do arquivo `DNSFlush.bat` na origem configurada respondeu `200`.
 - [x] `git diff --check` sem erros de whitespace.
 - [x] Deploy de `9a81e8c` na Vercel concluído com sucesso.
+- [x] Deploy de `a47b04a` na Vercel concluído com sucesso.
 - [x] Smoke tests no domínio publicado: API de problemas `200` com 17 itens,
   sitemap `200` com 19 URLs, robots `200` bloqueando ferramentas/conta/admin,
   `/tools` redireciona para login preservando a busca e `/api/tools` responde
@@ -106,8 +112,6 @@ sucesso e os smoke tests públicos em produção passaram.
 - [ ] Completar o fluxo Google OAuth com uma conta de teste autenticada e
   validar listagem, detalhe e download com sessão válida. Nenhuma conta ou
   credencial foi usada nesta verificação.
-- [ ] Publicar a versão com `max-height` e repetir o teste quadro a quadro no
-  domínio público.
 
 ## Nota de lint existente
 
