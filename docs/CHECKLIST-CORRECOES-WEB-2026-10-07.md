@@ -2,9 +2,9 @@
 
 ## Escopo e estado
 
-Correções implementadas e verificadas na build de produção local. As mudanças
-ainda não foram commitadas nem publicadas na Vercel; a confirmação no domínio
-de produção depende do deploy.
+Correções implementadas, verificadas localmente e publicadas na Vercel.
+O commit `9a81e8c` foi sincronizado com `main`; o check Vercel reportou
+sucesso e os smoke tests públicos em produção passaram.
 
 ## Achados corrigidos
 
@@ -71,13 +71,21 @@ de produção depende do deploy.
 - [x] Rota inexistente serviu o 404 customizado em português.
 - [x] HEAD do arquivo `DNSFlush.bat` na origem configurada respondeu `200`.
 - [x] `git diff --check` sem erros de whitespace.
+- [x] Deploy de `9a81e8c` na Vercel concluído com sucesso.
+- [x] Smoke tests no domínio publicado: API de problemas `200` com 17 itens,
+  sitemap `200` com 19 URLs, robots `200` bloqueando ferramentas/conta/admin,
+  `/tools` redireciona para login preservando a busca e `/api/tools` responde
+  `401` sem sessão.
 
-## Validações que dependem de acesso externo
+## Validações restantes
 
-- [ ] Publicar as alterações e repetir os smoke tests em `batlab.vercel.app`.
 - [ ] Completar o fluxo Google OAuth com uma conta de teste autenticada e
   validar listagem, detalhe e download com sessão válida. Nenhuma conta ou
   credencial foi usada nesta verificação.
-- [ ] O `npm run lint` global permanece bloqueado por erro preexistente e fora
-  deste escopo em `web/src/lib/utils.ts:4` (`no-explicit-any`). O ESLint
-  direcionado aos arquivos alterados passou.
+
+## Nota de lint existente
+
+O ESLint direcionado aos arquivos alterados passou. `npm run lint` global
+continua bloqueado por um erro preexistente e não relacionado em
+`web/src/lib/utils.ts:4` (`no-explicit-any`), além de avisos em arquivos não
+alterados nesta rodada.

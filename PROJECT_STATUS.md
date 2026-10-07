@@ -55,5 +55,6 @@ Atualizado em 7 de outubro de 2026.
   são publicadas no banco, enquanto o catálogo versionado permanece
   distribuível e disponível como base de continuidade.
 - `docs/CHECKLIST-CORRECOES-WEB-2026-10-07.md` registra os reparos e os testes
-  executados nesta rodada. A publicação dessas mudanças e a conferência final
-  na Vercel ainda dependem de sincronização/deploy.
+  executados nesta rodada. As correções foram sincronizadas e o deploy da
+  Vercel concluiu com sucesso; o checklist registra o teste de produção e as
+  limitações restantes do fluxo autenticado.
