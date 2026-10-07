@@ -10,12 +10,11 @@ export default function HeroWaves({ categories }: { categories: CategoryOption[]
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative isolate flex min-h-[min(82vh,820px)] items-center justify-center overflow-hidden bg-black px-4 py-20 sm:px-6">
-      <TerminalCodeBackground />
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute left-1/2 top-1/2 z-0 h-[420px] w-[min(90vw,900px)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-300/[0.07] blur-[120px]"
-      />
+    <section className="relative isolate flex min-h-[min(82vh,820px)] items-center justify-center bg-black px-4 py-20 sm:px-6">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+        <TerminalCodeBackground />
+        <div className="absolute left-1/2 top-1/2 h-[420px] w-[min(90vw,900px)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-300/[0.07] blur-[120px]" />
+      </div>
       <motion.div
         initial={reduceMotion ? false : { y: 18, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

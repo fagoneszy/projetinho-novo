@@ -64,8 +64,8 @@ export default function HeroSearch({ categories }: { categories: CategoryOption[
     <form
       onSubmit={handleSubmit}
       role="search"
-      className={`overflow-hidden border border-white/15 bg-[#09090b]/90 shadow-[0_24px_90px_rgba(0,0,0,0.65),0_0_45px_rgba(34,211,238,0.08)] backdrop-blur-2xl transition-[border-radius,box-shadow] duration-300 ${
-        expanded ? "rounded-[2rem]" : "rounded-full"
+      className={`relative border border-white/15 bg-[#09090b]/90 shadow-[0_24px_90px_rgba(0,0,0,0.65),0_0_45px_rgba(34,211,238,0.08)] backdrop-blur-2xl transition-[border-radius,box-shadow] duration-300 motion-reduce:transition-none ${
+        expanded ? "rounded-t-[2rem] rounded-b-none border-b-0" : "rounded-full"
       }`}
     >
       <div className="flex items-center gap-1.5 p-1.5 sm:gap-2 sm:p-2">
@@ -135,17 +135,18 @@ export default function HeroSearch({ categories }: { categories: CategoryOption[
         </button>
       </div>
 
-      <AnimatePresence initial={false}>
-        {expanded && (
-          <motion.div
-            id="hero-search-options"
-            initial={{ height: 0, opacity: 0, y: -6 }}
-            animate={{ height: "auto", opacity: 1, y: 0 }}
-            exit={{ height: 0, opacity: 0, y: -6 }}
-            transition={{ duration: reduceMotion ? 0 : 0.24, ease: "easeOut" }}
-            className="overflow-hidden"
-          >
-            <div className="border-t border-white/[0.08] px-4 pb-4 pt-4 sm:px-6 sm:pb-5">
+      <div
+        id="hero-search-options"
+        aria-hidden={!expanded}
+        inert={!expanded}
+        className={`absolute left-0 right-0 top-[calc(100%-1px)] z-20 grid overflow-hidden rounded-b-[2rem] border-x border-b border-white/15 bg-[#09090b]/95 shadow-[0_24px_90px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-[grid-template-rows,opacity] ease-out motion-reduce:transition-none ${
+          expanded
+            ? "grid-rows-[1fr] opacity-100 duration-300"
+            : "grid-rows-[0fr] opacity-0 duration-200"
+        }`}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <div className="border-t border-white/[0.08] px-4 pb-4 pt-4 sm:px-6 sm:pb-5">
               <div className="grid gap-4 sm:grid-cols-2 sm:items-start">
                 <label className="block min-w-0">
                   <span className="mb-1.5 block text-[11px] font-medium uppercase tracking-[0.12em] text-zinc-500">
@@ -357,9 +358,8 @@ export default function HeroSearch({ categories }: { categories: CategoryOption[
                 </button>
               </div>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+        </div>
+      </div>
     </form>
   );
 }

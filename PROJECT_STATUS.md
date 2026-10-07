@@ -33,6 +33,8 @@ Atualizado em 7 de outubro de 2026.
 - A home disponibiliza busca e filtros alimentados pelas categorias do
   manifesto; `/tools` e suas APIs exigem sessão; `/problems` e sua API são
   públicos e usam os dados versionados.
+- O painel expansível da busca abre em overlay sem deslocar a barra; sua
+  transição CSS foi verificada na build local, incluindo movimento reduzido.
 - Ferramentas publicadas no banco são combinadas com o manifesto. Se a leitura
   do banco falhar, o catálogo do manifesto continua disponível, a aplicação
   registra o erro e informa a condição degradada ao usuário.
