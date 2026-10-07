@@ -13,6 +13,14 @@ Para autenticação e recursos administrativos, configure no ambiente local ou
 na Vercel `DATABASE_URL`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` e
 `NEXT_PUBLIC_SITE_URL`. Não versione valores de credenciais.
 
+### Corrigir schema de autenticação existente
+
+Em bancos criados pela migração inicial de usuários, aplique
+[`scripts/repair-auth-schema.sql`](./scripts/repair-auth-schema.sql) uma vez no
+SQL Editor do Neon antes de testar o login. O script é aditivo e pode ser
+executado novamente com segurança; adiciona os campos de perfil esperados pelo
+app e cria a tabela de sessões, caso ainda não exista.
+
 ## Catálogo e dados
 
 `site/projects.json` e `site/problems.json`, na raiz do repositório, são as
