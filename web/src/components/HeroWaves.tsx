@@ -19,10 +19,6 @@ export default function HeroWaves() {
         className="relative z-10 w-full max-w-5xl"
       >
         <div className="mx-auto mb-9 max-w-4xl text-center sm:mb-11">
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-zinc-300 shadow-[0_0_30px_rgba(34,211,238,0.08)] sm:text-xs">
-            <span className="h-1.5 w-1.5 rounded-full bg-cyan-300 shadow-[0_0_12px_rgba(103,232,249,0.9)]" />
-            Catálogo de ferramentas auditadas
-          </p>
           <h1 className="text-balance text-4xl font-semibold leading-[1.06] tracking-[-0.055em] text-white sm:text-6xl lg:text-7xl">
             Encontre a ferramenta certa.
             <span className="mt-1 block bg-gradient-to-r from-cyan-200 via-white to-violet-200 bg-clip-text text-transparent">

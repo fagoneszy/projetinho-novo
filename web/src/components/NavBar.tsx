@@ -8,9 +8,11 @@ export default async function NavBar() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 sm:px-8">
         <Link href="/" className="font-extrabold tracking-tighter text-white">BATLAB</Link>
         <div className="flex items-center gap-4">
-          <Link href="/tools" className="text-sm text-zinc-300 hover:text-zinc-100 transition-colors duration-200">Ferramentas</Link>
           {session?.user ? (
-            <span className="text-sm text-zinc-300">{session.user.name ?? session.user.email}</span>
+            <>
+              <Link href="/tools" className="text-sm text-zinc-300 hover:text-zinc-100 transition-colors duration-200">Ferramentas</Link>
+              <span className="text-sm text-zinc-300">{session.user.name ?? session.user.email}</span>
+            </>
           ) : (
             <Link href="/login" className="batlab-button text-sm rounded-full border border-zinc-700 bg-zinc-900/50 px-4 py-2 hover:bg-zinc-800 hover:border-zinc-600 transition-colors duration-200">Entrar</Link>
           )}
