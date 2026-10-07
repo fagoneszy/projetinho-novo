@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 const glyphs = "01{}[]<>/\\=+-_#$:;abcdef";
-const cellWidth = 20;
-const cellHeight = 25;
+const cellWidth = 14;
+const cellHeight = 18;
 const hoverRadius = 150;
 
 export default function TerminalCodeBackground() {
@@ -26,7 +26,7 @@ export default function TerminalCodeBackground() {
     const draw = () => {
       frame = 0;
       context.clearRect(0, 0, width, height);
-      context.font = "12px ui-monospace, SFMono-Regular, Menlo, monospace";
+      context.font = "11px ui-monospace, SFMono-Regular, Menlo, monospace";
       context.textAlign = "center";
       context.textBaseline = "middle";
 
@@ -43,10 +43,14 @@ export default function TerminalCodeBackground() {
           if (pointer && distance < hoverRadius) {
             const strength = 1 - distance / hoverRadius;
             const hue = (column * 13 + row * 7) % 3;
-            const color = ["174, 232, 255", "163, 255, 194", "201, 174, 255"][hue];
-            context.fillStyle = `rgba(${color}, ${0.2 + strength * 0.8})`;
+            const color = ["0, 255, 255", "0, 255, 115", "196, 0, 255"][hue];
+            context.fillStyle = `rgba(${color}, ${0.3 + strength * 0.7})`;
+            context.shadowColor = `rgba(${color}, ${0.9 * strength})`;
+            context.shadowBlur = 16 * strength;
           } else {
-            context.fillStyle = "rgba(161, 161, 170, 0.28)";
+            context.fillStyle = "rgba(75, 110, 125, 0.28)";
+            context.shadowColor = "transparent";
+            context.shadowBlur = 0;
           }
 
           context.fillText(glyph, x, y);
