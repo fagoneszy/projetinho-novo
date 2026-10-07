@@ -36,7 +36,7 @@ sucesso e os smoke tests públicos em produção passaram.
 - [x] **Animação de expansão da busca travada:** removida a animação baseada em
   `height: auto` do Framer Motion, que em produção mantinha o painel em
   `height: 0`/`opacity: 0` mesmo com o controle marcado como aberto. A expansão
-  agora interpola `grid-template-rows` e opacidade por CSS, deixa o painel
+  agora interpola `max-height` e opacidade por CSS, deixa o painel
   montado e inerte quando recolhido, e respeita `prefers-reduced-motion`.
 - [x] **`robots.txt` e `sitemap.xml` ausentes:** rotas Next.js públicas
   adicionadas. O sitemap contém home, índice de problemas e seus detalhes; não
@@ -74,10 +74,14 @@ sucesso e os smoke tests públicos em produção passaram.
 - [x] Reprodução do defeito original no site publicado: depois do clique, o
   botão dizia expandido, mas o painel continuava com altura 0 e opacidade 0
   (após aguardar mais de 800 ms).
-- [x] Teste da correção no browser da build de produção local: painel passou
-  de 0 a 328 px em amostras durante a transição, agora posicionado em overlay.
-  O topo da barra permaneceu em 522,3–522,8 px enquanto o painel abria; ao
-  recolher, terminou com altura 0, opacidade 0 e `inert`.
+- [x] A primeira correção com CSS Grid foi validada localmente, mas falhou no
+  domínio depois do deploy (o track permaneceu em 0 px). Foi substituída por
+  transição de `max-height` para não depender da resolução de tracks
+  intrínsecos. No browser da build local, a altura medida cresceu de 123 a
+  328 px nos primeiros 50 ms da transição de 300 ms; a barra permaneceu em
+  `y=523 px` durante toda a animação. O overlay mantém o painel fora do fluxo.
+- [x] Build e ESLint da versão com `max-height` passaram; o fechamento retorna
+  o painel a altura 0/opacidade 0 e o marca como `inert`.
 - [x] Teste do filtro de categorias acessível por teclado e da preferência de
   movimento reduzido em browser; a variante CSS elimina a transição quando a
   preferência está ativa.
@@ -102,8 +106,8 @@ sucesso e os smoke tests públicos em produção passaram.
 - [ ] Completar o fluxo Google OAuth com uma conta de teste autenticada e
   validar listagem, detalhe e download com sessão válida. Nenhuma conta ou
   credencial foi usada nesta verificação.
-- [ ] Publicar esta última correção da expansão e repetir o teste quadro a
-  quadro no domínio público.
+- [ ] Publicar a versão com `max-height` e repetir o teste quadro a quadro no
+  domínio público.
 
 ## Nota de lint existente
 

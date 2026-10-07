@@ -139,13 +139,14 @@ export default function HeroSearch({ categories }: { categories: CategoryOption[
         id="hero-search-options"
         aria-hidden={!expanded}
         inert={!expanded}
-        className={`absolute left-0 right-0 top-[calc(100%-1px)] z-20 grid overflow-hidden rounded-b-[2rem] border-x border-b border-white/15 bg-[#09090b]/95 shadow-[0_24px_90px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-[grid-template-rows,opacity] ease-out motion-reduce:transition-none ${
+        className={`absolute left-0 right-0 top-[calc(100%-1px)] z-20 overflow-hidden rounded-b-[2rem] border-x border-b bg-[#09090b]/95 shadow-[0_24px_90px_rgba(0,0,0,0.65)] backdrop-blur-2xl transition-[max-height,opacity,border-color] ease-out motion-reduce:transition-none ${
           expanded
-            ? "grid-rows-[1fr] opacity-100 duration-300"
-            : "grid-rows-[0fr] opacity-0 duration-200"
+            ? "border-white/15 opacity-100 duration-300"
+            : "border-transparent opacity-0 duration-200"
         }`}
+        style={{ maxHeight: expanded ? "640px" : "0px" }}
       >
-        <div className="min-h-0 overflow-hidden">
+        <div>
           <div className="border-t border-white/[0.08] px-4 pb-4 pt-4 sm:px-6 sm:pb-5">
               <div className="grid gap-4 sm:grid-cols-2 sm:items-start">
                 <label className="block min-w-0">
